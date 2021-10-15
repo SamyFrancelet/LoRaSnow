@@ -1,0 +1,10 @@
+16:39:30 **** Incremental Build of configuration Debug for project LoRaSnow_Lidar_Lite ****
+make -j8 all 
+arm-none-eabi-size   LoRaSnow_Lidar_Lite.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16876	    120	   1816	  18812	   497c	LoRaSnow_Lidar_Lite.elf
+Finished building: default.size.stdout
+ 
+
+16:39:30 Build Finished. 0 errors, 0 warnings. (took 299ms)
+

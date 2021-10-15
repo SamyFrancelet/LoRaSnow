@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;LiDar_Lite_V4/Sensors/Src/LIDARLite_v4LED&apos; to &apos;LIDARLite_v4LED.c&apos;" description="Rename resource &apos;LIDARLite_v4LED&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Sensors/Src/LIDARLite_v4LED" name="LIDARLite_v4LED.c" stamp="1634202823252" updateReferences="true"/>
+</session>

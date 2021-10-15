@@ -1,0 +1,10 @@
+16:55:32 **** Incremental Build of configuration Debug for project LiDar_Lite_V4 ****
+make -j8 all 
+arm-none-eabi-size   LiDar_Lite_V4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  31992	    124	   4788	  36904	   9028	LiDar_Lite_V4.elf
+Finished building: default.size.stdout
+ 
+
+16:55:32 Build Finished. 0 errors, 0 warnings. (took 542ms)
+

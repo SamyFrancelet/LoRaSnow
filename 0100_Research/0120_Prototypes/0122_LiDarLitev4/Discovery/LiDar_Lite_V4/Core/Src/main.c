@@ -18,11 +18,16 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
+#include <stdbool.h>
+#include <string.h>
+
 #include "main.h"
 #include "cmsis_os.h"
 #include "fatfs.h"
 #include "usb_host.h"
 #include "usb_host.h"
+
+#include "../Sensors/Inc/LIDARLite_v4LED.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -133,6 +138,11 @@ void StartDefaultTask(void const * argument);
 int main(void)
 {
   /* USER CODE BEGIN 1 */
+	__disable_irq();
+
+  LIDARLite_TypeDef lidar;	//Our LIDAR
+  char str[40];				//String buffer
+  uint16_t distance;		//The distance, in cm
 
   /* USER CODE END 1 */
 
@@ -153,71 +163,31 @@ int main(void)
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
-  MX_GPIO_Init();
-  MX_ADC3_Init();
-  MX_CRC_Init();
-  MX_DCMI_Init();
-  MX_DMA2D_Init();
-  MX_ETH_Init();
-  MX_FMC_Init();
   MX_I2C1_Init();
-  MX_I2C3_Init();
-  MX_LTDC_Init();
-  MX_QUADSPI_Init();
-  MX_RTC_Init();
-  MX_SAI2_Init();
-  MX_SDMMC1_SD_Init();
-  MX_SPDIFRX_Init();
-  MX_SPI2_Init();
-  MX_TIM1_Init();
-  MX_TIM2_Init();
-  MX_TIM3_Init();
-  MX_TIM5_Init();
-  MX_TIM8_Init();
-  MX_TIM12_Init();
   MX_USART1_UART_Init();
-  MX_USART6_UART_Init();
-  MX_FATFS_Init();
-  /* USER CODE BEGIN 2 */
 
-  /* USER CODE END 2 */
+  //Connect to LIDAR
+  bool connect = LIDAR_init(&lidar, LIDAR_DEFAULT_ADDR, &hi2c1);
 
-  /* USER CODE BEGIN RTOS_MUTEX */
-  /* add mutexes, ... */
-  /* USER CODE END RTOS_MUTEX */
+  if(connect)
+	  strcpy(str, "Successfully connected.\r\n");
+  else
+	  strcpy(str, "Error.\r\n");
 
-  /* USER CODE BEGIN RTOS_SEMAPHORES */
-  /* add semaphores, ... */
-  /* USER CODE END RTOS_SEMAPHORES */
-
-  /* USER CODE BEGIN RTOS_TIMERS */
-  /* start timers, add new ones, ... */
-  /* USER CODE END RTOS_TIMERS */
-
-  /* USER CODE BEGIN RTOS_QUEUES */
-  /* add queues, ... */
-  /* USER CODE END RTOS_QUEUES */
-
-  /* Create the thread(s) */
-  /* definition and creation of defaultTask */
-  osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 4096);
-  defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
-
-  /* USER CODE BEGIN RTOS_THREADS */
-  /* add threads, ... */
-  /* USER CODE END RTOS_THREADS */
-
-  /* Start scheduler */
-  osKernelStart();
-
-  /* We should never get here as control is now taken by the scheduler */
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
+  HAL_UART_Transmit(&huart1, str, strlen(str), HAL_MAX_DELAY);
+  __enable_irq();
   while (1)
   {
-    /* USER CODE END WHILE */
+	  distance = LIDAR_getDistance(&lidar);
 
-    /* USER CODE BEGIN 3 */
+	  sprintf(str, "Distance: %icm\r\n", distance);
+
+	  HAL_UART_Transmit(&huart1, str, strlen(str), HAL_MAX_DELAY);
+
+	  HAL_Delay(100);
+	/* USER CODE END WHILE */
+
+	/* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
 }
