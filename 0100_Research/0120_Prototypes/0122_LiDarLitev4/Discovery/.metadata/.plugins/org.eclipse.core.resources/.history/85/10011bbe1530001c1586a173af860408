@@ -1,0 +1,31 @@
+#include <config/xf-config.h>
+
+#if (USE_XF_IDF_STM32_EVENT_QUEUE_CLASS != 0)
+
+#include <cassert>
+#include "eventqueue.h"
+
+// TODO: Implement code for XFEventQueue class
+
+#endif // USE_XF_IDF_STM32_EVENT_QUEUE_CLASS
+
+XFEventQueue::XFEventQueue() {
+}
+
+XFEventQueue::~XFEventQueue() {
+}
+
+bool XFEventQueue::empty() const {
+}
+
+bool XFEventQueue::push(const XFEvent *pEvent, bool fromISR) {
+}
+
+const XFEvent* XFEventQueue::front() {
+}
+
+void XFEventQueue::pop() {
+}
+
+bool XFEventQueue::pend() {
+}

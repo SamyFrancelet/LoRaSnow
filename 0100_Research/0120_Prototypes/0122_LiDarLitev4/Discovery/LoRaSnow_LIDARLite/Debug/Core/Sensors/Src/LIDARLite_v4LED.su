@@ -1,0 +1,16 @@
+LIDARLite_v4LED.c:16:6:LIDAR_init	24	static
+LIDARLite_v4LED.c:28:6:LIDAR_isConnected	16	static
+LIDARLite_v4LED.c:52:6:LIDAR_configure	24	static
+LIDARLite_v4LED.c:103:6:LIDAR_setI2CAddr	16	static
+LIDARLite_v4LED.c:110:6:LIDAR_useDefaultAddress	16	static
+LIDARLite_v4LED.c:116:6:LIDAR_useNewAddressOnly	16	static
+LIDARLite_v4LED.c:122:6:LIDAR_useBothAddresses	16	static
+LIDARLite_v4LED.c:128:6:LIDAR_enableFlash	16	static
+LIDARLite_v4LED.c:138:6:LIDAR_takeRange	16	static
+LIDARLite_v4LED.c:148:6:LIDAR_waitForBusy	24	static
+LIDARLite_v4LED.c:162:9:LIDAR_getBusyFlag	24	static
+LIDARLite_v4LED.c:179:10:LIDAR_readDistance	24	static
+LIDARLite_v4LED.c:193:10:LIDAR_getDistance	16	static
+LIDARLite_v4LED.c:219:6:LIDAR_write	48	static
+LIDARLite_v4LED.c:246:6:LIDAR_read	48	static
+LIDARLite_v4LED.c:279:6:LIDAR_correlationRecordRead	24	static

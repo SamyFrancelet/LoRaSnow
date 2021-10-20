@@ -1,0 +1,10 @@
+13:08:56 **** Incremental Build of configuration Debug for project ide-cubeide-test3-idf ****
+make -j8 all 
+arm-none-eabi-size   ide-cubeide-test3-idf.elf 
+   text	   data	    bss	    dec	    hex	filename
+  20416	    152	   9064	  29632	   73c0	ide-cubeide-test3-idf.elf
+Finished building: default.size.stdout
+ 
+
+13:08:56 Build Finished. 0 errors, 0 warnings. (took 301ms)
+

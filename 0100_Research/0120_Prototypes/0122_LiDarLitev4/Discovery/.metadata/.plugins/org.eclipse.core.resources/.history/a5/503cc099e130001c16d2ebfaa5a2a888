@@ -1,0 +1,53 @@
+#include <config/xf-config.h>
+
+#if (USE_XF_IDF_STM32_EVENT_QUEUE_CLASS != 0)
+
+#include <cassert>
+#include "eventqueue.h"
+
+XFEventQueue::XFEventQueue()
+{
+
+}
+
+XFEventQueue::~XFEventQueue()
+{
+
+}
+
+bool XFEventQueue::empty() const
+{
+	return _queue.empty();
+}
+
+bool XFEventQueue::push(const XFEvent *pEvent, bool fromISR)
+{
+	assert(pEvent != nullptr);
+
+	//Lock mutex while pushing to the queue
+	_mutex.lock();
+	_queue.push(pEvent);
+	_mutex.unlock();
+
+	return true;
+}
+
+const XFEvent* XFEventQueue::front()
+{
+	return _queue.front();
+}
+
+void XFEventQueue::pop()
+{
+	//Lock mutex while poping to the queue
+	_mutex.lock();
+	_queue.pop();
+	_mutex.unlock();
+}
+
+bool XFEventQueue::pend()
+{
+	return true;
+}
+
+#endif // USE_XF_IDF_STM32_EVENT_QUEUE_CLASS
