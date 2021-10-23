@@ -1,27 +1,43 @@
 import cv2
+import numpy as np
 
-vid_capture = cv2.VideoCapture("Cars.mp4")
+# Create a VideoCapture object
+cap = cv2.VideoCapture(0)
 
-if (not vid_capture.isOpened()):
-	print("Error opening the video file")
-else:
-	fps = int(vid_capture.get(5))
-	print("FPS : ", fps)
+# Check if camera opened successfully
+if (cap.isOpened() == False): 
+  print("Unable to read camera feed")
 
-	frame_count = vid_capture.get(7)
-	print("Frame count : ", frame_count)
+# Default resolutions of the frame are obtained.The default resolutions are system dependent.
+# We convert the resolutions from float to integer.
+frame_width = int(cap.get(3))
+frame_height = int(cap.get(4))
 
-while(vid_capture.isOpened()):
-	ret, frame = vid_capture.read()
-	if ret == True:
-		cv2.imshow("Frame", frame)
+# Define the codec and create VideoWriter object.The output is stored in 'outpy.avi' file.
+out = cv2.VideoWriter('outpy.avi',cv2.VideoWriter_fourcc('M','J','P','G'), 20, (frame_width,frame_height))
 
-		key = cv2.waitKey(20)
+while(True):
+  ret, frame = cap.read()
 
-		if key == ord('q'):
-			break
-	else:
-		break
+  if ret == True: 
+    
+    # Write the frame into the file 'output.avi'
+    out.write(frame)
 
-vid_capture.release()
+    # Display the resulting frame    
+    cv2.imshow('frame',frame)
+
+    # Press Q on keyboard to stop recording
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+      break
+
+  # Break the loop
+  else:
+    break  
+
+# When everything done, release the video capture and video write objects
+cap.release()
+out.release()
+
+# Closes all the frames
 cv2.destroyAllWindows()
