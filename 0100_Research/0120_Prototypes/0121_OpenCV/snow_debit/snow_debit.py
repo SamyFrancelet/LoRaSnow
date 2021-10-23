@@ -1,56 +1,52 @@
 import cv2 as cv
 import numpy as np
 
+from threshold_out import threshold_out
+
 def main():
-    resize = False
     cam = cv.VideoCapture(0)
+
     if not cam.isOpened():
         print("Can't open camera")
         exit()
 
-    check, frame = cam.read()
-    snowyArray = []
+    frame_width = int(cam.get(cv.CAP_PROP_FRAME_WIDTH))
+    frame_height = int(cam.get(cv.CAP_PROP_FRAME_HEIGHT))
+    frame_size = (frame_width, frame_height)
 
-    if not check:
-        print("Can't receive frame. Exiting...")
-        exit()
+    fps = 20 #cam.get(cv.CAP_PROP_FPS)
+    cam.set(cv.CAP_PROP_AUTO_EXPOSURE, 0.0)
+    cam.set(cv.CAP_PROP_EXPOSURE, 0.1)
 
-    if resize:
-        frame = cv.resize(frame, None, fx=0.5, fy=0.5, interpolation=cv.INTER_LINEAR)
+    fourcc = cv.VideoWriter_fourcc('M','J','P','G')
+    out_origin = cv.VideoWriter("original.avi", fourcc, fps, frame_size)
+    out_grey = cv.VideoWriter("grey.avi", fourcc, fps, frame_size, False)
 
-    h,w,c = frame.shape
-    pixel_tot = h*w
-    #text = "Total pixels :" + str(pixel_tot)
-    org = (20,20)
+    thresholds = []
+
+    for x in range(100, 250, 20):
+        thresholds.append(threshold_out(x, cv.THRESH_BINARY, fps, frame_size))
 
     while True:
         check, frame = cam.read()
 
-        if not check:
-            print("Can't receive frame. Exiting...")
+        if check:
+            out_origin.write(frame)
+            cv.imshow("original", frame)
+
+            frame_grey = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
+            out_grey.write(frame_grey)
+            cv.imshow("grey", frame_grey)
+
+            for thr in thresholds:
+                thr.write(frame_grey, True)
+
+            if cv.waitKey(1) == ord('q'):
+                break
+
+        else:
+            print("Camera feed gone, exitting...")
             break
 
-        if resize:
-            frame = cv.resize(frame, None, fx=0.5, fy=0.5, interpolation=cv.INTER_LINEAR)
-
-        frame = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
-        th, frame = cv.threshold(frame, 127, 255, cv.THRESH_BINARY)
-        pixel_white = np.sum(frame == 255)
-        snowyness = 100 * pixel_white/pixel_tot
-        snowyArray.append(snowyness)
-        text = "Snowyness :{:.2f}%".format(snowyness)
-
-        frame = cv.cvtColor(frame, cv.COLOR_GRAY2BGR)
-        cv.putText(frame, text, org, fontFace=cv.FONT_HERSHEY_COMPLEX, fontScale=0.5, color=(0,0,255))
-        cv.imshow('cam', frame)
-
-        if cv.waitKey(1) == ord('q'):
-            break
-
-    cam.release()
-    A = np.array(snowyArray)
-    print("{:.2f}%".format(np.mean(A)))
-    cv.destroyAllWindows()
-
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
