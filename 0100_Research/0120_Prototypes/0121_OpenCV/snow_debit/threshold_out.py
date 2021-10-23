@@ -23,7 +23,7 @@ class threshold_out:
             org = (20,20)
 
             pixel_white = np.sum(frame_thr == 255)
-            white_ratio = pixel_white/pixel_total
+            white_ratio = 100*pixel_white/pixel_total
 
             text = "White_ratio = {:.2f}%".format(white_ratio)
 

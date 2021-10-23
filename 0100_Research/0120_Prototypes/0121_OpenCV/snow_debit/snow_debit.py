@@ -15,8 +15,8 @@ def main():
     frame_size = (frame_width, frame_height)
 
     fps = 20 #cam.get(cv.CAP_PROP_FPS)
-    cam.set(cv.CAP_PROP_AUTO_EXPOSURE, 0.0)
-    cam.set(cv.CAP_PROP_EXPOSURE, 0.1)
+    #cam.set(cv.CAP_PROP_AUTO_EXPOSURE, 0.0)
+    #cam.set(cv.CAP_PROP_EXPOSURE, 0.1)
 
     fourcc = cv.VideoWriter_fourcc('M','J','P','G')
     out_origin = cv.VideoWriter("original.avi", fourcc, fps, frame_size)
