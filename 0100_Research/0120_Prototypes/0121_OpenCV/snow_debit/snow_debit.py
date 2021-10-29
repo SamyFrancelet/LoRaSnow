@@ -3,6 +3,9 @@ import numpy as np
 
 from threshold_out import threshold_out
 
+show_image = True
+show_whiteness = False
+
 def main():
     cam = cv.VideoCapture(0)
 
@@ -39,7 +42,7 @@ def main():
             cv.imshow("grey", frame_grey)
 
             for thr in thresholds:
-                thr.write(frame_grey, True)
+                thr.write(frame_grey, show_whiteness, show_image)
 
             if cv.waitKey(1) == ord('q'):
                 break
