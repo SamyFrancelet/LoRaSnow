@@ -1,4 +1,6 @@
 import csv
+import os
+from time import localtime, strftime
 
 def csvTest():
     with open('eggs.csv', 'w', newline='') as csvfile:
@@ -13,4 +15,8 @@ def main():
     print(cs)
 
 if __name__ == "__main__":
-    main()
+    #main()
+    #os.makedirs("videos")
+    folderName = "logs/" + strftime("%Y-%m-%d_%H%M%S", localtime())
+    print(folderName)
+    os.makedirs(folderName)

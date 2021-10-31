@@ -1,5 +1,7 @@
 import cv2 as cv
 import numpy as np
+import os
+from time import localtime, strftime
 
 from threshold_out import threshold_out
 
@@ -7,6 +9,8 @@ show_image = True
 show_whiteness = False
 
 def main():
+    logFolder = "logs/" + strftime("%Y-%m-%d_%H%M%S", localtime()) + "/"
+    os.makedirs(logFolder)
     cam = cv.VideoCapture(0)
 
     if not cam.isOpened():
@@ -22,13 +26,13 @@ def main():
     #cam.set(cv.CAP_PROP_EXPOSURE, 0.1)
 
     fourcc = cv.VideoWriter_fourcc('M','J','P','G')
-    out_origin = cv.VideoWriter("original.avi", fourcc, fps, frame_size)
-    out_grey = cv.VideoWriter("grey.avi", fourcc, fps, frame_size, False)
+    out_origin = cv.VideoWriter(logFolder + "original.avi", fourcc, fps, frame_size)
+    out_grey = cv.VideoWriter(logFolder + "grey.avi", fourcc, fps, frame_size, False)
 
     thresholds = []
 
     for x in range(100, 250, 20):
-        thresholds.append(threshold_out(x, cv.THRESH_BINARY, fps, frame_size))
+        thresholds.append(threshold_out(logFolder, x, cv.THRESH_BINARY, fps, frame_size))
 
     while True:
         check, frame = cam.read()

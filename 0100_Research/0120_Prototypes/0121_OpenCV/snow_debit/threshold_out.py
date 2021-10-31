@@ -4,17 +4,19 @@ import csv
 
 class threshold_out:
     name = "thr_"
+    folder = "logs/"
     thres = 127
     thres_type = cv.THRESH_BINARY
     vid_out = cv.VideoWriter()
 
 
-    def __init__(self, thres, thres_type, fps, frame_size):
+    def __init__(self, folder, thres, thres_type, fps, frame_size):
         self.name = "thr_{}".format(thres)
+        self.folder = folder
         self.thres = thres
         self.thres_type = thres_type
         fourcc = cv.VideoWriter_fourcc('M','J','P','G')
-        self.vid_out = cv.VideoWriter(self.name+".avi", fourcc, fps, frame_size)
+        self.vid_out = cv.VideoWriter(self.folder+self.name+".avi", fourcc, fps, frame_size)
 
     def write(self, frame_grey, show_whiteness, show_image):
         th, frame_thr = cv.threshold(frame_grey, self.thres, 255, self.thres_type)
