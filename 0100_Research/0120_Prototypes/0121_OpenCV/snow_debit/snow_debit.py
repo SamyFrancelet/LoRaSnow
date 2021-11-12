@@ -9,7 +9,8 @@ from threshold_out import threshold_out
 def main(show_image = False, show_whiteness = False):
     logFolder = "logs/" + strftime("%Y-%m-%d_%H%M%S", localtime()) + "/"
     os.makedirs(logFolder)
-    cam = cv.VideoCapture(0)
+    #cam = cv.VideoCapture(0)
+    cam = cv.VideoCapture('Vincent.mp4')
 
     if not cam.isOpened():
         print("Can't open camera")
