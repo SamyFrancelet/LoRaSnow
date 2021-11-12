@@ -18,6 +18,10 @@ class threshold_out:
         fourcc = cv.VideoWriter_fourcc('M','J','P','G')
         self.vid_out = cv.VideoWriter(self.folder+self.name+".avi", fourcc, fps, frame_size)
 
+        f = open(self.folder + 'measure.csv', 'a')
+        f.write(self.name + ';')
+        f.close()
+
     def write(self, frame_grey, show_whiteness, show_image):
         th, frame_thr = cv.threshold(frame_grey, self.thres, 255, self.thres_type)
 
@@ -26,12 +30,16 @@ class threshold_out:
         org = (20,20)
 
         pixel_white = np.sum(frame_thr == 255)
-        white_ratio = 100*pixel_white/pixel_total
+        white_ratio = pixel_white/pixel_total
+
+        f = open(self.folder + 'measure.csv', 'a')
+        f.write('{:.6f};'.format(white_ratio))
+        f.close()
 
         frame_thr = cv.cvtColor(frame_thr, cv.COLOR_GRAY2BGR)
 
         if show_whiteness:
-            text = "White_ratio = {:.2f}%".format(white_ratio)
+            text = "White_ratio = {:.2f}%".format(100*white_ratio)
             cv.putText(frame_thr, text, org, fontFace=cv.FONT_HERSHEY_COMPLEX, fontScale=0.5, color=(0,0,255))
 
         if show_image:
