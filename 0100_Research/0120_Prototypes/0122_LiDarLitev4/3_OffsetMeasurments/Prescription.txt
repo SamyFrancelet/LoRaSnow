@@ -1,0 +1,8 @@
+1ere mesure : offset sans bruit
+2e mesure : sol
+Mes 3 à 5 : offset avec bruit graduel
+
+Offset résiduel sur la plaque après essai : 2cm
+Epaisseur de la plaque : 6.6cm
+
+Sensor angle to vertical : 30°

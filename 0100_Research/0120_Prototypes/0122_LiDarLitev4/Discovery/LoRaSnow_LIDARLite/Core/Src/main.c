@@ -110,9 +110,6 @@ int main(void)
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 
-  MX_I2C1_Init();
-  MX_USART1_UART_Init();
-
   //Connect to LIDAR
   bool connect = LIDAR_init(&lidar, LIDAR_DEFAULT_ADDR, &hi2c1);
 

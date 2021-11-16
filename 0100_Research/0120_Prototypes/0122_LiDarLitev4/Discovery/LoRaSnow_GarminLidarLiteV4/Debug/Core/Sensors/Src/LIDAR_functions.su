@@ -1,0 +1,5 @@
+LIDAR_functions.c:10:6:LIDARfc_init	40	static
+LIDAR_functions.c:27:6:LIDARfc_calibDistance	4	static
+LIDAR_functions.c:32:6:LIDARfc_measureNoise	16	static
+LIDAR_functions.c:54:10:LIDARfc_mostOccurence	16	static
+LIDAR_functions.c:59:6:LIDARfc_printf	24	static

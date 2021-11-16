@@ -1,0 +1,6 @@
+mainDistanceCalib.c:75:5:oldmain	168	static,ignoring_inline_asm
+mainDistanceCalib.c:168:6:SystemClock_Config	88	static
+mainDistanceCalib.c:213:13:MX_I2C1_Init	8	static
+mainDistanceCalib.c:247:13:MX_USART2_UART_Init	8	static
+mainDistanceCalib.c:280:13:MX_GPIO_Init	48	static
+mainDistanceCalib.c:316:6:Error_Handler	4	static,ignoring_inline_asm
