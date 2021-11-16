@@ -1,0 +1,77 @@
+import cv2 as cv
+import numpy as np
+
+def main():
+    snowyArray = []
+    cam = cv.VideoCapture(0)
+
+    if not cam.isOpened():
+        print("Can't open camera")
+        exit()
+
+    # Default resolutions of the frame are obtained.The default resolutions are system dependent.
+    # We convert the resolutions from float to integer.
+    frame_width = int(cam.get(3))
+    frame_height = int(cam.get(4))
+    frame_size = (frame_width, frame_height)
+
+    out_origin = cv.VideoWriter("original.avi", cv.VideoWriter_fourcc('M','J','P','G'), 10, frame_size, True)
+    out_grey = cv.VideoWriter("grey.avi", cv.VideoWriter_fourcc('M','J','P','G'), 10, frame_size, False)
+    out_127 = cv.VideoWriter("thr_127.avi", cv.VideoWriter_fourcc('M','J','P','G'), 10, frame_size, False)
+    out_50 = cv.VideoWriter("thr_50.avi", cv.VideoWriter_fourcc('M','J','P','G'), 10, frame_size, False)
+
+    check, frame = cam.read()
+
+    if not check:
+        print("Can't receive frame. Exiting...")
+        exit()
+
+    h,w,c = frame.shape
+    pixel_tot = h*w
+    #text = "Total pixels :" + str(pixel_tot)
+    org = (20,20)
+
+    while True:
+        check, frame = cam.read()
+
+        out_origin.write(frame)
+
+        if check:
+            frame_grey = cv.cvtColor(frame, cv.COLOR_BGR2GRAY)
+            out_grey.write(frame_grey)
+
+            th, frame_127 = cv.threshold(frame_grey, 127, 255, cv.THRESH_BINARY)
+            out_127.write(frame_127)
+
+            th, frame_50 = cv.threshold(frame_grey, 50, 255, cv.THRESH_BINARY)
+            out_50.write(frame_50)
+
+            pixel_white = np.sum(frame_127 == 255)
+            snowyness = 100 * pixel_white/pixel_tot
+            #snowyArray.append(snowyness)
+            text = "Snowyness :{:.2f}%".format(snowyness)
+
+            frame_show = cv.cvtColor(frame_127, cv.COLOR_GRAY2BGR)
+            cv.putText(frame_show, text, org, fontFace=cv.FONT_HERSHEY_COMPLEX, fontScale=0.5, color=(0,0,255))
+            cv.imshow('cam', frame_show)
+
+            if cv.waitKey(1) == ord('q'):
+                break
+
+        else:
+            print("Can't receive frame. Exiting...")
+            break
+
+
+
+    cam.release()
+    out_origin.release()
+    out_grey.release()
+    out_127.release()
+    out_50.release()
+    #A = np.array(snowyArray)
+    #print("{:.2f}%".format(np.mean(A)))
+    cv.destroyAllWindows()
+
+if __name__ == '__main__':
+    main()
