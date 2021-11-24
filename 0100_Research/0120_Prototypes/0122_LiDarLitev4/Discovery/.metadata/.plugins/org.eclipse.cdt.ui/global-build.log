@@ -1,160 +1,120 @@
-14:16:32 **** Incremental Build of configuration Debug for project LoRaSnow_GarminLidarLiteV4 ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Sensors/Src/LIDAR_functions.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Sensors/Src/LIDAR_functions.d" -MT"Core/Sensors/Src/LIDAR_functions.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Sensors/Src/LIDAR_functions.o"
-arm-none-eabi-gcc -o "LoRaSnow_GarminLidarLiteV4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\vince\OneDrive\Documents\3e\PGA\git\LoRaSnow\0100_Research\0120_Prototypes\0122_LiDarLitev4\Discovery\LoRaSnow_GarminLidarLiteV4\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LoRaSnow_GarminLidarLiteV4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: LoRaSnow_GarminLidarLiteV4.elf
- 
-arm-none-eabi-size   LoRaSnow_GarminLidarLiteV4.elf 
-arm-none-eabi-objdump -h -S  LoRaSnow_GarminLidarLiteV4.elf  > "LoRaSnow_GarminLidarLiteV4.list"
-arm-none-eabi-objcopy  -O binary  LoRaSnow_GarminLidarLiteV4.elf  "LoRaSnow_GarminLidarLiteV4.bin"
-   text	   data	    bss	    dec	    hex	filename
-  15464	    120	   1872	  17456	   4430	LoRaSnow_GarminLidarLiteV4.elf
-Finished building: default.size.stdout
- 
-Finished building: LoRaSnow_GarminLidarLiteV4.bin
- 
-Finished building: LoRaSnow_GarminLidarLiteV4.list
- 
-14:16:39 **** Incremental Build of configuration Debug for project LoRaSnow_GarminLidarLiteV4 ****
-make -j8 all 
-arm-none-eabi-size   LoRaSnow_GarminLidarLiteV4.elf 
-   text	   data	    bss	    dec	    hex	filename
-  15464	    120	   1872	  17456	   4430	LoRaSnow_GarminLidarLiteV4.elf
-Finished building: default.size.stdout
- 
-14:46:51 **** Incremental Build of configuration Debug for project LoRaSnow_GarminLidarLiteV4 ****
-make -j8 all 
-arm-none-eabi-size   LoRaSnow_GarminLidarLiteV4.elf 
-   text	   data	    bss	    dec	    hex	filename
-  15464	    120	   1872	  17456	   4430	LoRaSnow_GarminLidarLiteV4.elf
-Finished building: default.size.stdout
- 
-14:48:10 **** Incremental Build of configuration Debug for project LoRaSnow_GarminLidarLiteV4 ****
-make -j8 all 
-arm-none-eabi-size   LoRaSnow_GarminLidarLiteV4.elf 
-   text	   data	    bss	    dec	    hex	filename
-  15464	    120	   1872	  17456	   4430	LoRaSnow_GarminLidarLiteV4.elf
-Finished building: default.size.stdout
- 
-15:36:57 **** Build of configuration Debug for project LoRaSnow_GarminLidarLiteV4 ****
+16:59:44 **** Incremental Build of configuration Debug for project LoRaSnow_GarminLidarLiteV4 ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc "../Core/Sensors/Src/LIDAR_functions.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Sensors/Src/LIDAR_functions.d" -MT"Core/Sensors/Src/LIDAR_functions.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Sensors/Src/LIDAR_functions.o"
-../Core/Sensors/Src/LIDAR_functions.c: In function 'LIDARfc_mostOccurence':
-../Core/Sensors/Src/LIDAR_functions.c:57:1: warning: control reaches end of non-void function [-Wreturn-type]
-   57 | }
-      | ^
-arm-none-eabi-gcc -o "LoRaSnow_GarminLidarLiteV4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\vince\OneDrive\Documents\3e\PGA\git\LoRaSnow\0100_Research\0120_Prototypes\0122_LiDarLitev4\Discovery\LoRaSnow_GarminLidarLiteV4\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LoRaSnow_GarminLidarLiteV4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+arm-none-eabi-gcc -o "LoRaSnow_GarminLidarLiteV4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\vince\OneDrive\Documents\3e\PGA\git\LoRaSnow\0100_Research\0120_Prototypes\0122_LiDarLitev4\Discovery\LoRaSnow_GarminLidarLiteV4\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LoRaSnow_GarminLidarLiteV4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: LoRaSnow_GarminLidarLiteV4.elf
  
 arm-none-eabi-size   LoRaSnow_GarminLidarLiteV4.elf 
 arm-none-eabi-objdump -h -S  LoRaSnow_GarminLidarLiteV4.elf  > "LoRaSnow_GarminLidarLiteV4.list"
 arm-none-eabi-objcopy  -O binary  LoRaSnow_GarminLidarLiteV4.elf  "LoRaSnow_GarminLidarLiteV4.bin"
    text	   data	    bss	    dec	    hex	filename
-  15464	    120	   1872	  17456	   4430	LoRaSnow_GarminLidarLiteV4.elf
+  33108	    484	   2076	  35668	   8b54	LoRaSnow_GarminLidarLiteV4.elf
 Finished building: default.size.stdout
  
 Finished building: LoRaSnow_GarminLidarLiteV4.bin
  
 Finished building: LoRaSnow_GarminLidarLiteV4.list
  
-12:56:17 **** Incremental Build of configuration Debug for project LoRaSnow_GarminLidarLiteV4 ****
+17:01:42 **** Incremental Build of configuration Debug for project LoRaSnow_GarminLidarLiteV4 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "LoRaSnow_GarminLidarLiteV4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\vince\OneDrive\Documents\3e\PGA\git\LoRaSnow\0100_Research\0120_Prototypes\0122_LiDarLitev4\Discovery\LoRaSnow_GarminLidarLiteV4\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LoRaSnow_GarminLidarLiteV4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LoRaSnow_GarminLidarLiteV4.elf
+ 
+arm-none-eabi-size   LoRaSnow_GarminLidarLiteV4.elf 
+arm-none-eabi-objdump -h -S  LoRaSnow_GarminLidarLiteV4.elf  > "LoRaSnow_GarminLidarLiteV4.list"
+arm-none-eabi-objcopy  -O binary  LoRaSnow_GarminLidarLiteV4.elf  "LoRaSnow_GarminLidarLiteV4.bin"
+   text	   data	    bss	    dec	    hex	filename
+  33108	    484	   2076	  35668	   8b54	LoRaSnow_GarminLidarLiteV4.elf
+Finished building: default.size.stdout
+ 
+Finished building: LoRaSnow_GarminLidarLiteV4.bin
+ 
+Finished building: LoRaSnow_GarminLidarLiteV4.list
+ 
+17:02:04 **** Incremental Build of configuration Debug for project LoRaSnow_GarminLidarLiteV4 ****
+make -j8 all 
+arm-none-eabi-size   LoRaSnow_GarminLidarLiteV4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33108	    484	   2076	  35668	   8b54	LoRaSnow_GarminLidarLiteV4.elf
+Finished building: default.size.stdout
+ 
+17:02:27 **** Incremental Build of configuration Debug for project LoRaSnow_GarminLidarLiteV4 ****
+make -j8 all 
+arm-none-eabi-size   LoRaSnow_GarminLidarLiteV4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33108	    484	   2076	  35668	   8b54	LoRaSnow_GarminLidarLiteV4.elf
+Finished building: default.size.stdout
+ 
+17:03:45 **** Incremental Build of configuration Debug for project LoRaSnow_GarminLidarLiteV4 ****
+make -j8 all 
+arm-none-eabi-size   LoRaSnow_GarminLidarLiteV4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33108	    484	   2076	  35668	   8b54	LoRaSnow_GarminLidarLiteV4.elf
+Finished building: default.size.stdout
+ 
+17:04:14 **** Incremental Build of configuration Debug for project LoRaSnow_GarminLidarLiteV4 ****
+make -j8 all 
+arm-none-eabi-size   LoRaSnow_GarminLidarLiteV4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33108	    484	   2076	  35668	   8b54	LoRaSnow_GarminLidarLiteV4.elf
+Finished building: default.size.stdout
+ 
+17:04:50 **** Incremental Build of configuration Debug for project LoRaSnow_GarminLidarLiteV4 ****
+make -j8 all 
+arm-none-eabi-size   LoRaSnow_GarminLidarLiteV4.elf 
+   text	   data	    bss	    dec	    hex	filename
+  33108	    484	   2076	  35668	   8b54	LoRaSnow_GarminLidarLiteV4.elf
+Finished building: default.size.stdout
+ 
+17:15:24 **** Incremental Build of configuration Debug for project LoRaSnow_GarminLidarLiteV4 ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc "../Core/Sensors/Src/LIDAR_functions.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Sensors/Src/LIDAR_functions.d" -MT"Core/Sensors/Src/LIDAR_functions.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Sensors/Src/LIDAR_functions.o"
-../Core/Sensors/Src/LIDAR_functions.c: In function 'LIDARfc_measureVSTemp':
-../Core/Sensors/Src/LIDAR_functions.c:61:47: error: 'toSend' undeclared (first use in this function)
-   61 |  HAL_UART_Receive(_huart2, str, strlen((char*)toSend), HAL_MAX_DELAY);
-      |                                               ^~~~~~
-../Core/Sensors/Src/LIDAR_functions.c:61:47: note: each undeclared identifier is reported only once for each function it appears in
-../Core/Sensors/Src/LIDAR_functions.c: In function 'LIDARfc_mostOccurence':
-../Core/Sensors/Src/LIDAR_functions.c:82:1: warning: control reaches end of non-void function [-Wreturn-type]
-   82 | }
-      | ^
-make: *** [Core/Sensors/Src/subdir.mk:22: Core/Sensors/Src/LIDAR_functions.o] Error 1
-make: *** Waiting for unfinished jobs....
-"make -j8 all" terminated with exit code 2. Build might be incomplete.
-12:56:55 **** Incremental Build of configuration Debug for project LoRaSnow_GarminLidarLiteV4 ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Sensors/Src/LIDAR_functions.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Sensors/Src/LIDAR_functions.d" -MT"Core/Sensors/Src/LIDAR_functions.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Sensors/Src/LIDAR_functions.o"
-arm-none-eabi-gcc -o "LoRaSnow_GarminLidarLiteV4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\vince\OneDrive\Documents\3e\PGA\git\LoRaSnow\0100_Research\0120_Prototypes\0122_LiDarLitev4\Discovery\LoRaSnow_GarminLidarLiteV4\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LoRaSnow_GarminLidarLiteV4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+arm-none-eabi-gcc -o "LoRaSnow_GarminLidarLiteV4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\vince\OneDrive\Documents\3e\PGA\git\LoRaSnow\0100_Research\0120_Prototypes\0122_LiDarLitev4\Discovery\LoRaSnow_GarminLidarLiteV4\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LoRaSnow_GarminLidarLiteV4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: LoRaSnow_GarminLidarLiteV4.elf
  
 arm-none-eabi-size   LoRaSnow_GarminLidarLiteV4.elf 
 arm-none-eabi-objdump -h -S  LoRaSnow_GarminLidarLiteV4.elf  > "LoRaSnow_GarminLidarLiteV4.list"
 arm-none-eabi-objcopy  -O binary  LoRaSnow_GarminLidarLiteV4.elf  "LoRaSnow_GarminLidarLiteV4.bin"
    text	   data	    bss	    dec	    hex	filename
-  15484	    120	   1872	  17476	   4444	LoRaSnow_GarminLidarLiteV4.elf
+  33116	    484	   2076	  35676	   8b5c	LoRaSnow_GarminLidarLiteV4.elf
 Finished building: default.size.stdout
  
 Finished building: LoRaSnow_GarminLidarLiteV4.bin
  
 Finished building: LoRaSnow_GarminLidarLiteV4.list
  
-12:57:12 **** Incremental Build of configuration Debug for project LoRaSnow_GarminLidarLiteV4 ****
+17:17:44 **** Incremental Build of configuration Debug for project LoRaSnow_GarminLidarLiteV4 ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "LoRaSnow_GarminLidarLiteV4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\vince\OneDrive\Documents\3e\PGA\git\LoRaSnow\0100_Research\0120_Prototypes\0122_LiDarLitev4\Discovery\LoRaSnow_GarminLidarLiteV4\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LoRaSnow_GarminLidarLiteV4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+arm-none-eabi-gcc -o "LoRaSnow_GarminLidarLiteV4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\vince\OneDrive\Documents\3e\PGA\git\LoRaSnow\0100_Research\0120_Prototypes\0122_LiDarLitev4\Discovery\LoRaSnow_GarminLidarLiteV4\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LoRaSnow_GarminLidarLiteV4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: LoRaSnow_GarminLidarLiteV4.elf
  
 arm-none-eabi-size   LoRaSnow_GarminLidarLiteV4.elf 
 arm-none-eabi-objdump -h -S  LoRaSnow_GarminLidarLiteV4.elf  > "LoRaSnow_GarminLidarLiteV4.list"
 arm-none-eabi-objcopy  -O binary  LoRaSnow_GarminLidarLiteV4.elf  "LoRaSnow_GarminLidarLiteV4.bin"
    text	   data	    bss	    dec	    hex	filename
-  15824	    120	   1872	  17816	   4598	LoRaSnow_GarminLidarLiteV4.elf
+  33116	    484	   2076	  35676	   8b5c	LoRaSnow_GarminLidarLiteV4.elf
 Finished building: default.size.stdout
  
 Finished building: LoRaSnow_GarminLidarLiteV4.bin
  
 Finished building: LoRaSnow_GarminLidarLiteV4.list
  
-12:59:00 **** Incremental Build of configuration Debug for project LoRaSnow_GarminLidarLiteV4 ****
+17:28:24 **** Incremental Build of configuration Debug for project LoRaSnow_GarminLidarLiteV4 ****
 make -j8 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc "../Core/Sensors/Src/LIDAR_functions.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Sensors/Src/LIDAR_functions.d" -MT"Core/Sensors/Src/LIDAR_functions.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Sensors/Src/LIDAR_functions.o"
-arm-none-eabi-gcc -o "LoRaSnow_GarminLidarLiteV4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\vince\OneDrive\Documents\3e\PGA\git\LoRaSnow\0100_Research\0120_Prototypes\0122_LiDarLitev4\Discovery\LoRaSnow_GarminLidarLiteV4\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LoRaSnow_GarminLidarLiteV4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+arm-none-eabi-gcc -o "LoRaSnow_GarminLidarLiteV4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\vince\OneDrive\Documents\3e\PGA\git\LoRaSnow\0100_Research\0120_Prototypes\0122_LiDarLitev4\Discovery\LoRaSnow_GarminLidarLiteV4\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LoRaSnow_GarminLidarLiteV4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
 Finished building target: LoRaSnow_GarminLidarLiteV4.elf
  
 arm-none-eabi-size   LoRaSnow_GarminLidarLiteV4.elf 
 arm-none-eabi-objdump -h -S  LoRaSnow_GarminLidarLiteV4.elf  > "LoRaSnow_GarminLidarLiteV4.list"
 arm-none-eabi-objcopy  -O binary  LoRaSnow_GarminLidarLiteV4.elf  "LoRaSnow_GarminLidarLiteV4.bin"
    text	   data	    bss	    dec	    hex	filename
-  15516	    120	   1872	  17508	   4464	LoRaSnow_GarminLidarLiteV4.elf
-Finished building: default.size.stdout
- 
-Finished building: LoRaSnow_GarminLidarLiteV4.bin
- 
-Finished building: LoRaSnow_GarminLidarLiteV4.list
- 
-12:59:26 **** Incremental Build of configuration Debug for project LoRaSnow_GarminLidarLiteV4 ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Sensors/Src/LIDAR_functions.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Sensors/Src/LIDAR_functions.d" -MT"Core/Sensors/Src/LIDAR_functions.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Sensors/Src/LIDAR_functions.o"
-arm-none-eabi-gcc -o "LoRaSnow_GarminLidarLiteV4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\vince\OneDrive\Documents\3e\PGA\git\LoRaSnow\0100_Research\0120_Prototypes\0122_LiDarLitev4\Discovery\LoRaSnow_GarminLidarLiteV4\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LoRaSnow_GarminLidarLiteV4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: LoRaSnow_GarminLidarLiteV4.elf
- 
-arm-none-eabi-size   LoRaSnow_GarminLidarLiteV4.elf 
-arm-none-eabi-objdump -h -S  LoRaSnow_GarminLidarLiteV4.elf  > "LoRaSnow_GarminLidarLiteV4.list"
-arm-none-eabi-objcopy  -O binary  LoRaSnow_GarminLidarLiteV4.elf  "LoRaSnow_GarminLidarLiteV4.bin"
-   text	   data	    bss	    dec	    hex	filename
-  15584	    120	   1872	  17576	   44a8	LoRaSnow_GarminLidarLiteV4.elf
-Finished building: default.size.stdout
- 
-Finished building: LoRaSnow_GarminLidarLiteV4.bin
- 
-Finished building: LoRaSnow_GarminLidarLiteV4.list
- 
-13:01:15 **** Incremental Build of configuration Debug for project LoRaSnow_GarminLidarLiteV4 ****
-make -j8 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc "../Core/Sensors/Src/LIDAR_functions.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Sensors/Src/LIDAR_functions.d" -MT"Core/Sensors/Src/LIDAR_functions.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Sensors/Src/LIDAR_functions.o"
-arm-none-eabi-gcc -o "LoRaSnow_GarminLidarLiteV4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\vince\OneDrive\Documents\3e\PGA\git\LoRaSnow\0100_Research\0120_Prototypes\0122_LiDarLitev4\Discovery\LoRaSnow_GarminLidarLiteV4\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LoRaSnow_GarminLidarLiteV4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: LoRaSnow_GarminLidarLiteV4.elf
- 
-arm-none-eabi-size   LoRaSnow_GarminLidarLiteV4.elf 
-arm-none-eabi-objdump -h -S  LoRaSnow_GarminLidarLiteV4.elf  > "LoRaSnow_GarminLidarLiteV4.list"
-arm-none-eabi-objcopy  -O binary  LoRaSnow_GarminLidarLiteV4.elf  "LoRaSnow_GarminLidarLiteV4.bin"
-   text	   data	    bss	    dec	    hex	filename
-  15584	    120	   1872	  17576	   44a8	LoRaSnow_GarminLidarLiteV4.elf
+  33116	    484	   1892	  35492	   8aa4	LoRaSnow_GarminLidarLiteV4.elf
 Finished building: default.size.stdout
  
 Finished building: LoRaSnow_GarminLidarLiteV4.bin

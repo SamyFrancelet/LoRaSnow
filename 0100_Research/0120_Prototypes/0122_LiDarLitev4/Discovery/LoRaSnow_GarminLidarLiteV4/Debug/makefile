@@ -63,7 +63,7 @@ main-build: LoRaSnow_GarminLidarLiteV4.elf secondary-outputs
 
 # Tool invocations
 LoRaSnow_GarminLidarLiteV4.elf: $(OBJS) $(USER_OBJS) C:\Users\vince\OneDrive\Documents\3e\PGA\git\LoRaSnow\0100_Research\0120_Prototypes\0122_LiDarLitev4\Discovery\LoRaSnow_GarminLidarLiteV4\STM32F411RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "LoRaSnow_GarminLidarLiteV4.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\vince\OneDrive\Documents\3e\PGA\git\LoRaSnow\0100_Research\0120_Prototypes\0122_LiDarLitev4\Discovery\LoRaSnow_GarminLidarLiteV4\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LoRaSnow_GarminLidarLiteV4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+	arm-none-eabi-gcc -o "LoRaSnow_GarminLidarLiteV4.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\vince\OneDrive\Documents\3e\PGA\git\LoRaSnow\0100_Research\0120_Prototypes\0122_LiDarLitev4\Discovery\LoRaSnow_GarminLidarLiteV4\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LoRaSnow_GarminLidarLiteV4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

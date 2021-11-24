@@ -11,23 +11,30 @@
 #include <stdbool.h>
 #include <string.h>
 #include <stdio.h>
+#include <math.h>
 
 #include "stm32f4xx_hal.h"
 
 #include "LIDARLite_v4LED.h"
+
+#define NMES 10
 
 UART_HandleTypeDef* _huart2;
 I2C_HandleTypeDef* _hi2c1;
 LIDARLite_TypeDef* _lidar;
 
 uint8_t str[100];			//String buffer
-uint16_t distance;			//The distance, in cm
+uint16_t refDist, offset;	//Reference distance (without snow) and snow height
+uint16_t measures[NMES];	//Measures array
 
-void LIDARfc_init(UART_HandleTypeDef* huart2, LIDARLite_TypeDef* lidar, I2C_HandleTypeDef* hi2c1);	//Initialize the LIDARLite
-void LIDARfc_calibDistance();							//Calibrate LIDAR distance
-void LIDARfc_measureNoise();							//Measure noise in the test bench
-uint16_t LIDARfc_mostOccurence(uint16_t* measures);		//Find the distance with the most occurrence in the array
+void LIDARfc_init(UART_HandleTypeDef* huart2, LIDARLite_TypeDef* lidar, I2C_HandleTypeDef* hi2c1, float lAngle, float rAngle);	//Initialize the LIDARLite
 
-void LIDARfc_printf(uint8_t* str);						//Convenience function, equivalent to printf
+void LIDARfc_measure(uint16_t* measures, uint8_t nTimes, uint16_t delay);	//Take nTimes measures with a specified delay
+void LIDARfc_saveRefDistance();												//Take distance measurement and save and reference
+void LIDARfc_measureOffset();												//Measure snow offset
+
+uint16_t LIDARfc_distanceToGround(uint16_t* measures, uint8_t size);										//Output distance to ground according to a model
+
+void LIDARfc_printf(uint8_t* str);											//Convenience function, equivalent to printf
 
 #endif /* SENSORS_INC_LIDAR_FUNCTIONS_H_ */
