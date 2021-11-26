@@ -1,4 +1,3 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete resource &apos;LiDar_Lite_V4&apos;" deleteContents="false" description="Delete resource &apos;LiDar_Lite_V4&apos;" element1="/LiDar_Lite_V4" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1634730246098"/>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;LiDar_Lite_V4&apos;" deleteContents="false" description="Delete resource &apos;LiDar_Lite_V4&apos;" element1="/LiDar_Lite_V4" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1634730246098"/>&#x0A;<refactoring comment="Delete resource &apos;LoRaSnow_GarminLidarLiteV4/Core/Src/mainDistanceCalib.c&apos;" deleteContents="false" description="Delete resource &apos;LoRaSnow_GarminLidarLiteV4/Core/Src/mainDistanceCalib.c&apos;" element1="/LoRaSnow_GarminLidarLiteV4/Core/Src/mainDistanceCalib.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1634901004485"/>
 </session>
