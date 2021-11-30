@@ -40,7 +40,7 @@
 #$videoFolderPath = "C:\Users\NUC3\Desktop\ip_cam\"
 #use following line for test purpose
 $videoFolderPath = "C:\work\ip_cam\test"
-$HexPass = Get-Content "C:\work\LoRaSnow\0500_Software\ip_cam\creds.txt"
+$HexPass = Get-Content "C:\work\LoRaSnow\0500_Software\ip_cam\credential.txt"
 $creds = New-Object -TypeName PSCredential -ArgumentList "lorasnow", ($HexPass | ConvertTo-SecureString)
 
 clear
@@ -50,7 +50,7 @@ echo "Script to upload videos started"
 #remote information
 $pgaURL = "homedrive.crabdance.com"
 $pgaPort = 10022
-$serverVideosPath = "/media/homeDrive/ip_cam/"
+$serverVideosPath = "/media/homeDrive/ip_cam"
 
 #################################################################################################################################
 #set the private key path for the ssh communication #############################################################################
@@ -72,7 +72,10 @@ $folderToSend = Get-ChildItem -Path $videoFolderPath | where-object {$_.Creation
 #################################################################################################################################
 #Upload the folder ##############################################################################################################
 try{
-    set-SFTPItem -SessionId $sessionID -Destination $serverVideosPath -Path "$videoFolderPath" -verbose -ErrorAction Stop
+    set-SFTPItem -SessionId $sessionID -Destination "$serverVideosPath/$requiredFolderDate" -Path "$videoFolderPath"
+    foreach($fileToSend in $folderToSend) {
+        set-SFTPItem -SessionId $sessionID -Destination "$serverVideosPath/$requiredFolderDate" -Path "$fileToSend" -verbose -ErrorAction Stop
+    }
     #set-SFTPItem -SessionId $sessionID -Destination $serverVideosPath -Path "$rootVideosPath\$videoFolder" -verbose -ErrorAction Stop
 #################################################################################################################################
 #Delete the folder ##############################################################################################################
