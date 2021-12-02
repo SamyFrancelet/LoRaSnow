@@ -1,0 +1,2 @@
+Change Component Footprint: Designator=C1 Old Footprint=CAPACITOR 0510 REFLOW New Footprint=CAPACITOR 1608 REFLOW
+Added Room: Name=LoRaSnow

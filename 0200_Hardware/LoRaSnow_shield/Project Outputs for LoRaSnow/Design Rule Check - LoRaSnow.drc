@@ -1,0 +1,60 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\vincent.savioz\Desktop\LoRaSnow_board\LoRaSnow.PcbDoc
+Date     : 26.11.2021
+Time     : 14:30:03
+
+Processing Rule : Clearance Constraint (Gap=0.25mm) (All),(All)
+   Violation between Clearance Constraint: (0.211mm < 0.25mm) Between Pad J2-15(11.863mm,1.362mm) on Top Layer And Pad J2-8(12.825mm,3.197mm) on Top Layer 
+Rule Violations :1
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.25mm) (Max=4mm) (Preferred=0.4mm) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.5mm) (Conductor Width=0.25mm) (Air Gap=0.25mm) (Entries=4) (Disabled)(All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=0.35mm) (Disabled)(All)
+Rule Violations :0
+
+Processing Rule : Acute Angle Constraint [Tracks Only] (Minimum=90.000) (All)
+   Violation between Acute Angle Constraint: (89.521 < 90.000) Between Track (11.725mm,23.425mm)(11.725mm,25.525mm) on Top Layer And Track (2.68mm,25.6mm)(11.8mm,25.6mm) on Top Layer (Angle = 89.521)
+   Violation between Acute Angle Constraint: (89.604 < 90.000) Between Track (43.525mm,16.075mm)(46.025mm,16.075mm) on Top Layer And Track (46.1mm,16.15mm)(46.1mm,18.5mm) on Top Layer (Angle = 89.604)
+Rule Violations :2
+
+Processing Rule : Hole Size Constraint (Min=0.15mm) (Max=3mm) (Disabled)(All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.25mm) (Disabled)(All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0mm) (Disabled)(All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=0mm) (Disabled)(IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0mm) (Disabled)(All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+Rule Violations :0
+
+Processing Rule : Board Clearance Constraint (Gap=0mm) (Disabled)(All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (Disabled)(All)
+Rule Violations :0
+
+
+Violations Detected : 3
+Waived Violations : 0
+Time Elapsed        : 00:00:00

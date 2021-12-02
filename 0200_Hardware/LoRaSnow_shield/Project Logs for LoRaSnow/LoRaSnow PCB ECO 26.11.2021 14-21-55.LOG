@@ -1,0 +1,19 @@
+Removed Pin From Net: NetName=GND Pin=J2-10
+Removed Pin From Net: NetName=GND Pin=J2-11
+Removed Pin From Net: NetName=GND Pin=J2-12
+Removed Pin From Net: NetName=GND Pin=J2-13
+Removed Pin From Net: NetName=GND Pin=J2-14
+Removed Pin From Net: NetName=GND Pin=J2-15
+Removed Pin From Net: NetName=GND Pin=J2-16
+Change Component Comment : Designator=J2 Old Comment=SD-MICRO MOLEX 504077 New Comment=503398-1892
+Change component parameters: Designator = "J2"; Footprint = "MOLEX_503398-1892"; UniqueID = "\FDNDNZBZ"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Digi-Key_Part_Number"; Value = "WM11190CT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Digi-Key_Purchase_URL"; Value = "https://www.digikey.com/product-detail/en/molex/5033981892/WM11190CT-ND/5230912?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "Molex"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "5033981892"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/5033981892/Molex/view-part/1614473/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Member To Class: ClassName=LoRaSnow Member=Component B1 Arduino UNO Socket Rev3
+Added Room: Name=LoRaSnow

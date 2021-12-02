@@ -1,0 +1,22 @@
+Added Component: Designator=J2(MOLEX_503398-1892)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Digi-Key_Part_Number"; Value = "WM11190CT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Purchase_URL"; Value = "https://www.digikey.com/product-detail/en/molex/5033981892/WM11190CT-ND/5230912?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Molex"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "5033981892"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/5033981892/Molex/view-part/1614473/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetB1_P1.2 Pin=J2-2
+Added Pin To Net: NetName=NetB1_P3.7 Pin=J2-3
+Added Pin To Net: NetName=3V3 Pin=J2-4
+Added Pin To Net: NetName=NetB1_P3.5 Pin=J2-5
+Added Pin To Net: NetName=GND Pin=J2-6
+Added Pin To Net: NetName=NetB1_P3.6 Pin=J2-7
+Added Pin To Net: NetName=GND Pin=J2-9
+Added Pin To Net: NetName=GND Pin=J2-P1
+Added Pin To Net: NetName=GND Pin=J2-P2
+Added Pin To Net: NetName=GND Pin=J2-P3
+Added Pin To Net: NetName=GND Pin=J2-P4
+Added Member To Class: ClassName=LoRaSnow Member=Component J2 503398-1892
+Added Room: Name=LoRaSnow

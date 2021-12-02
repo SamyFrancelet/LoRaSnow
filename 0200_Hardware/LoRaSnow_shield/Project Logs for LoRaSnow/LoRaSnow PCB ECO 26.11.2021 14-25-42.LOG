@@ -1,0 +1,4 @@
+Change component parameters: Designator = "J2"; Footprint = "SD MICRO MOLEX 504077"; UniqueID = "\VEXTNQBG"
+Change component parameters. Clean all parameters for all variants
+Added Member To Class: ClassName=LoRaSnow Member=Component J2 SD-MICRO MOLEX 504077
+Added Room: Name=LoRaSnow
