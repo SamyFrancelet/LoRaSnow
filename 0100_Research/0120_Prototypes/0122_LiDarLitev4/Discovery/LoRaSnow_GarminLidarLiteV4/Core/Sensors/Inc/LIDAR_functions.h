@@ -24,7 +24,8 @@ I2C_HandleTypeDef* _hi2c1;
 LIDARLite_TypeDef* _lidar;
 
 uint8_t str[100];			//String buffer
-uint16_t refDist, offset;	//Reference distance (without snow) and snow height
+uint16_t refDist			//Reference distance (without snow)
+float offset;				//Snow height
 uint16_t measures[NMES];	//Measures array
 
 void LIDARfc_init(UART_HandleTypeDef* huart2, LIDARLite_TypeDef* lidar, I2C_HandleTypeDef* hi2c1, float lAngle, float rAngle);	//Initialize the LIDARLite

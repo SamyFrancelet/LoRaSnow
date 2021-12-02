@@ -1,0 +1,82 @@
+PARTENAIRES CLES
+Eurocircuit, leader européen dans la production de circuit imprimés sur mesures, partenaire de choix pour la réalisation de produits électronique.
+A noter que ce partenaire propose aussi un service de montage électronique, ce qui nous permet de faire sous-traiter cette partie compliquée pour
+un coût plus faible qu'en Suisse.
+
+Mädler est un leader dans l'industrie mécanique et propose des solutions adaptés à notre projet. Cette entreprise sera notre partenaire pour les
+questions mécaniques du projet.
+
+Boschung est une entreprise spécialisée dans les solutions de surveillance des routes et notamment du déneigement. Ils proposent déjà un système de
+détection de verglas sur les routes mais sont relativement chers. Nous pourrions collaborer afin de proposer nos solutions pour améliorer leurs
+gammes de produits.
+
+
+FRAIS
+Les frais sont basés sur une estimation de coût en l'état pour une centaine d'exemplaires. Nous comptons ici uniquement les frais de production
+et non de développement, lesquels sont détaillés dans le budget prévu à cet effet.
+
+Partie électronique
+	PCB:		9CHF/pce
+	Composants:	100CHF/pce
+
+Partie mécanique
+	Boîtier:	xxCHF/pce
+
+Divers frais
+	Installation:	xxCHF/pce
+
+Total			xxCHF/pce
+
+
+DESCRIPTION DU PRODUIT
+LoRaSnow apporte une solution efficace pour dégager efficacement les routes et permettre aux automobilistes de conduire en toute sécurité, 
+même par mauvais temps.
+Il arrive parfois que les routes mettent du temps à être déneigées, ou le salage est trop faible, conduisant à une chaussée glissante et dangereuse.
+De plus, une répartition inhomogène du manteau neigeux sur une région peut rendre la tâche compliquée, surtout en montagne.
+LoRaSnow apporte un monitoring constant des niveaux de neige sur la route à des points clés ainsi que les possibilités de verglas, et ce de
+manière efficace et rentable. Grâce à un réseau de capteurs sur une région, il devient possible d'optimiser la courses des chasses-neige et de
+cibler les axes en plus grandes difficultés, de même que d'offrir l'opportunité d'effectuer des salages préventifs, avant que du verglas ne se
+forme.
+En plus de simplifier le déneigement des routes publiques, les entreprises de déneigement peuvent bénéficier de ces avantages pour optimiser leur
+course chez leurs clients privés, et par la même occasion faire des économies.
+Grâce à des capteurs intelligents et une durée de vie maximale, LoRaSnow sera en mesure de vous fournir un débit de chute de neige, un indicateur
+d'état de la route, une potentielle hauteur de neige sur la chaussée ainsi qu'un indice de verglas. Le tout est relié sur le réseau LoRa, ce qui
+permet de consulter les données récoltées depuis n'importe où, n'importe quand.
+
+
+SEGMENTATION DE CLIENTELE
+Les clients succeptibles d'acquérir le système LoRaSnow sont séparés en deux catégories:
+	Communes/Cantons
+	Entreprises de déneigement privées
+
+Les communes et cantons verront en ce projet la possibilité de superviser un territoire parfois compliqué (par exemple, les fonds de vallée,
+routes de montagnes, etc...) et d'efficacement déneiger ou saler afin que la chaussée soit prête dès que possible à accueillir des automobilistes,
+et ce sans trajet inutiles. Ils pourront remplacer leur réseau d'alerte par un système robuste et fiable, et surtout tout automatisé, fournissant
+une vue globale de l'enneigement sur une région donnée.
+
+Les entreprises privées de déneigement pourront faire des économies grâce à LoRaSnow. En effet, comme leurs prestations reposent souvent sur un
+forfais saisonnier, les entreprises cherche à minimiser les temps de sortie de leurs véhicules. Ce projet pourra donner une vue d'ensemble de
+l'état des routes de leur client, optimisant par la même occasion leur parcours.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

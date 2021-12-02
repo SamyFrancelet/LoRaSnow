@@ -69,7 +69,7 @@ void LIDARfc_measureOffset()
 
 	offset = delta * cosf(M_PI / 2 - gamma);					//Compute the snow height
 
-	sprintf((char*)str, "Measured offset is %icm\r\n", offset);
+	sprintf((char*)str, "Measured offset is %.2fcm\r\n", offset);
 	LIDARfc_printf(str);
 }
 
