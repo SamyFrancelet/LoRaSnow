@@ -60,8 +60,8 @@ void LIDARfc_measureOffset()
 	uint16_t dist = 0, delta = 0;
 	float gamma = 0;
 
-	sprintf((char*)str, "Measuring offset...\r\n\n");
-	LIDARfc_printf(str);
+	//sprintf((char*)str, "Measuring offset...\r\n\n");
+	//LIDARfc_printf(str);
 
 	dist = LIDARfc_distanceToGround(measures, NMES);			//Save measured distance
 	delta = refDist - dist;										//Compute the difference between the measured and the reference distance
@@ -75,7 +75,7 @@ void LIDARfc_measureOffset()
 
 void LIDARfc_measure(uint16_t* measures, uint8_t nTimes, uint16_t delay)
 {
-	sprintf((char*)str, "Taking %i measures with a %ims delay...\r\n", nTimes, delay);
+	//sprintf((char*)str, "Taking %i measures with a %ims delay...\r\n", nTimes, delay);
 	LIDARfc_printf(str);
 
 	for(uint8_t i = 0; i < nTimes; i++)
@@ -83,8 +83,9 @@ void LIDARfc_measure(uint16_t* measures, uint8_t nTimes, uint16_t delay)
 		float progress = ((float)i+1)/nTimes*100;
 
 		measures[i] = LIDAR_getDistance(_lidar);		//Take distance measurements
+		sprintf((char*)str, "%i;", measures[i]);
 
-		sprintf((char*)str, "\r%.2f%% done...  ", progress);
+		//sprintf((char*)str, "\r%.2f%% done...  ", progress);
 		LIDARfc_printf(str);
 
 		HAL_Delay(delay);

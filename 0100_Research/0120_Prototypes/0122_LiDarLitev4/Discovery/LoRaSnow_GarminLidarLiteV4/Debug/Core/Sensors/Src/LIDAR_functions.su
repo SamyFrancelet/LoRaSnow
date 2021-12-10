@@ -3,4 +3,4 @@ LIDAR_functions.c:27:10:LIDARfc_distanceToGround	24	static
 LIDAR_functions.c:50:6:LIDARfc_saveRefDistance	8	static
 LIDAR_functions.c:58:6:LIDARfc_measureOffset	32	static
 LIDAR_functions.c:76:6:LIDARfc_measure	32	static
-LIDAR_functions.c:97:6:LIDARfc_printf	24	static
+LIDAR_functions.c:98:6:LIDARfc_printf	24	static

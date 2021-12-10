@@ -17,14 +17,14 @@
 
 #include "LIDARLite_v4LED.h"
 
-#define NMES 10
+#define NMES 50
 
 UART_HandleTypeDef* _huart2;
 I2C_HandleTypeDef* _hi2c1;
 LIDARLite_TypeDef* _lidar;
 
 uint8_t str[100];			//String buffer
-uint16_t refDist			//Reference distance (without snow)
+uint16_t refDist;			//Reference distance (without snow)
 float offset;				//Snow height
 uint16_t measures[NMES];	//Measures array
 

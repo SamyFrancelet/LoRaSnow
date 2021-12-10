@@ -20,7 +20,7 @@ Partie électronique
 	Composants:	100CHF/pce
 
 Partie mécanique
-	Boîtier:	xxCHF/pce
+	Boîtier:	400CHF/pce
 
 Divers frais
 	Installation:	xxCHF/pce

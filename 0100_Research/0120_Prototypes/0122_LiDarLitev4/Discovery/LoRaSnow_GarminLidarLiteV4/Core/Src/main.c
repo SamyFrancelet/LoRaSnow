@@ -80,7 +80,7 @@ int main(void)
 
 	//Variables
 	LIDARLite_TypeDef lidar;						//Our LIDAR
-	float lidarAngle = 0, roadAngle = 0;		//Lidar angle from vertical and road angle from plane in degrees
+	float lidarAngle = 45, roadAngle = 0;		//Lidar angle from vertical and road angle from plane in degrees
 
   /* USER CODE END 1 */
 
@@ -115,17 +115,36 @@ int main(void)
   lidarAngle *= M_PI/180;
   roadAngle *= M_PI/180;
 
+  //Enable temperature and LIDAR
+  HAL_GPIO_WritePin(LIDAR_en_GPIO_Port, LIDAR_en_Pin, GPIO_PIN_SET);
+  //HAL_GPIO_WritePin(TEMP_en_GPIO_Port, TEMP_en_Pin, GPIO_PIN_SET); //Todo resolder pin
+
   LIDARfc_init(&huart2, &lidar, &hi2c1, lidarAngle, roadAngle);  //Init LIDAR connection
 
   //Take reference distance to ground (no snow)
   LIDARfc_saveRefDistance();
 
+  bool stay = true;
+
   while (1)
   {
-	  if(!HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13))	//User button to start measurement
+	  /**while(stay)
 	  {
+		  HAL_StatusTypeDef ret = HAL_UART_Receive(&huart2, str, 1, HAL_MAX_DELAY);
+		  if(ret == HAL_OK)
+		  {
+			  stay = false;
+		  }
+	  }**/
+
+	  stay = true;
+
+	  /*if(/*!HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13))	//User button to start measurement
+	  {*/
 		  LIDARfc_measureOffset();
-	  }
+	  //}
+
+		  HAL_Delay(30000);
 
     /* USER CODE END WHILE */
 
@@ -261,7 +280,10 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, LD2_Pin|LIDAR_en_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(TEMP_en_GPIO_Port, TEMP_en_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin : B1_Pin */
   GPIO_InitStruct.Pin = B1_Pin;
@@ -269,12 +291,19 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(B1_GPIO_Port, &GPIO_InitStruct);
 
-  /*Configure GPIO pin : LD2_Pin */
-  GPIO_InitStruct.Pin = LD2_Pin;
+  /*Configure GPIO pins : LD2_Pin LIDAR_en_Pin */
+  GPIO_InitStruct.Pin = LD2_Pin|LIDAR_en_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(LD2_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+
+  /*Configure GPIO pin : TEMP_en_Pin */
+  GPIO_InitStruct.Pin = TEMP_en_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+  GPIO_InitStruct.Pull = GPIO_NOPULL;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(TEMP_en_GPIO_Port, &GPIO_InitStruct);
 
 }
 
