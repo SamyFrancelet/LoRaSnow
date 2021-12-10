@@ -1,0 +1,66 @@
+\documentclass[11pt,titlepage]{report}
+\usepackage{Preamble}
+
+\begin{document}
+
+\begin{titlepage}
+	\newgeometry{margin=3cm}
+	\centering
+    \includegraphics[width=0.6\linewidth]{hes/hei}\\[0.5cm] 	% University Logo
+    \textsc{\Large Haute école d'ingénieur du Valais}\\ \vspace{\fill}
+	\includegraphics[width=1\linewidth]{Images/lorasnow/logo.png}\\ \vspace{\fill}
+    %\textbf{\textsc{\fontsize{35}{35}\selectfont Report Name}}\\ \vspace{\fill}
+	\textsc{\LARGE Rapport de gestion}\\[0.4cm]
+	\rule{\linewidth}{0.2 mm} \\[0.5 cm]
+	Deferr Gabriel, Francelet Samy, Savioz Vincent \\
+	\today
+\end{titlepage}
+\restoregeometry
+
+\tableofcontents
+
+%\part{Gestion}
+
+\chapter{Résumé}
+\input{business/1-Resume.tex}
+
+\chapter{Produits et services}
+\input{business/2-Produits.tex}
+
+\chapter{Marché et Contexte}
+\input{business/3-Contexte.tex}
+
+\chapter{Stratégie}
+\input{business/4-Strategie.tex}
+
+\chapter{Mesures}
+\input{business/5-Mesures.tex}
+
+\chapter{Finances}
+\input{business/6-Finances.tex}
+
+%\part{Technique}
+
+%\chapter{Introduction}
+%\input{tech/1-Introduction}
+
+%\chapter{Méthodes}
+%\input{tech/2-Methods}
+
+%\chapter{Résultats}
+%\input{tech/3-Results}
+
+%\chapter{Discussions}
+%\input{tech/4-Discussion}
+
+%\chapter{Conclusion}
+%\input{tech/5-Conclusion}
+
+\appendix
+
+\chapter{Bilan prévisionnel}
+\includegraphics[width=\textwidth]{Images/business/costs.png}
+\newpage
+\includegraphics[angle=90, height=\textheight]{Images/business/bilan.png}
+
+\end{document}
