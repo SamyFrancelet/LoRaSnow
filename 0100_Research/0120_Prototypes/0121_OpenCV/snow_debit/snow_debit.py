@@ -6,11 +6,11 @@ from time import localtime, strftime
 
 from threshold_out import threshold_out
 
-def main(show_image = False, show_whiteness = False):
+def main(show_image = False, show_whiteness = True):
     logFolder = "logs/" + strftime("%Y-%m-%d_%H%M%S", localtime()) + "/"
     os.makedirs(logFolder)
-    cam = cv.VideoCapture(1)
-    #cam = cv.VideoCapture('Vincent.mp4')
+    #cam = cv.VideoCapture(1)
+    cam = cv.VideoCapture('test.mp4')
 
     if not cam.isOpened():
         print("Can't open camera")
