@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module snow_detection</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>snow_detection</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:c%3A%5Cwork%5Clorasnow%5C0500_software%5Csnow_detection%5Csnow_detection.py">c:\work\lorasnow\0500_software\snow_detection\snow_detection.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="cv2.cv2.html">cv2.cv2</a><br>
+</td><td width="25%" valign=top><a href="numpy.html">numpy</a><br>
+</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#eeaa77">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Functions</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#eeaa77"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl><dt><a name="-main"><strong>main</strong></a>()</dt></dl>
+ <dl><dt><a name="-snowDebit"><strong>snowDebit</strong></a>(refVid, testVid)</dt></dl>
+ <dl><dt><a name="-snowDetection"><strong>snowDetection</strong></a>(ref, tests, log)</dt><dd><tt>Detects&nbsp;in&nbsp;multiple&nbsp;test&nbsp;videos&nbsp;the&nbsp;snowfall&nbsp;rate&nbsp;and<br>
+if&nbsp;there&nbsp;is&nbsp;snow&nbsp;on&nbsp;the&nbsp;road&nbsp;or&nbsp;not.&nbsp;Uses&nbsp;a&nbsp;reference&nbsp;video&nbsp;to<br>
+test&nbsp;every&nbsp;other&nbsp;videos.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ref&nbsp;(str):&nbsp;path&nbsp;to&nbsp;reference&nbsp;video<br>
+&nbsp;&nbsp;&nbsp;&nbsp;tests&nbsp;([str]):&nbsp;list&nbsp;of&nbsp;paths&nbsp;to&nbsp;test&nbsp;videos<br>
+&nbsp;&nbsp;&nbsp;&nbsp;log&nbsp;(bool):&nbsp;indicates&nbsp;if&nbsp;a&nbsp;csv&nbsp;logfile&nbsp;must&nbsp;be&nbsp;made&nbsp;for&nbsp;this&nbsp;test<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[(bool,&nbsp;float)]:&nbsp;list&nbsp;of&nbsp;tuples&nbsp;containing&nbsp;test&nbsp;results&nbsp;in&nbsp;the&nbsp;following&nbsp;format&nbsp;:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[(snowOnRoad1,&nbsp;snowfallRate1),&nbsp;(snowOnRoad2,&nbsp;snowfallRate2),...]</tt></dd></dl>
+ <dl><dt><a name="-snowOnRoad"><strong>snowOnRoad</strong></a>(refVid, testVid)</dt></dl>
+</td></tr></table>
+</body></html>
