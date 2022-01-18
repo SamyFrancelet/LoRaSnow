@@ -27,7 +27,7 @@ class threshold_out:
 
         h,w = frame_grey.shape
         pixel_total = h*w
-        org = (20,20)
+        org = (20,60)
 
         pixel_white = np.sum(frame_thr == 255)
         white_ratio = pixel_white/pixel_total
@@ -40,7 +40,7 @@ class threshold_out:
 
         if show_whiteness:
             text = "White_ratio = {:.2f}%".format(100*white_ratio)
-            cv.putText(frame_thr, text, org, fontFace=cv.FONT_HERSHEY_COMPLEX, fontScale=0.5, color=(0,0,255))
+            cv.putText(frame_thr, text, org, fontFace=cv.FONT_HERSHEY_COMPLEX, fontScale=2, color=(0,0,255))
 
         if show_image:
             cv.imshow(self.name, frame_thr)
