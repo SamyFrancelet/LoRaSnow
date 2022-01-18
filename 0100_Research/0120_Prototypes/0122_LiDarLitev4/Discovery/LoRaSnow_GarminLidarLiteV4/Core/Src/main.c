@@ -128,14 +128,14 @@ int main(void)
 
   while (1)
   {
-	  /**while(stay)
+	  while(stay)
 	  {
 		  HAL_StatusTypeDef ret = HAL_UART_Receive(&huart2, str, 1, HAL_MAX_DELAY);
 		  if(ret == HAL_OK)
 		  {
 			  stay = false;
 		  }
-	  }**/
+	  }
 
 	  stay = true;
 
@@ -144,7 +144,7 @@ int main(void)
 		  LIDARfc_measureOffset();
 	  //}
 
-		  HAL_Delay(30000);
+		  //HAL_Delay(30000);
 
     /* USER CODE END WHILE */
 

@@ -142,3 +142,63 @@ Finished building: LoRaSnow_GarminLidarLiteV4.bin
  
 Finished building: LoRaSnow_GarminLidarLiteV4.list
  
+13:14:42 **** Build of configuration Debug for project LoRaSnow_GarminLidarLiteV4 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:131:4: warning: statement with no effect [-Wunused-value]
+  131 |    (stay)
+      |    ^
+../Core/Src/main.c:131:10: error: expected ';' before '{' token
+  131 |    (stay)
+      |          ^
+      |          ;
+  132 |    {
+      |    ~      
+../Core/Src/main.c:142:9: warning: "/*" within comment [-Wcomment]
+  142 |    /*if(/*!HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13)) //User button to start measurement
+      |          
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+13:15:46 **** Incremental Build of configuration Debug for project LoRaSnow_GarminLidarLiteV4 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:142:9: warning: "/*" within comment [-Wcomment]
+  142 |    /*if(/*!HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13)) //User button to start measurement
+      |          
+arm-none-eabi-gcc -o "LoRaSnow_GarminLidarLiteV4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\vince\OneDrive\Documents\3e\PGA\git\LoRaSnow\0100_Research\0120_Prototypes\0122_LiDarLitev4\Discovery\LoRaSnow_GarminLidarLiteV4\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LoRaSnow_GarminLidarLiteV4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LoRaSnow_GarminLidarLiteV4.elf
+ 
+arm-none-eabi-size   LoRaSnow_GarminLidarLiteV4.elf 
+arm-none-eabi-objdump -h -S  LoRaSnow_GarminLidarLiteV4.elf  > "LoRaSnow_GarminLidarLiteV4.list"
+arm-none-eabi-objcopy  -O binary  LoRaSnow_GarminLidarLiteV4.elf  "LoRaSnow_GarminLidarLiteV4.bin"
+   text	   data	    bss	    dec	    hex	filename
+  33372	    484	   1980	  35836	   8bfc	LoRaSnow_GarminLidarLiteV4.elf
+Finished building: default.size.stdout
+ 
+Finished building: LoRaSnow_GarminLidarLiteV4.bin
+ 
+Finished building: LoRaSnow_GarminLidarLiteV4.list
+ 
+13:16:05 **** Incremental Build of configuration Debug for project LoRaSnow_GarminLidarLiteV4 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:142:9: warning: "/*" within comment [-Wcomment]
+  142 |    /*if(/*!HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13)) //User button to start measurement
+      |          
+arm-none-eabi-gcc -o "LoRaSnow_GarminLidarLiteV4.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\vince\OneDrive\Documents\3e\PGA\git\LoRaSnow\0100_Research\0120_Prototypes\0122_LiDarLitev4\Discovery\LoRaSnow_GarminLidarLiteV4\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="LoRaSnow_GarminLidarLiteV4.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: LoRaSnow_GarminLidarLiteV4.elf
+ 
+arm-none-eabi-size   LoRaSnow_GarminLidarLiteV4.elf 
+arm-none-eabi-objdump -h -S  LoRaSnow_GarminLidarLiteV4.elf  > "LoRaSnow_GarminLidarLiteV4.list"
+arm-none-eabi-objcopy  -O binary  LoRaSnow_GarminLidarLiteV4.elf  "LoRaSnow_GarminLidarLiteV4.bin"
+   text	   data	    bss	    dec	    hex	filename
+  33364	    484	   1980	  35828	   8bf4	LoRaSnow_GarminLidarLiteV4.elf
+Finished building: default.size.stdout
+ 
+Finished building: LoRaSnow_GarminLidarLiteV4.bin
+ 
+Finished building: LoRaSnow_GarminLidarLiteV4.list
+ 
