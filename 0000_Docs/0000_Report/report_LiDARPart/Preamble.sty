@@ -1,0 +1,110 @@
+%%%%%%%%%%%%%%%%%%%%%%%%% Document + Text Formatting %%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[a4paper,top=3cm, bottom=3cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage[utf8]{inputenc} %char encoding
+\usepackage[T1]{fontenc} %font encoding
+\usepackage[french]{babel} %Language
+\usepackage{times} %font type
+\usepackage{caption}
+\usepackage{subcaption}
+
+
+\usepackage{lipsum} %lorem ipsum
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Figures %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{graphicx}
+\graphicspath{{Images/}}
+\usepackage{caption}
+\usepackage{float}
+
+\usepackage{amsmath}
+\usepackage{mathtools}
+\DeclareMathSizes{12}{20}{14}{10} % Add +1 to all for up the size von 1
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Tabel %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{booktabs}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% En-tête  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{fancyhdr}
+\setlength{\headheight}{14pt}
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{#1}}
+\fancyhead[LO]{\textbf{\leftmark}}
+\fancyhead[RO]{\textbf{ SystInf\ }}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Code C %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{listings}
+
+%\lstset {
+%	language=C,
+%	backgroundcolor=\color{black!5},
+%	basicstyle=\footnotesize
+%}
+
+\definecolor{mGreen}{rgb}{0,0.6,0}
+\definecolor{mGray}{rgb}{0.5,0.5,0.5}
+\definecolor{mPurple}{rgb}{0.58,0,0.82}
+\definecolor{backgroundColour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{CStyle}{
+    backgroundcolor=\color{backgroundColour},
+    commentstyle=\color{mGreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{mGray},
+    stringstyle=\color{mPurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2,
+    language=C
+}
+
+\lstset {
+	language=C,
+	style=CStyle
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Remarque  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{newfloat}
+\definecolor{darkorange}{HTML}{724209}
+\definecolor{lightorange}{HTML}{f7ce9d}
+\definecolor{verylightorange}{HTML}{fbe6ce}
+\definecolor{darkblue}{RGB}{31,78,120}
+\definecolor{lightblue}{RGB}{221,235,247}
+\definecolor{puce}{HTML}{513b41}
+\definecolor{tifblue}{HTML}{c8f4f9}
+\definecolor{lightbluegrey}{RGB}{230,240,255}
+\definecolor{darkgrey}{RGB}{50,50,50}
+\definecolor{darkgreen}{RGB}{27,64,74}
+\definecolor{lightgreen}{RGB}{233,245,211}
+
+\DeclareFloatingEnvironment[placement=H]{frameenv} %separate from figure for endfloat compatibility
+\usepackage[framemethod=TikZ]{mdframed}
+\newenvironment{summary}{
+    \begin{frameenv}
+    \begin{mdframed}[roundcorner=10pt,backgroundcolor=lightgreen,linecolor=darkgreen,%
+                     linewidth=4pt,innertopmargin=10px,innerbottommargin=10px]
+}{
+    \end{mdframed}\end{frameenv}
+}
+
+\newenvironment{invsummary}{
+    \begin{frameenv}
+    \begin{mdframed}[roundcorner=10pt,backgroundcolor=darkgreen,%
+                     linewidth=0pt,innertopmargin=10px,innerbottommargin=10px]
+    \color{lightgreen}
+}{
+    \end{mdframed}\end{frameenv}
+}
