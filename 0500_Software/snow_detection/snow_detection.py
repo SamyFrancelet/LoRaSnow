@@ -147,7 +147,7 @@ def snowDetection(ref, test, log):
 
 def main():
     ref = "100-172719-172810.mp4"
-    test = "001-100448-100456.mp4"
+    test = "420-021927-022427.mp4"
 
     results = snowDetection(ref, test, True)
     

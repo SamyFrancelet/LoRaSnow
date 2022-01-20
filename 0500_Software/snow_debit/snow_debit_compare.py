@@ -12,7 +12,7 @@ def main(show_image = False, show_whiteness = True):
     os.makedirs(logFolder + "thres/")
     os.makedirs(logFolder + "noise/")
     #cam = cv.VideoCapture(1)
-    cam = cv.VideoCapture('test2.mp4')
+    cam = cv.VideoCapture('snow_test.mp4')
 
     frame_width = int(cam.get(cv.CAP_PROP_FRAME_WIDTH)/2)
     frame_height = int(cam.get(cv.CAP_PROP_FRAME_HEIGHT)/2)
