@@ -1,0 +1,75 @@
+@startuml GlobalBlockDiagram
+
+skinparam Arrow {
+    Color black
+    FontSize 18
+}
+
+skinparam cloud {
+    BackGroundColor white
+    FontSize 25
+}
+
+skinparam component {
+    BackGroundColor orange
+    LineColor black
+    FontSize 20
+}
+
+skinparam node {
+    BackGroundColor skyblue
+    LineColor black
+}
+
+skinparam rectangle {
+    BackGroundColor lightgrey
+    LineColor black
+    FontSize 18
+}
+
+skinparam storage {
+    BackGroundColor skyblue
+    LineColor black
+    FontSize 18
+}
+
+skinparam artifact {
+    BackGroundColor skyblue
+    LineColor black
+    FontSize 18
+}
+
+skinparam package {
+    FontSize 20
+}
+
+
+package "LoRaSnow Module"{
+
+    component "Embedded Electronic" as ee 
+
+    rectangle "Height Measurement" as hm
+    rectangle "Camera" as cv 
+
+    rectangle "LoRa Transmission" as lt
+
+}
+
+storage Environment as e
+
+artifact "LoRa Gateway" as g
+cloud "Cloud Server" as cs
+
+hm ~right~> e : "<<observes>>"
+cv ~right~> e : "<<observes>>"
+
+ee -right-> hm 
+ee -right-> cv 
+ee -left-> lt 
+
+lt .left.> g : "<<transmits>>"
+g -up-> cs
+
+hm -[hidden]- cv
+
+@enduml

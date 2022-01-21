@@ -1,0 +1,30 @@
+\section{Résultats}
+Plusieurs scripts \emph{Python} ont été réalisés pour testés les différentes
+méthodes de mesure. Cette section détails ces scripts, les tests effectués
+et des conclusions préliminaires.
+
+\subsection{Mesure de débit de chute de neige}
+Cette mesure doit permettre une information estimée de la chute de neige
+actuelle. Idéalement, on devrait pouvoir estimer les précipitations de neige
+en mm/h. Mais n'ayant pas encore reçu l'accès aux données de \emph{MeteoSwiss}
+pour comparer nos mesures à des données fiables, une approche simplifiée a été
+appliquée.\\
+On récupère plusieurs vidéos qu'on trie selon 3 critères : \label{criterias}
+\begin{description}
+    \item[Le moment de la journée] \hfill \\
+    matin, journée, soir, nuit
+    \item[La quantité visuelle de neiger qui est en train de tomber] \hfill \\
+    rien, petite neige, neige, grosse neige, tempête
+    \item[L'état de la route] \hfill \\
+    sèche, déneigée, partiellement enneigée, complêtement enneigée
+\end{description}
+Chaque vidéo avec une route sèche ou déneigée, et avec aucune chute de neige
+peut servir de référence pour faire les mesures suivantes.
+Il est important de comparer des vidéos se passant durant la même période de la journée.
+La luminosité peut grandement affecter le résultat de la mesure.
+
+\subsection{Détection de route enneigée}
+Le but de cette mesure est de fournir, a minima, si oui ou non la route
+est enneigée. Idéalement elle devrait pouvoir différencier plusieurs degré
+d'enneigement de la route. Ces degrés sont définis selon les critères
+cités précédemment (\ref{criterias})
