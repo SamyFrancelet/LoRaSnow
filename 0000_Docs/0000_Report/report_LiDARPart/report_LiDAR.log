@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.10)  20 JAN 2022 21:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.10)  20 JAN 2022 23:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/vince/OneDrive/Documents/3e/_LaTeX_Template/LaTeX_Templates-master/LaTeX_Templates-master/report/report_LiDAR.tex
-(c:/Users/vince/OneDrive/Documents/3e/_LaTeX_Template/LaTeX_Templates-master/LaTeX_Templates-master/report/report_LiDAR.tex
+**c:/Users/vince/OneDrive/Documents/3e/PGA/git/LoRaSnow/0000_Docs/0000_Report/report_LiDARPart/report_LiDAR.tex
+(c:/Users/vince/OneDrive/Documents/3e/PGA/git/LoRaSnow/0000_Docs/0000_Report/report_LiDARPart/report_LiDAR.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2021-11-22> (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
 Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
@@ -794,8 +794,12 @@ Package mdframed Info: mdframed inside a box
 
 ]
 Chapitre 2.
-(2-Methods.tex
-<Images/LiDAR/GarminLiDARLiteV4.jpg, id=19, 1023.825pt x 572.1375pt>
+(2-Specs.tex) [3
+
+]
+Chapitre 3.
+(3-MethodsLiDAR.tex
+<Images/LiDAR/GarminLiDARLiteV4.jpg, id=22, 1023.825pt x 572.1375pt>
 File: Images/LiDAR/GarminLiDARLiteV4.jpg Graphic file (type jpg)
 <use Images/LiDAR/GarminLiDARLiteV4.jpg>
 Package pdftex.def Info: Images/LiDAR/GarminLiDARLiteV4.jpg  used on input line 5.
@@ -805,7 +809,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 33--40
 
  []
 
-[3
+[4
 
  <./Images/LiDAR/GarminLiDARLiteV4.jpg>]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 47.
@@ -816,139 +820,130 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--80
 
  []
 
-[4]
-<Images/LiDAR/LiDAROnArduino.jpeg, id=27, 709.14937pt x 1088.56688pt>
+[5]
+<Images/LiDAR/LiDAROnArduino.jpeg, id=30, 709.14937pt x 1088.56688pt>
 File: Images/LiDAR/LiDAROnArduino.jpeg Graphic file (type jpg)
 <use Images/LiDAR/LiDAROnArduino.jpeg>
 Package pdftex.def Info: Images/LiDAR/LiDAROnArduino.jpeg  used on input line 116.
 (pdftex.def)             Requested size: 227.62206pt x 349.39496pt.
- [5 <./Images/LiDAR/LiDAROnArduino.jpeg>]
-<Images/LiDAR/LiDAROnNucleo.jpeg, id=31, 578.16pt x 639.89063pt>
+ [6 <./Images/LiDAR/LiDAROnArduino.jpeg>]
+<Images/LiDAR/LiDAROnNucleo.jpeg, id=35, 578.16pt x 639.89063pt>
 File: Images/LiDAR/LiDAROnNucleo.jpeg Graphic file (type jpg)
 <use Images/LiDAR/LiDAROnNucleo.jpeg>
 Package pdftex.def Info: Images/LiDAR/LiDAROnNucleo.jpeg  used on input line 167.
 (pdftex.def)             Requested size: 227.62206pt x 251.9192pt.
- [6 <./Images/LiDAR/LiDAROnNucleo.jpeg>]
-<Images/LiDAR/LiDAR_MesMethod.png, id=36, 265.74281pt x 243.91125pt>
+ [7 <./Images/LiDAR/LiDAROnNucleo.jpeg>]
+<Images/LiDAR/LiDAR_MesMethod.png, id=39, 265.74281pt x 243.91125pt>
 File: Images/LiDAR/LiDAR_MesMethod.png Graphic file (type png)
 <use Images/LiDAR/LiDAR_MesMethod.png>
 Package pdftex.def Info: Images/LiDAR/LiDAR_MesMethod.png  used on input line 182.
 (pdftex.def)             Requested size: 227.62206pt x 208.92589pt.
-) [7 <./Images/LiDAR/LiDAR_MesMethod.png>]
-Chapitre 3.
-(3-Results.tex
-<Images/LiDAR/RealDistanceMes.jpeg, id=46, 1027.84pt x 770.88pt>
+) (4-ResultsLiDAR.tex [8 <./Images/LiDAR/LiDAR_MesMethod.png>]
+<Images/LiDAR/RealDistanceMes.jpeg, id=49, 1027.84pt x 770.88pt>
 File: Images/LiDAR/RealDistanceMes.jpeg Graphic file (type jpg)
 <use Images/LiDAR/RealDistanceMes.jpeg>
 Package pdftex.def Info: Images/LiDAR/RealDistanceMes.jpeg  used on input line 25.
 (pdftex.def)             Requested size: 227.62206pt x 170.71158pt.
- [8
-
- <./Images/LiDAR/RealDistanceMes.jpeg>]
 <Images/LiDAR/LiDARRealDistanceGraph_MesDist.png, id=50, 510.708pt x 330.471pt>
 File: Images/LiDAR/LiDARRealDistanceGraph_MesDist.png Graphic file (type png)
 <use Images/LiDAR/LiDARRealDistanceGraph_MesDist.png>
 Package pdftex.def Info: Images/LiDAR/LiDARRealDistanceGraph_MesDist.png  used on input line 39.
 (pdftex.def)             Requested size: 364.19667pt x 235.66975pt.
-<Images/LiDAR/LiDARRealDistanceGraph_MesDistError.png, id=51, 510.927pt x 330.471pt>
+ [9 <./Images/LiDAR/RealDistanceMes.jpeg>]
+<Images/LiDAR/LiDARRealDistanceGraph_MesDistError.png, id=54, 510.927pt x 330.471pt>
 File: Images/LiDAR/LiDARRealDistanceGraph_MesDistError.png Graphic file (type png)
 <use Images/LiDAR/LiDARRealDistanceGraph_MesDistError.png>
 Package pdftex.def Info: Images/LiDAR/LiDARRealDistanceGraph_MesDistError.png  used on input line 46.
 (pdftex.def)             Requested size: 364.19667pt x 235.56891pt.
-<Images/LiDAR/LiDARRealDistanceGraph_MesDist_Zoom.png, id=52, 511.365pt x 329.595pt>
+<Images/LiDAR/LiDARRealDistanceGraph_MesDist_Zoom.png, id=55, 511.365pt x 329.595pt>
 File: Images/LiDAR/LiDARRealDistanceGraph_MesDist_Zoom.png Graphic file (type png)
 <use Images/LiDAR/LiDARRealDistanceGraph_MesDist_Zoom.png>
 Package pdftex.def Info: Images/LiDAR/LiDARRealDistanceGraph_MesDist_Zoom.png  used on input line 56.
 (pdftex.def)             Requested size: 364.19667pt x 234.74835pt.
- [9 <./Images/LiDAR/LiDARRealDistanceGraph_MesDist.png> <./Images/LiDAR/LiDARRealDistanceGraph_MesDistError.png>]
-<Images/LiDAR/LiDARRealDistanceGraph_MesDistError_Zoom.png, id=58, 511.803pt x 329.595pt>
+ [10 <./Images/LiDAR/LiDARRealDistanceGraph_MesDist.png> <./Images/LiDAR/LiDARRealDistanceGraph_MesDistError.png>]
+<Images/LiDAR/LiDARRealDistanceGraph_MesDistError_Zoom.png, id=61, 511.803pt x 329.595pt>
 File: Images/LiDAR/LiDARRealDistanceGraph_MesDistError_Zoom.png Graphic file (type png)
 <use Images/LiDAR/LiDARRealDistanceGraph_MesDistError_Zoom.png>
 Package pdftex.def Info: Images/LiDAR/LiDARRealDistanceGraph_MesDistError_Zoom.png  used on input line 63.
 (pdftex.def)             Requested size: 364.19667pt x 234.54718pt.
- [10 <./Images/LiDAR/LiDARRealDistanceGraph_MesDist_Zoom.png> <./Images/LiDAR/LiDARRealDistanceGraph_MesDistError_Zoom.png>]
-<Images/LiDAR/ErrorMesSetup.jpeg, id=64, 1027.84pt x 613.29124pt>
+ [11 <./Images/LiDAR/LiDARRealDistanceGraph_MesDist_Zoom.png> <./Images/LiDAR/LiDARRealDistanceGraph_MesDistError_Zoom.png>]
+<Images/LiDAR/ErrorMesSetup.jpeg, id=67, 1027.84pt x 613.29124pt>
 File: Images/LiDAR/ErrorMesSetup.jpeg Graphic file (type jpg)
 <use Images/LiDAR/ErrorMesSetup.jpeg>
 Package pdftex.def Info: Images/LiDAR/ErrorMesSetup.jpeg  used on input line 112.
 (pdftex.def)             Requested size: 341.43307pt x 203.72493pt.
-<Images/LiDAR/LiDAR_ErrorMes_NoNoise.png, id=65, 459.243pt x 295.869pt>
+<Images/LiDAR/LiDAR_ErrorMes_NoNoise.png, id=68, 459.243pt x 295.869pt>
 File: Images/LiDAR/LiDAR_ErrorMes_NoNoise.png Graphic file (type png)
 <use Images/LiDAR/LiDAR_ErrorMes_NoNoise.png>
 Package pdftex.def Info: Images/LiDAR/LiDAR_ErrorMes_NoNoise.png  used on input line 121.
 (pdftex.def)             Requested size: 364.19667pt x 234.64589pt.
- [11 <./Images/LiDAR/ErrorMesSetup.jpeg>]
-<Images/LiDAR/LiDAR_ErrorMes_Moustache.png, id=69, 543.339pt x 401.208pt>
+ [12 <./Images/LiDAR/ErrorMesSetup.jpeg>]
+<Images/LiDAR/LiDAR_ErrorMes_Moustache.png, id=73, 543.339pt x 401.208pt>
 File: Images/LiDAR/LiDAR_ErrorMes_Moustache.png Graphic file (type png)
 <use Images/LiDAR/LiDAR_ErrorMes_Moustache.png>
 Package pdftex.def Info: Images/LiDAR/LiDAR_ErrorMes_Moustache.png  used on input line 128.
 (pdftex.def)             Requested size: 364.19667pt x 268.93652pt.
- [12 <./Images/LiDAR/LiDAR_ErrorMes_NoNoise.png> <./Images/LiDAR/LiDAR_ErrorMes_Moustache.png>]
-Overfull \hbox (2.71164pt too wide) in paragraph at lines 162--164
-[]\T1/ptm/m/n/10.95 Premièrement, la fi-gure 3.7[] montre l'his-to-gramme des 100 me-sures de ré-fé-rence au sol. Elles s'avèrent
- []
-
-[13]
-<Images/LiDAR/TempMes.jpeg, id=79, 867.24pt x 1163.84813pt>
+ [13 <./Images/LiDAR/LiDAR_ErrorMes_NoNoise.png> <./Images/LiDAR/LiDAR_ErrorMes_Moustache.png>] [14]
+<Images/LiDAR/TempMes.jpeg, id=82, 867.24pt x 1163.84813pt>
 File: Images/LiDAR/TempMes.jpeg Graphic file (type jpg)
 <use Images/LiDAR/TempMes.jpeg>
 Package pdftex.def Info: Images/LiDAR/TempMes.jpeg  used on input line 220.
 (pdftex.def)             Requested size: 227.62206pt x 305.47032pt.
-<Images/LiDAR/LiDAR_TempStabilityGraph.png, id=80, 695.544pt x 443.037pt>
+<Images/LiDAR/LiDAR_TempStabilityGraph.png, id=83, 695.544pt x 443.037pt>
 File: Images/LiDAR/LiDAR_TempStabilityGraph.png Graphic file (type png)
 <use Images/LiDAR/LiDAR_TempStabilityGraph.png>
 Package pdftex.def Info: Images/LiDAR/LiDAR_TempStabilityGraph.png  used on input line 229.
 (pdftex.def)             Requested size: 364.19667pt x 231.98273pt.
- [14 <./Images/LiDAR/TempMes.jpeg>] [15 <./Images/LiDAR/LiDAR_TempStabilityGraph.png>]
-<Images/LiDAR/OffsetMes_InLab.jpeg, id=88, 770.88pt x 1027.84pt>
+ [15 <./Images/LiDAR/TempMes.jpeg>] [16 <./Images/LiDAR/LiDAR_TempStabilityGraph.png>]
+<Images/LiDAR/OffsetMes_InLab.jpeg, id=91, 770.88pt x 1027.84pt>
 File: Images/LiDAR/OffsetMes_InLab.jpeg Graphic file (type jpg)
 <use Images/LiDAR/OffsetMes_InLab.jpeg>
 Package pdftex.def Info: Images/LiDAR/OffsetMes_InLab.jpeg  used on input line 271.
 (pdftex.def)             Requested size: 227.62206pt x 303.49248pt.
-<Images/LiDAR/LiDAR_OffsetMes_Moustache.png, id=89, 536.331pt x 357.408pt>
+<Images/LiDAR/LiDAR_OffsetMes_Moustache.png, id=92, 536.331pt x 357.408pt>
 File: Images/LiDAR/LiDAR_OffsetMes_Moustache.png Graphic file (type png)
 <use Images/LiDAR/LiDAR_OffsetMes_Moustache.png>
 Package pdftex.def Info: Images/LiDAR/LiDAR_OffsetMes_Moustache.png  used on input line 280.
 (pdftex.def)             Requested size: 364.19667pt x 242.70155pt.
- [16 <./Images/LiDAR/OffsetMes_InLab.jpeg>]
-<Images/LiDAR/LiDAR_OffsetMes_PerMethods.png, id=93, 535.893pt x 328.938pt>
+ [17 <./Images/LiDAR/OffsetMes_InLab.jpeg>]
+<Images/LiDAR/LiDAR_OffsetMes_PerMethods.png, id=96, 535.893pt x 328.938pt>
 File: Images/LiDAR/LiDAR_OffsetMes_PerMethods.png Graphic file (type png)
 <use Images/LiDAR/LiDAR_OffsetMes_PerMethods.png>
 Package pdftex.def Info: Images/LiDAR/LiDAR_OffsetMes_PerMethods.png  used on input line 291.
 (pdftex.def)             Requested size: 364.19667pt x 223.55441pt.
- [17 <./Images/LiDAR/LiDAR_OffsetMes_Moustache.png> <./Images/LiDAR/LiDAR_OffsetMes_PerMethods.png>]
-<Images/LiDAR/ReadTests_Setup.jpeg, id=99, 2055.68pt x 1541.76pt>
+ [18 <./Images/LiDAR/LiDAR_OffsetMes_Moustache.png> <./Images/LiDAR/LiDAR_OffsetMes_PerMethods.png>]
+<Images/LiDAR/ReadTests_Setup.jpeg, id=103, 2055.68pt x 1541.76pt>
 File: Images/LiDAR/ReadTests_Setup.jpeg Graphic file (type jpg)
 <use Images/LiDAR/ReadTests_Setup.jpeg>
 Package pdftex.def Info: Images/LiDAR/ReadTests_Setup.jpeg  used on input line 333.
 (pdftex.def)             Requested size: 341.43307pt x 256.07324pt.
- [18 <./Images/LiDAR/ReadTests_Setup.jpeg>]
-<Images/LiDAR/ReadTests_Results.png, id=104, 614.295pt x 444.132pt>
+ [19 <./Images/LiDAR/ReadTests_Setup.jpeg>]
+<Images/LiDAR/ReadTests_Results.png, id=107, 614.295pt x 444.132pt>
 File: Images/LiDAR/ReadTests_Results.png Graphic file (type png)
 <use Images/LiDAR/ReadTests_Results.png>
 Package pdftex.def Info: Images/LiDAR/ReadTests_Results.png  used on input line 370.
 (pdftex.def)             Requested size: 341.43307pt x 246.85535pt.
-) [19 <./Images/LiDAR/ReadTests_Results.png>]
+) [20 <./Images/LiDAR/ReadTests_Results.png>]
 Chapitre 4.
-(4-Discussion.tex) [20
+(5-Analyse.tex) [21
 
 ]
 Chapitre 5.
-(5-Conclusion.tex) [21
+(6-Conclusion.tex) [22
 
 ] (report_LiDAR.aux) ) 
 Here is how much of TeX's memory you used:
- 21841 strings out of 478659
- 432832 string characters out of 2845919
+ 21847 strings out of 478659
+ 432867 string characters out of 2845919
  809924 words of memory out of 3000000
- 39492 multiletter control sequences out of 15000+600000
+ 39495 multiletter control sequences out of 15000+600000
  461617 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 119i,12n,116p,586b,1140s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 119i,12n,116p,573b,1140s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Users/vince/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/vince/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/vince/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/vince/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/vince/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/vince/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/vince/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/vince/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/vince/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on report_LiDAR.pdf (22 pages, 2308622 bytes).
+Output written on report_LiDAR.pdf (23 pages, 2310058 bytes).
 PDF statistics:
- 150 PDF objects out of 1000 (max. 8388607)
+ 153 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  113 words of extra memory for PDF output out of 10000 (max. 10000000)
 
