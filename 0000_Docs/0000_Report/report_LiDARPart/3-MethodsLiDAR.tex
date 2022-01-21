@@ -79,12 +79,14 @@ URL du datasheet}. Ci-dessous sont détaillés les éléments essentiels à la s
 capteur.\\
 
 \begin{description}
-    \item[Température de fonctionnement] Cette information s'avère essentielle pour ce projet. En
+    \item[Température de fonctionnement] \hfill \\ 
+    Cette information s'avère essentielle pour ce projet. En
     effet, on peut s'attendre à ce que ce capteur puisse fonctionner à des températures négatives,
     parfois jusqu'à -20°C. La borne supérieure de cette caractéristique nous intéresse moins, car
     ce sont des températures difficilement atteignables en hiver, même dans un boîtier fermé en 
     plein soleil.
-    \item[Consommation de courant] Cette valeur est cruciale pour un projet qui se veut basse
+    \item[Consommation de courant] \hfill \\ 
+    Cette valeur est cruciale pour un projet qui se veut basse
     consommation et autonome. En effet, nous ne pouvons pas nous permettre de consommer plus que
     quelques microampères lorsque le système est en veille.\\
     Ainsi, on remarque que le capteur au repos consomme un courant relativement élevé de 2mA, ce
@@ -92,16 +94,19 @@ capteur.\\
     implémenté (grâce à un MOSFET par exemple) afin de faire tomber cette consommation à zéro.\\
     Le courant de 85mA lorsque le LiDAR fait des acquisitions ne pose pas problème car la période 
     de mesure représente une partie négligeable du temps de fonctionnement total.
-    \item[Tension des signaux] Il est important de noter que les signaux qui sont transmis au
+    \item[Tension des signaux] \hfill \\ 
+    Il est important de noter que les signaux qui sont transmis au
     capteur (par le biais du bus I2C ou par les GPIO) doivent absolument avoir une tension de 3.3V.
     \item[Gamme de mesure] Le capteur est théoriquement capable de mesurer avec plus ou moins de
     précision n'importe quelle distance entre 5cm et 10m, ce qui satisfait entièrement les besoins
     du projet.
-    \item[Longueur d'onde de la LED] Pour effectuer ses mesures, le LiDAR envoie des rayons lumineux
+    \item[Longueur d'onde de la LED] \hfill \\ 
+    Pour effectuer ses mesures, le LiDAR envoie des rayons lumineux
     infrarouges (940nm) grâce à une LED. Ainsi, compte tenu de la puissance du système et des limitations
     introduites par ce type de lumière, on peut d'ores et déjà s'attendre à ce que ce capteur ne
     fonctionne pas durant la journée.
-    \item[Répétabilité des mesures] Cette information est nécessaire pour ajuster nos attentes quant
+    \item[Répétabilité des mesures] \hfill \\ 
+    Cette information est nécessaire pour ajuster nos attentes quant
     à la précision attendue de ce capteur. Sur le terrain, il est estimé qu'il aura des distances 
     maximales de 3 mètres à mesurer, impliquant une précision typique de \textpm 2cm. 
 \end{description}
@@ -113,7 +118,7 @@ terrain. Ils seront détaillés dans la section correspondante.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{Images/LiDAR/LiDAROnArduino.jpeg}
+    \includegraphics[width=0.4\textwidth]{Images/LiDAR/LiDAROnArduino.jpeg}
     \caption{LiDAR Lite V4 implémenté sur Arduino Uno}
     \label{LiDAROnArduino}
 \end{figure}
