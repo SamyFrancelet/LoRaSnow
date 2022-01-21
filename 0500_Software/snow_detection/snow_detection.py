@@ -78,7 +78,8 @@ def snowDetection(ref, test, log):
             # Create noise and background test frames
             testNoise = cv2.subtract(testFrame1, testFrame2)
             testBackground = cv2.subtract(testFrame1, testNoise)
-                
+            #testBackground = testFrame1
+               
             # Create thresholds frame
             refNoiseGrey = cv2.cvtColor(refNoise, cv2.COLOR_BGR2GRAY)
             th, refNoiseThres = cv2.threshold(refNoiseGrey, snowfallThreshold, 255, cv2.THRESH_BINARY)
