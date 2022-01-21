@@ -1,0 +1,118 @@
+\relax 
+\providecommand\zref@newlabel[2]{}
+\providecommand\babel@aux[2]{}
+\@nameuse{bbl@beforestart}
+\catcode `:\active 
+\catcode `;\active 
+\catcode `!\active 
+\catcode `?\active 
+\babel@aux{french}{}
+\@writefile{toc}{\contentsline {chapter}{\numberline {1}Introduction}{2}{}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loframeenv}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {1.1}Contexte}{2}{}\protected@file@percent }
+\pgfsyspdfmark {pgfid1}{4661699}{24057592}
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Spécifications}{3}{}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loframeenv}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Cahier des charges}{3}{}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{ConditionDifficiles}{{2.1}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}LoRaWAN}{3}{}\protected@file@percent }
+\newlabel{LoRaWANTopo}{{2.2}{4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}Edge Computing}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.3}Notre interprétation du cahier des charges}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Schéma bloc global}{5}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Schéma bloc global du projet\relax }}{5}{}\protected@file@percent }
+\newlabel{GlobalBlockDiagram}{{2.3}{5}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}LiDAR}{6}{}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loframeenv}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Méthode}{6}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces Garmin Lidar Lite v4\relax }}{6}{}\protected@file@percent }
+\newlabel{LiDARLiteV4}{{3.1}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Fondamentaux}{6}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Caractéristiques}{7}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3.1}{\ignorespaces Extrait des spécifications du LiDAR Lite V4\relax }}{7}{}\protected@file@percent }
+\newlabel{LiDARSpecs}{{3.1}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Implémentation}{8}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces LiDAR Lite V4 implémenté sur Arduino Uno\relax }}{8}{}\protected@file@percent }
+\newlabel{LiDAROnArduino}{{3.2}{8}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.2}{\ignorespaces Sélection des registres I2C essentiels\relax }}{9}{}\protected@file@percent }
+\newlabel{LiDARI2C}{{3.2}{9}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces LiDAR Lite V4 sur STM32-NUCLEO\relax }}{9}{}\protected@file@percent }
+\newlabel{LiDAROnNUCLEO}{{3.3}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.4}Méthode de mesure}{10}{}\protected@file@percent }
+\newlabel{MethodeDeMesure}{{3.1.4}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Schéma de l'installation d'un module LoRaSnow\relax }}{10}{}\protected@file@percent }
+\newlabel{LiDARMesMethod}{{3.4}{10}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Résultats}{11}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Caractéristique de l'erreur de mesure}{11}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Méthode}{11}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Mesure de distance comparée à la distance réelle\relax }}{11}{}\protected@file@percent }
+\newlabel{RealDistanceMeasures}{{3.5}{11}}
+\@writefile{toc}{\contentsline {subsubsection}{Résultats du test}{12}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces Distance mesurée en fonction de la distance réelle\relax }}{12}{}\protected@file@percent }
+\newlabel{RealDistanceMesGraph}{{3.6}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces Erreur de la distance mesurée par rapport à la distance réelle\relax }}{12}{}\protected@file@percent }
+\newlabel{RealDistanceMesGraphError}{{3.7}{12}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces Distance mesurée en fonction de la distance réelle dans la plage utile\relax }}{13}{}\protected@file@percent }
+\newlabel{RealDistanceMesGraphZoom}{{3.8}{13}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces Erreur de la distance mesurée par rapport à la distance réelle dans la plage utile\relax }}{13}{}\protected@file@percent }
+\newlabel{RealDistanceMesGraphErrorZoom}{{3.9}{13}}
+\@writefile{toc}{\contentsline {subsubsection}{Conclusion préliminaire}{13}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Mesures de distance dans un environnement perturbé}{14}{}\protected@file@percent }
+\newlabel{MesNoise}{{3.2.2}{14}}
+\@writefile{toc}{\contentsline {subsubsection}{Méthode}{14}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces Mise en place du test de perturbation\relax }}{14}{}\protected@file@percent }
+\newlabel{ErrorMesSetup}{{3.10}{14}}
+\@writefile{toc}{\contentsline {subsubsection}{Résultats du test}{15}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces Histogramme de la mesure de référence\relax }}{15}{}\protected@file@percent }
+\newlabel{ErrorMesRefDist}{{3.11}{15}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.12}{\ignorespaces Comparaison des 5 mesures effectuées\relax }}{15}{}\protected@file@percent }
+\newlabel{ErrorMesMoustache}{{3.12}{15}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.3}{\ignorespaces Différentes méthodes de calcul de distance (en cm)\relax }}{16}{}\protected@file@percent }
+\newlabel{ComputingMethods}{{3.3}{16}}
+\@writefile{toc}{\contentsline {subsubsection}{Conclusion préliminaire}{16}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Stabilité en température des mesures}{17}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Méthode}{17}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.13}{\ignorespaces Mise en place du test en température\relax }}{17}{}\protected@file@percent }
+\newlabel{TempError}{{3.13}{17}}
+\@writefile{toc}{\contentsline {subsubsection}{Résultats du test}{18}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.14}{\ignorespaces Graphe de stabilité en température du LiDAR\relax }}{18}{}\protected@file@percent }
+\newlabel{TempErrorGraph}{{3.14}{18}}
+\@writefile{toc}{\contentsline {subsubsection}{Conclusion préliminaire}{18}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.4}Mesure de hauteur en laboratoire}{18}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Méthode}{18}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.15}{\ignorespaces Mise en place du test de mesure d'épaisseur\relax }}{19}{}\protected@file@percent }
+\newlabel{OffsetMes_Labo}{{3.15}{19}}
+\@writefile{toc}{\contentsline {subsubsection}{Résultats du test}{20}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.16}{\ignorespaces Boîte à moustache des mesures d'épaisseur\relax }}{20}{}\protected@file@percent }
+\newlabel{OffsetMes_Moustache}{{3.16}{20}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.17}{\ignorespaces Résultat des calculs d'offset par méthode\relax }}{20}{}\protected@file@percent }
+\newlabel{OffsetMes_PerMethod}{{3.17}{20}}
+\@writefile{toc}{\contentsline {subsubsection}{Conclusion préliminaire}{20}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.5}Mesure de hauteur en situation réelle}{21}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Méthode}{21}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.18}{\ignorespaces Mise en place du test en condition réelle\relax }}{21}{}\protected@file@percent }
+\newlabel{RealTest_Setup}{{3.18}{21}}
+\@writefile{toc}{\contentsline {subsubsection}{Résultats du test}{22}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3.4}{\ignorespaces Mesures relevée lors du test\relax }}{22}{}\protected@file@percent }
+\newlabel{SnowingState}{{3.4}{22}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.19}{\ignorespaces Résultat des mesures effectuées\relax }}{22}{}\protected@file@percent }
+\newlabel{RealTest_Results}{{3.19}{22}}
+\@writefile{toc}{\contentsline {subsubsection}{Conclusion préliminaire}{22}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Synthèse}{23}{}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loframeenv}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Discussion des résultats}{23}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Problèmes rencontrés}{23}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Conclusion}{24}{}\protected@file@percent }
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{loframeenv}{\addvspace {10\p@ }}
+\gdef \@abspage@last{25}
