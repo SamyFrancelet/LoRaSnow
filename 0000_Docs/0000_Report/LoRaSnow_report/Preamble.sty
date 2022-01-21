@@ -1,0 +1,97 @@
+%%%%%%%%%%%%%%%%%%%%%%%%% Document + Text Formatting %%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[a4paper,top=3cm, bottom=3cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage[utf8]{inputenc} %char encoding
+\usepackage[T1]{fontenc} %font encoding
+\usepackage[french]{babel} %Language
+\usepackage{times} %font type
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage[style=alphabetic]{biblatex}
+\usepackage{csquotes}
+
+
+\usepackage{lipsum} %lorem ipsum
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Figures %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{graphicx}
+\graphicspath{{Images/}}
+\usepackage{caption}
+\usepackage{float}
+
+\usepackage{amsmath}
+\usepackage{mathtools}
+\DeclareMathSizes{12}{20}{14}{10} % Add +1 to all for up the size von 1
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Tabel %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{rotating}
+\usepackage{multirow}
+\usepackage{booktabs}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% En-tête  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{fancyhdr}
+\setlength{\headheight}{14pt}
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{#1}}
+\fancyhead[LO]{\textbf{\leftmark}}
+\fancyhead[RO]{\textbf{ LoRaSnow\ }}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CHAPTER HEADER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{tikz}
+\usepackage[explicit]{titlesec}
+\newcommand*\chapterlabel{}
+%\renewcommand{\thechapter}{\Roman{chapter}}
+\titleformat{\chapter}[display]  % type (section,chapter,etc...) to vary,  shape (eg display-type)
+	{\normalfont\bfseries\Huge} % format of the chapter
+	{\gdef\chapterlabel{\thechapter\ }}     % the label
+ 	{0pt} % separation between label and chapter-title
+ 	  {\begin{tikzpicture}[remember picture,overlay]
+    \node[yshift=-8cm] at (current page.north west)
+      {\begin{tikzpicture}[remember picture, overlay]
+        \draw[fill=black] (0,0) rectangle(35.5mm,15mm);
+        \node[anchor=north east,yshift=-7.2cm,xshift=34mm,minimum height=30mm,inner sep=0mm] at (current page.north west)
+        {\parbox[top][30mm][t]{15mm}{\raggedleft $\phantom{\textrm{l}}$\color{white}\chapterlabel}};  %the black l is just to get better base-line alingement
+        \node[anchor=north west,yshift=-7.2cm,xshift=37mm,text width=\textwidth,minimum height=30mm,inner sep=0mm] at (current page.north west)
+              {\parbox[top][30mm][t]{\textwidth}{\color{black}#1}};
+       \end{tikzpicture}
+      };
+   \end{tikzpicture}
+   \gdef\chapterlabel{}
+  }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Remarque  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{newfloat}
+\definecolor{darkorange}{HTML}{724209}
+\definecolor{lightorange}{HTML}{f7ce9d}
+\definecolor{verylightorange}{HTML}{fbe6ce}
+\definecolor{darkblue}{RGB}{31,78,120}
+\definecolor{lightblue}{RGB}{221,235,247}
+\definecolor{puce}{HTML}{513b41}
+\definecolor{tifblue}{HTML}{c8f4f9}
+\definecolor{lightbluegrey}{RGB}{230,240,255}
+\definecolor{darkgrey}{RGB}{50,50,50}
+\definecolor{darkgreen}{RGB}{27,64,74}
+\definecolor{lightgreen}{RGB}{233,245,211}
+
+\DeclareFloatingEnvironment[placement=H]{frameenv} %separate from figure for endfloat compatibility
+\usepackage[framemethod=TikZ]{mdframed}
+\newenvironment{summary}{
+    \begin{frameenv}
+    \begin{mdframed}[roundcorner=10pt,backgroundcolor=lightgreen,linecolor=darkgreen,%
+                     linewidth=4pt,innertopmargin=10px,innerbottommargin=10px]
+}{
+    \end{mdframed}\end{frameenv}
+}
+
+\newenvironment{invsummary}{
+    \begin{frameenv}
+    \begin{mdframed}[roundcorner=10pt,backgroundcolor=darkgreen,%
+                     linewidth=0pt,innertopmargin=10px,innerbottommargin=10px]
+    \color{lightgreen}
+}{
+    \end{mdframed}\end{frameenv}
+}

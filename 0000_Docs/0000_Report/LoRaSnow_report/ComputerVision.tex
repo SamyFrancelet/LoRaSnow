@@ -1,0 +1,232 @@
+La \emph{Computer Vision} (ou vision par ordinateur) comprend l'acquisition, l'analyse et
+le traitement des images numériques pour comprendre et extraire des données, informations
+ou décisions.\\
+Les applications et possibilités de ce domaine sont pour ainsi dire, infinie.
+
+\section{Défis liés à la mesure en extérieur}
+La principale difficulté de la mesure de neige par \emph{Computer Vision} est lié au fait
+qu'il neige. Les caméras embarquées sont souvent de mauvaise qualité, et les débits
+sont mauvais à cause des processeurs embarqués qui sont limités en puissance de calcul.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{Images/computer_vision/perfect_snow.jpg}
+    \includegraphics[width=0.4\textwidth]{Images/computer_vision/real_snow.png}
+    \caption[]{Comparaison entre une image idéale \footnotemark[1] et un cas concret\footnotemark[2]}
+    \label{Snow comparison}
+\end{figure}
+\footnotetext[1]{Wallpaper from WallpaperCave, by caveman, https://wallpapercave.com/w/scDoVwf
+(last accessed: 20 January 2022)}
+\footnotetext[2]{VibroSnow camera, implemented at route du Pralan, Ayent, Suisse}
+
+\noindent
+Il faut donc trouver une méthode ne demandant pas trop de ressources de calcul, et pouvant fournir
+des résultats utiles pour informer sur l'état des routes.
+
+\section{Applications pour la mesure de neige}
+Les possibilités de la \emph{Computer Vision} étant vaste, plusieurs méthodes ont été discutées.
+
+\newpage
+
+\subsection{Mesure de niveau sur une règlette}
+Les mesures de niveau de neige manuel se font déjà avec une réglette plantée dans la neige.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\textwidth]{Images/computer_vision/snow_meter.PNG}
+    \caption[]{Mesure d'environ 4.5 pouces de neige à Manitoba, Canada\footnotemark[1]}
+    \label{Snow meter}
+\end{figure}
+\footnotetext[1]{Image by Jerry Zachedniak, https://ici.radio-canada.ca/nouvelle/1338531/hiver-tempete-parc-mont-riding
+(last accessed: 20 January 2022)}
+\noindent
+La mesure pourrait être réalisé en plaçant la caméra en face de la règlette.
+Deux méthodes sont possibles :
+\begin{description}
+    \item[Avoir une règlette graduée] \hfill \\
+    et compter le nombre de graduation encore visible pour déterminer la hauteur de neige.
+    \item[Avoir un piquet d'une taille connue] \hfill \\
+    comparer la hauteur de ce piquet au nombre de pixel quand il n'y a pas de neige,
+    puis mesurer le nombre de pixels non-ensevelis pour mesurer la hauteur de neige.
+\end{description}
+\noindent
+Cependant mesurer une règlette peut paraître simple d'un point de vue de l'implémentation,
+mais présente plusieurs désavantages lors du fonctionnement:
+
+\begin{description}
+    \item[Il faut déneiger devant la caméra et la règlette] \hfill \\
+    demandant probablement à un ouvrier de descendre de son chasse-neige pour déneiger l'installation.
+    \item[L'installation ne doit pas être trop proche d'une route] \hfill \\ 
+    de risque d'être ensevelie ou endommagée lors du passage d'un chasse-neige.
+    \item[Si on utilise une règlette graduée] \hfill \\ 
+    il faut s'assurer d'avoir un matériau surlequel la neige ne colle pas ou 
+    ne réfléchis pas trop la lumière du soleil.
+    \item[L'utilisation d'un piquet peut demander l'usage d'une intelligence artificielle] \hfill \\
+    pour reconnaitre le piquet d'autres objets (p. ex.: arbres, lampadaires, ...) (ref\footnotemark[2])
+    Cela demanderait trop de puissance de calcul pour un système embarqué basse consommation.
+    Une autre solution serait de calibrer chaque installation pour reconnaître le piquet.
+    Cependant la caméra étant intégrée dans un système embarqué, cette calibration serait certainement
+    fastidieuse et demanderait une interface utilisateur supplémentaire pour la réaliser.
+\end{description}
+\footnotetext[2]{\emph{Snow Depth Measurement via Time Lapse Photography and Automated Image Recognition},
+by Kevin S. J. Brown and Steven R. Fassnacht at Colorado State University,
+Departement of Ecosystem Science and Sustainability, 2019, http://www.codos.org/\#lit}
+\newpage
+
+\subsection{Mesure de niveau par Stéréovision}
+La Stéréovision est une méthode de mesure se servant d'images provenant de plusieurs point de vue.
+Typiquement, deux caméras côte à côte, peuvent mesurer des profondeurs comme des yeux.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Images/computer_vision/stereovision.jpg}
+    \caption[]{Schéma de principe de mesure de distance par stéréovision}
+    \label{Stereovision}
+\end{figure}
+\noindent
+Beaucoup de caméra spécialisée dans la reconnaissance d'image par Intelligence artificielle utilise se principe
+pour estimer les distances (ex: OpenCV OAK cameras).
+Cette méthode demande trop de puissance de calcul pour un système embarqué basse consommation et ne fournit
+pas de résultat suffisamment précis pour mesurer une couche de neige.
+\newpage
+
+\subsection{Mesure du débit de chute de neige}
+Une mesure simple et rapide est d'estimer le débit de chute de neige en isolant les flocons.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.35\textwidth]{Images/computer_vision/snow_cam.png}
+    \includegraphics[width=0.35\textwidth]{Images/computer_vision/snowfall.png}
+    \caption[]{Image source de la caméra VibroSnow\footnotemark[1] et image avec les flocons isolés}
+    \label{Snowfall}
+\end{figure}
+\footnotetext[1]{VibroSnow camera, implemented at route du Pralan, Ayent, Suisse}
+\noindent
+Cette mesure, en parrallèle à une mesure de hauteur de neige, permettrait d'estimer 
+l'augmentation de cette hauteur au fil du temps. Fournissant ainsi une information supplémentaire
+aux services de déneigement.
+
+\subsection{Détection de route enneigée}
+Étant donné que la mesure de hauteur de neige par \emph{Computer Vision} serait trop complexe
+pour un système embarqué basse consommation, détecter si la route est enneigée ou non
+permettrait de fournir une redondance à une mesure de hauteur de neige fournie par un autre capteur.
+Si la petite zone mesurée par le capteur se retrouve mal déneigée, ou qu'un objet, comme un caillou, mal placé
+fausse la mesure du capteur, savoir si le segment de route est enneigé ou non permettrait d'éliminer ces erreurs.
+
+\subsection{Méthodes retenues}
+Les méthodes retenues pour ce projet de recherche sont \textbf{la mesure du débit de chute de neige}
+et \textbf{la détection de route enneigée}. Elles peuvent fournir des informations pertinentes
+pour le déneigement, tout en demandant relativement peu de puissance de calcul.
+\newpage
+
+\section{Implémentation}
+Pour tester les algorithmes de mesure avec des vidéos sur le terrain,
+Dr. Mudry Pierre-André et M. Matter Fabien nous on aimablement laissé accès à
+la caméra de notre projet parent \emph{VibroSnow\cite{VibroSnow}} et nous
+les remercions énormément.
+
+\subsection{Récupération des vidéos}
+La caméra de \emph{VibroSnow} détecte le passage d'objet (voitures, chute de neige,...) et
+enregistre une vidéo qui est ensuite transmise à un serveur \emph{Windows}.
+Bien que l'accès aux vidéos nous a été donné, nous ne pouvons pas aller chercher les vidéos
+directement sur le serveur \emph{Windows} car il est utilisé pour d'autres projets auxquels nous
+n'avons pas accès.\\
+Il a donc fallu créer un script \emph{Powershell}, transferant chaque jour les vidéos
+cumulées sur le serveur \emph{Windows} vers un serveur auquel nous avons accès.
+Un \emph{Raspberry Pi} a été mis en place comme serveur pour récuperer les vidéos.
+
+\subsection{Mesure du débit de chute de neige}
+La méthode utilisée pour détecter les chutes de neige se décompose ainsi :
+\begin{description}
+    \item[Soustraction de deux images] \hfill \\
+    pour isoler les éléments qui ont bougé entre les deux images
+    \item[Seuillage des niveaux de blancs sur l'image] \hfill \\
+    pour accentuer les chutes de neige
+    \item[Calcul du ratio de pixels blancs] \hfill \\
+    pour avoir un nombre correspondant au débit de chute de neige    
+\end{description}
+
+\begin{figure}[H]
+    \begin{subfigure}{.45\textwidth}
+        \includegraphics[width=\linewidth]{Images/computer_vision/snowfall/original.png}
+        \caption{Image originale}
+        \label{fig:Snowfall_original}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{.45\textwidth}
+        \includegraphics[width=\linewidth]{Images/computer_vision/snowfall/noise.png}
+        \caption{Image avec neige isolée}
+        \label{fig:Snowfall_noise}
+    \end{subfigure}
+    \hfill
+    \centering
+    \begin{subfigure}{.45\textwidth}
+        \includegraphics[width=\linewidth]{Images/computer_vision/snowfall/snowfall.png}
+        \caption{Image seuillée avec calcul du ratio de pixels blancs (9.05\% ici)}
+        \label{fig:Snowfall_thres}
+    \end{subfigure}
+    \caption{Étapes de la mesure de débit de chute de neige}
+    \label{fig:Snowfall_algorithm}
+\end{figure}
+\newpage
+
+\subsection{Détection de route enneigée}
+Deux méthodes ont été testées pour détecter si la route est enneigée ou non.\\
+La première réalise un simple seuillage des niveaux de blancs, et un calcul
+du ratio des pixels blancs sur l'image. On récupère plusieurs images et on
+calcul la moyenne du ratio de blanc sur toute les images.
+Cette moyenne est ensuite comparée à une moyenne similaire réalisée sur une
+vidéo de la route déneigée, en vérifiant qu'on se trouve au même moment de
+la journée (jour/nuit, matin/après-midi).\\
+La deuxième est identique, à l'exception d'une suppression du bruit réalisée
+avant le seuillage. Cette suppresion du bruit reprends la méthode d'isolation
+de neige utilisée pour mesurer le débit de chute de neige et soustrait cette image
+de bruit à l'image originale. Cette méthode demande un peu plus de calculs mais peut
+potentiellement générer un résultat plus fiable.
+
+\begin{figure}[H]
+    \begin{subfigure}{.45\textwidth}
+        \includegraphics[width=\linewidth]{Images/computer_vision/snowOnRoad/ref_original.png}
+        \caption{Image de référence originale}
+        \label{fig:SnowOnRoad_ref_original}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{.45\textwidth}
+        \includegraphics[width=\linewidth]{Images/computer_vision/snowOnRoad/ref_thres.png}
+        \caption{Image de référence seuillée}
+        \label{fig:SnowOnRoad_ref_thres}
+    \end{subfigure}
+    \caption{Image de référence}
+    \label{fig:SnowOnRoad_ref}
+\end{figure}
+
+\begin{figure}[H]
+    \begin{subfigure}{.45\textwidth}
+        \includegraphics[width=\linewidth]{Images/computer_vision/snowOnRoad/test_original.png}
+        \caption{Image de test originale}
+        \label{fig:SnowOnRoad_test_original}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{.45\textwidth}
+        \includegraphics[width=\linewidth]{Images/computer_vision/snowOnRoad/test_thres.png}
+        \caption{Image de test seuillée}
+        \label{fig:SnowOnRoad_test_thres}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{.45\textwidth}
+        \includegraphics[width=\linewidth]{Images/computer_vision/snowOnRoad/test_denoised.png}
+        \caption{Image de test avec suppression de bruit}
+        \label{fig:SnowOnRoad_test_denoised}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{.45\textwidth}
+        \includegraphics[width=\linewidth]{Images/computer_vision/snowOnRoad/test_denoisedThres.png}
+        \caption{Image de test avec suppression de bruit et seuillée}
+        \label{fig:SnowOnRoad_test_denoisedThres}
+    \end{subfigure}
+    \caption{Image de test}
+    \label{fig:SnowOnRoad_test}
+\end{figure}
+\newpage
+
+
+\section{Résultats}
