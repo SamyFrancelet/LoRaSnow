@@ -1,0 +1,25 @@
+\documentclass[11pt,titlepage]{report}
+\usepackage{Preamble}
+%\addbibresource{ref.bib}
+
+\begin{document}
+
+\begin{titlepage}
+	\newgeometry{margin=3cm}
+	\centering
+    \includegraphics[width=0.75\linewidth]{hes/hei}\\[1cm] 	% University Logo
+    \textsc{\LARGE Haute école d'ingénieur du Valais}\\ \vspace{\fill}
+    \textbf{\textsc{\fontsize{35}{35}\selectfont Report Name}}\\ \vspace{\fill}
+	\textsc{\LARGE Course name}\\[0.4cm]
+	\rule{\linewidth}{0.2 mm} \\[0.5 cm]
+	Author Name \\
+	\today
+\end{titlepage}
+\restoregeometry
+
+\tableofcontents
+
+\chapter{Partie mécanique}
+\input{3-MethodsMechanical.tex}
+
+\end{document}
