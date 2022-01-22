@@ -10,6 +10,29 @@ d'une centaine de mesures, il était parfaitement capable de mesurer une distanc
 le débit de fausse neige devant le capteur. Cette information est essentielle pour un fonctionnement en
 condition réelle. De cette manière, nous savons que la neige ou le brouillard ne poseront pas de problèmes 
 pour effectuer les mesures. La méthode de mesure du maximum a par ailleurs été retenue.\\
-
+Comme ce projet est à même de devoir résister à de grandes variations de température entre le jour et
+la nuit. Cependant, cette différence ne doit en aucun cas avoir des répectutions sur les mesures effectuées.
+Heureusement, il semble que le capteur soit stable en température, restant majoritairement dans son 
+erreur typique.\\
+Après que les tests ci-dessus soient validés, nous avons pu nous concentrer sur une méthode de mesure de 
+hauteur en laboratoire. Nous avons ainsi constaté que le capteur arrive à calculer la hauteur d'un élément,
+même avec du bruit généré devant lui. Il faut cependant faire attention à la porosité du matériau mesuré. En
+effet, certaines épaisseurs ont été fortement faussées. Cette étape a aussi permis de définitivement valider
+la méthode du maximum pour le test suivant.\\
+Finalement, le 4 décembre 2021, nous avons pu faire une nuit de mesure sur le terrain. Le LiDAR a été en
+mesure de calculer la hauteur de neige présente sur la route, et ce avec une
+précision de 7 milimètres! Ce test final a permis de valider le \emph{proof of concept} de cette méthode. De plus amples
+recherches et essais doivent être effectués afin de totalement valider ou abandonner ce capteur, mais les
+résultats actuels sont prometteurs.\par 
+Il est important de noter que, comme prévu, le LiDAR ne fonctionne pas de jour, même lorsque le ciel
+est complètement couvert. Cela ne pose en aucun cas un problème. En effet, ce projet est fait pour 
+majoritairement fonctionner la nuit.
 
 \section{Problèmes rencontrés}
+
+\begin{description}
+    \item[Porosité du matériau mesuré] \hfill \\ 
+    Nous savons que le LiDAR a des difficultés à mesurer des distances sur des matériaux poreux. Cependant,
+    les essais sur le terrain avec de la véritable neige n'ont monté aucune erreur. Il serait nécessaire
+    d'approfondir les recherches afin de déterminer si certaines neiges peuvent provoquer ce problème.
+\end{description}
