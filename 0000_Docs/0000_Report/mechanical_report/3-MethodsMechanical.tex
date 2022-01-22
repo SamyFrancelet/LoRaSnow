@@ -186,28 +186,27 @@ des fixations n’a pas été une priorité. L’objectif qui était d’avoir u
 \newpage
 \section{Boitier}
 
-L’électronique ainsi que les capteurs doivent être protégés, les mesures se passant en milieu non 
-favorable (neige, pluie, vents…). La conception du boitier devra assurer une bonne étanchéité des 
-composants. Pour cela il faut un boitier sur mesure répondant à beaucoup de critères comme un encombrement 
-optimisé, une fixation permettant de mettre le boitier sur plusieurs styles de support et surtout 
-une simplicité de conception. Garantir une simplicité de conception dans un encombrement limité est
-un défi complexe.\par
-La configuration de base du boitier était d’avoir un LiDAR et une caméra qui travaillent ensemble, 
-le liDAR permettant d’avoir une mesure de hauteur de neige et la webcam d’avoir une mesure sur le débit 
-de neige. Une carte de développement ainsi qu’une carte d'extension spécifique doit être intégré. Une batterie 
-permet au système de fonctionner de manière autonome.
+Les mesures se passant en milieu non favorable (neige, pluie, vents…), L’électronique ainsi que les capteurs 
+doivent être protégés. La conception du boitier devra assurer une bonne étanchéité. Pour cela il faut un 
+boitier sur mesures répondant à beaucoup de critères comme un encombrement optimisé, une fixation permettant 
+de mettre le boitier sur plusieurs styles de supports et surtout une simplicité de conception. Garantir une 
+simplicité de conception dans un encombrement limité devient vite compliqué. \par
+La configuration de base du boitier est d’avoir un LiDAR et une caméra qui travaillent ensemble. Le LiDAR 
+permet d’avoir une mesure de hauteur de neige et la caméra d’avoir une indication sur le débit de neige. 
+Une carte de développement ainsi qu’un Shield spécifique doive être intégré. Une batterie permet au système 
+de fonctionner de manière autonome. Si la solution devait être reliée au secteur beaucoup d’endroits potentiels 
+de mesures en serait restreint. C’est pourquoi la solution d’une batterie fut retenue. 
 
 \subsection{Vitre}
 
-Le premier défi réside dans le fait d’avoir une partie du boitier transparente tout en gardant ses caractéristiques d'étanchéité, 
-le but étant d’incruster une ou plusieurs vitres pour que les capteurs puissent effectuer leurs mesures 
-sans être perturbé par des problèmes d’eau ou de poussière. La vitre doit rester remplaçable facilement 
-en cas de casse ou d’usure. Un appareil qui est particulièrement étanche et qui permet une vision à 
-travers un boitier est la GoPro. Sur les anciens modèles, la vitre est démontable. Le système qui permet 
-à cette dernière d’être étanche et composé d’un joint qui vient pincer entre les deux surfaces en contact. 
-Le principe étant le même que celui recherché, il a été retenu et adapté.Lla solution est plus 
-amplement détaillée à la figure \ref{fig:vitre}, la vitre en bleu vient pincée sur le joint par la plaque du haut. La pression est 
-maintenue par les vis ce qui garantit l’étanchéité.
+Le premier défi est d’avoir une partie du boitier transparente sans pour autant ne plus être étanche. Le but 
+étant d’incruster une ou plusieurs vitres pour que les capteurs puissent effectuer leurs mesures sans être 
+perturbés par des problèmes d’eau ou de poussière. La vitre doit rester remplaçable facilement en cas de 
+casse ou d’usure. Un appareil qui correspond à ces caractéristiques est la GoPro. Sur les anciens modèles, 
+la vitre est démontable. Le système qui permet à cette dernière d’être étanche est composé d’un joint qui 
+vient se pincer entre les deux surfaces en contact. Ci-dessous, la solution est plus amplement détaillée (figure \ref{fig:vitre}), 
+la vitre en bleu vient pincée sur le joint par la plaque du haut. La pression est maintenue par les vis ce 
+qui garantit l’étanchéité.
 
 \begin{figure}[H]
     \centering
@@ -217,20 +216,19 @@ maintenue par les vis ce qui garantit l’étanchéité.
     \label{fig:vitre}
 \end{figure}
 
-Dans le cas où ces pièces sont faites en plastique, l’utilisation de vis auto taraudeuse ou d’insert 
-filetés seraient utilisés. Les vis auto taraudeuses sont plus simple à mettre en place et tout aussi 
+Dans le cas où ces pièces seraient faites en plastique, l’utilisation de vis auto taraudeuse ou d’insert 
+filetés pourraient être utilisés Les vis auto taraudeuses sont plus simple à mettre en place et tout aussi 
 efficace. \\
-Dans le cas de pièces métalliques, un simple taraudage suffit. L’utilisation de frein filet est 
-envisageable mais étant donné que la pièce sert un joint élastique, il devrait absorber la plupart 
-des vibrations.\par 
-Pour permettre au capteur de faire des mesures, il faut une zone du boitier transparente. Un verre 
-était la solution. Cependant ce n’est pas aussi simple. En effet, le capteur fonctionne dans les infrarouges 
-proches (940nm). Tous les verres ne permettent pas le passage de ces rayons. Sur le graphique de la figure \ref{fig:wavelength}, 
-la capacité à laisser passer les rayons en fonction de la longueur d’onde est exprimé. Sans étonnement, 
-le verre de quartz est le plus adapté.\\
-De plus, les verres de quartz et de silice offrent une grande résistance aux hautes températures et 
-aux chocs thermiques. Ils ont une grande homogénéité et permettent une excellente transmission de la 
-lumière visible, mais aussi des rayonnements ultraviolets et infrarouges proches\footnotemark[1].
+Dans le cas de pièces métalliques, un simple taraudage suffit. L’utilisation de freins filet est envisageable 
+mais étant donné que la pièce serre un joint élastique, il absorbera la plupart des vibrations.\par 
+Afin de permettre au capteur de faire des mesures, il faut une zone du boitier transparente. L’utilisation 
+de verre est la solution. Cependant ce n’est pas aussi simple, le capteur fonctionne dans les infrarouges proches 
+(940nm). Tous les verres ne permettent pas le passage de ces rayons. Sur le graphique ci-dessous, la capacité à 
+laisser passer les rayons en fonction de la longueur d’onde est exprimé. Sans étonnement, le verre de quartz est 
+le plus adapté.\\
+De plus, les verres de quartz et de silice offrent une grande résistance aux hautes températures et aux chocs 
+thermiques. Ils ont une grande homogénéité et permettent une excellente transmission de la lumière visible, mais 
+aussi des rayonnements ultraviolets et infrarouges proches\footnotemark[1].
 
 %\footnotetext[1]{https://www.researchgate.net/figure/Color-online-Optical-transmittance-spectra-of-quartz-glass-asdeposited-ZnO-and_fig4_274430836}
 
@@ -243,11 +241,11 @@ lumière visible, mais aussi des rayonnements ultraviolets et infrarouges proche
 
 \subsection{Modification des composants internes}
 
-Durant une bonne première partie du projet, la caméra et le lidar devaient être inclus dans le boitier. 
-Un choix au niveau de la disposition des vitres était nécessaire. Dans la première configuration, chaque 
-capteur possède une vitre adaptée à son boitier. Le design est très original cependant le fait de faire 
-ça augmente la complexité du montage et des pièces utilisées. Il n’y a aucun réel intérêt à faire ce design 
-plutôt qu’une simple grande vitre. La figure \ref{fig:boitierv1} montre la première version du boitier.
+Durant une bonne première partie du projet, la caméra et le lidar devaient être inclus ensemble dans le boitier. 
+Un choix au niveau de la disposition des vitres était nécessaire. Dans la première configuration, 
+chaque capteur possède une vitre adaptée à son boitier. Le design est très original cependant le fait de faire ça 
+augmente la complexité du montage et des pièces utilisées. Il n’y a aucun réel intérêt à faire ce design plutôt 
+qu’une simple grande vitre (figure \ref{fig:boitierv1}).
 
 \begin{figure}[H]
     \centering
@@ -257,20 +255,20 @@ plutôt qu’une simple grande vitre. La figure \ref{fig:boitierv1} montre la pr
     \label{fig:boitierv1}
 \end{figure}
 
-Durant une séance, la suppression de la stéréovision dans le boitier a été décidée. Ce choix a remis en cause 
-le design de ce dernier. L’encombrement se retrouve réduit et l’utilisation de deux verres n’est plus 
-nécessaire. 
+Durant une séance, la suppression de la stéréovision dans le boitier fut décidée. Ce choix remis en cause le design 
+de ce dernier. L’encombrement se retrouvait réduit et l’utilisation de deux verres n’était plus une question à se 
+poser. 
 
 \subsection{Etanchéité}
 
-Lors de la suite de la conception, l’étanchéité de la boite posait beaucoup de difficulté. La situation de 
-l’ouverture pour accéder à l’intérieur était aussi une question à bien se poser.\\
-La solution pour l’étanchéité du mécanisme d’ouverture du boitier fut inspirée des boitiers étanches fortement 
-utilisé dans l’industrie pour protéger des composants électroniques. Le principe est très simple, il suffit 
-de faire une gorge dans la partie non amovible afin de pouvoir loger le joint. La partie amovible qui dans 
-notre cas est le couvercle, est composé d’un petit bourlet qui va venir écraser le joint lors de la fermeture 
-afin d’assurer une très bonne étanchéité. L’élasticité du joint permettra d’avoir constamment une étanchéité.
-La figure \ref{fig:etanche} montre le système d'étanchéité.
+Lors de la suite de la conception, l’étanchéité de la boite posa beaucoup de difficultés. La situation 
+de l’ouverture pour accéder à l’intérieur était aussi une question à bien se poser. \\
+La solution pour l’étanchéité du mécanisme d’ouverture fut inspirée des boitiers étanches fortement 
+utilisés dans l’industrie pour protéger les composants électroniques. Le principe est très simple, il 
+suffit d’une gorge dans la partie non amovible afin de pouvoir loger un joint. La partie amovible, qui 
+dans notre cas est le couvercle, est composée d’un petit bourlet qui va venir écraser le joint lors de 
+la fermeture afin d’assurer une très bonne étanchéité. L’élasticité du joint, sous contrainte, permettra 
+d’avoir constamment une étanchéité. 
 
 \begin{figure}[H]
     \centering
@@ -281,12 +279,12 @@ La figure \ref{fig:etanche} montre le système d'étanchéité.
 
 \subsection{Problèmes de buée}
 
-Le système ne consommant que très peu courant (-100mA pendant env 2 min sinon en mode sleep dans les uA), 
-les problèmes de buées ne devraient pas poser trop de soucis. L’humidié dans le boitier se condense à cause 
-du froid de la vitre et forme une couche de buée. Cette buée pourrait nuire au bon fonctionnement du capteur. 
-La solution pour enlever au maximum l’humidité dans le boitier sont les sachets de silica gel. Un espace 
-permettra de pouvoir en disposer deux dans le boitier. 
-Malheureusement par manque de temps, des essais n’ont pas pu être réalisé pour prouver le bon fonctionnement 
+L’humidié dans le boitier se condense à cause du froid de la vitre et forme une couche de buée. Cette buée 
+pourrait nuire au bon fonctionnement du capteur. Le système ne consommant que très peu courant (-100mA pendant
+env 2 min sinon en mode sleep dans les uA), les problèmes de buées ne sont normalement pas un problème. La solution 
+pour enlever au maximum l’humidité dans le boitier sont les sachets de silica gel. Un espace permettra 
+de pouvoir en disposer deux dans le boitier. \\
+Malheureusement par manque de temps, des essais n’ont pas pu être réalisés pour prouver le bon fonctionnement 
 de cette solution. Cependant cette méthode est déjà très rependue et n’a pas besoin de faire ses preuves.
 
 \subsection{Premier prototype}
