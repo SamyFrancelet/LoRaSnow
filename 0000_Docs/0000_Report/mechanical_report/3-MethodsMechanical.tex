@@ -1,23 +1,26 @@
-Afin de savoir si les capteurs choisis vont fonctionner, il a fallu effectuer une série de simulations. 
-Le premier défi était de simuler de la neige en pleine été. Etant donné que des canons à neige ou autres 
-dispositifs du style n’étaient pas disponibles, de la fausse neige a dû être fabriquée. Cependant, simuler 
-des chutes de neige implique des importantes salissures. Un banc de test a donc été mis en place pour effectuer 
-ces tests de manière propre. Pour simuler la neige qui tombe, un canon a confettis permit de le faire. 
-Ces mesures ont grandement aidé à l’avancement du projet.\par 
-Le deuxième grand défi était de compacter toute la partie électronique dans un boitier pouvant résister aux 
-intempéries. Une carte de développement, un Shield, des batteries ainsi que d’autres composants doivent être 
-à l’abri dans ce boitier. Pour assurer des mesures fiables et la survie de l’électronique, l’étanchéité du 
-boitier est nécessaire. La simplicité du démontage est aussi recherchée, elle permettra aux personnes de 
-gagner du temps lors du montage ou de la maintenance.
+Dans le but d'effectuer une série de tests avec les capteur choisis, il a fallu simuler un environnement 
+similaire aux conditions réelles. Le premier défi est de simuler de la neige en plein été. Etant donné 
+que des canons à neige ou autres dispositifs équivalents n’étaient pas disponibles, de la fausse neige 
+a dû être fabriquée. Cependant, simuler des chutes de neige implique des importantes salissures. Un 
+banc de test a donc été mis en place pour effectuer ces tests de manière propre. Pour simuler la neige 
+qui tombe, un canon à confettis a permis de le faire. Ces mesures ont grandement aidé à l’avancement 
+du projet.\par 
+Le deuxième grand défi est de compacter toute l'électronique dans un boitier pouvant résister aux 
+intempéries. Une carte de développement, une carte d'extension, des batteries ainsi que d’autres composants 
+doivent être à l’abri dans ce boitier. Pour assurer des mesures fiables et la survie de l’électronique, 
+l’étanchéité du boitier est nécessaire. La simplicité du démontage est aussi recherchée, elle permettra 
+aux personnes de gagner du temps lors du montage ou de la maintenance.
 
 \section{Banc de test}
 
-Durant l’étape de réflexions deux capteurs ont été retenus. Cependant les moyens pour essayer ces derniers 
-étaient restreints. Afin d’avoir un espace pour effectuer des tests volatiles sans impacter nos collègues, 
-un banc d’essai a été mis en place. \\
-Le but était d’avoir assez de place dans une zone fermée pour être 3 personnes à l’intérieur tout en créant 
-des nuages de confettis. Ces nuages ne devaient en aucun cas gêner les autres personnes dans la salle de classe. 
-Une cage avec une base de 2m par 1.5m et 1.5m de haut a été développé. 
+Durant l’étape de recherche, deux méthodes de mesure ont été retenues. Cependant, les possibilités pour 
+attester de leur bon fonctionnement sont restreintes. Afin d’avoir un espace pour effectuer des tests 
+volatiles sans impacter nos collègues, un banc d’essai a été mis en place. \\
+Il est nécessaire que ce banc de test soit assez grand pour que trois personnes puissent effectuer des 
+essais avec les capteurs choisis. Les nuages de confettis générés ne doivent en aucun cas gêner les 
+autres personnes présentes dans la salle de classe. Une cage avec une base de 2m par 1.5m et 1.5m de 
+haut a été développée. La figure \ref{fig:encombrement} montre les étapes de conception de ce banc 
+de test.
 
 \begin{figure}[H]
     \centering
@@ -28,34 +31,33 @@ Une cage avec une base de 2m par 1.5m et 1.5m de haut a été développé.
     \label{fig:encombrement}
 \end{figure}
 
-La structure nécessitait d’être rapidement construite. Sans elle, les essais auraient été bien plus 
-compliqués. Une structure en bois a donc été retenue pour sa simplicité à être travaillée. Les façades 
-de la cage ont été réalisées avec des bâches de protections épaisses qui furent agrafées sur la structure 
-en bois. Les planches en bois ont été assemblées à l’aide d’équerres en métal et de vis à bois. Toutes 
-les fournitures ont été trouvées chez Hornbach.\\
-Afin d’avoir une très bonne rigidité, la structure aurait pu être triangulé avec des poutres en bois en 
-plus. Cependant la structure étant exposé à quasiment aucune contrainte, la rigidité rajoutée par les 
-bâches de protections épaisses agrafée était largement suffisante. Cette configuration nous a permis 
-d’économiser du temps et de l’argent.
+Comme des essais doivent être réalisés dès les premières semaines du projet, la structure a dû être
+rapidement construite. Une structure en bois a donc été retenue pour sa simplicité de montage. 
+Les façades de la cage ont été réalisées avec des bâches de protections épaisses que nous avons aggrafé 
+sur la structure. Les planches ont été assemblées à l’aide d’équerres en métal et de vis à bois.\\
+Afin d’avoir une bonne rigidité, la structure aurait pu être triangulé avec des poutres en bois. 
+Cependant, le banc de test étant exposé à quasiment aucune contrainte mécanique, la rigidité ajoutée par 
+les bâches de protections est largement suffisante. Cette configuration nous a permis d’économiser du 
+temps et de l’argent.
 
 \subsection{Fausse neige (confettis)}
 
 \subsubsection{Problématique}
 
-Simuler de la neige en plein été est quelque chose de compliqué. La température ne jouant pas en notre 
-faveur, la solution retenue était d’utiliser des confettis blancs. À la suite d’une commande impossible 
-de confettis (rupture de stock), une autre solution dure être trouvée rapidement.
+Simuler de la neige en plein été représente un défi supplémentaire. La température ne jouant pas en notre 
+faveur, la solution retenue est d’utiliser des confettis blancs. À la suite d’une commande impossible 
+de confettis (rupture de stock), nous avons rapidement dû trouver une autre solution.
 
 \subsubsection{Méthode}
 
-La première chose envisagée était de regarder dans les bacs des perforatrices automatiques situées 
+La première idée envisagée consiste à regarder dans les bacs des perforatrices automatiques situées 
 dans les imprimantes de l’école. Malheureusement ces derniers étaient vidés régulièrement. La quantité 
 trouvée était plus qu’insuffisante.\\
-La deuxième solution, celle qui a été retenue, était d’utiliser la déchiqueteuse du secrétariat. Cette 
-démarche n’était pas des plus écologique, mais elle a permis de pouvoir avoir les confettis rapidement. 
+La deuxième solution, celle qui a été retenue, est d’utiliser la déchiqueteuse du secrétariat. Cette 
+démarche n’était pas des plus écologique, mais elle a permis de pouvoir créer les confettis rapidement. 
 Un paquet de feuille blanche a été détruit pour fabriquer un carton plein de lamelle blanche s’apparentant 
 à des confettis ou de la grosse neige. \\
-Le remplissage du carton ci-dessous a pris environ une heure. 
+Le remplissage du carton à la figure \ref{fig:confettis} a pris environ une heure. 
 
 \begin{figure}[H]
     \centering
@@ -67,25 +69,25 @@ Le remplissage du carton ci-dessous a pris environ une heure.
 
 \subsection{Canon à confettis}
 
-La meilleure solution pour simuler la chute des flocons est de projeter des confettis de la manière la 
-plus continue possible vers le haut. Les premiers essais ont été effectué en les jetant manuellement 
-devant les capteurs. Cependant, il fallait avoir un débit constant afin de pouvoir faire des séries de
+La meilleure solution pour simuler la chute des flocons est de projeter des confettis vers le haut 
+de la manière la plus continue possible. Les premiers essais ont été effectués en les jetant manuellement 
+devant les capteurs. Cependant, un débit constant était nécessaire afin de pouvoir effectuer des séries de
 mesures et déterminer plus précisément les erreurs. 
 
 \subsubsection{Principe de fonctionnement}
 
-En regardant les canons à confettis existants qui la plupart fonctionnent par à-coup d’air comprimé 
-(effet non désiré) une solution avec un débit d’air plus faible fonctionnant par effet venturi fut 
-retenue. Le principe de base (inspiré des carburateurs) était, grâce à un débit d’air régulier dans 
-notre cas, d’aspirer des confettis introduit dans un réservoir grâce à une baisse de pression à un 
-endroit précis. La première version se composait d’un tube principal avec une réduction de section. 
-Ce tube était parcouru par le débit d’air constant. Un réservoir de confettis se situait au-dessus 
-de la zone de dépression (réduction de section). Un petit coude déposé dans le réservoir permettait 
-aux confettis de pouvoir mieux couler dans le tube principal.\par 
-Sur le schéma ci-dessous, le principe y est bien représenté. Le débit d’air constant en noir arrive 
-au niveau du réservoir, la section diminuant la pression diminue aussi. En diminuant une dépression 
-a ce niveau est créé, un phénomène d’aspiration ce produit. En ressortent de ce système, un mélange 
-d’air et de confettis.
+Des recherches concernant des solutions déja existantes ont été effectuées. Malheureusement, la plupart 
+utilisent un principe d'à-coup d'air comprimé, un effet non désiré. Finalement, un canon avec un 
+débit d'air plus faible a été retenu, fonctionnant par effet Venturi.
+Le principe de base (inspiré des carburateurs) est, grâce à un débit d’air régulier dans 
+notre cas, d’aspirer des confettis introduits dans un réservoir grâce à une baisse de pression à un 
+endroit précis. La première version est constituée d’un tube principal avec une réduction de section, où
+on retrouve un débit d'air constant. Les confettis sont stockés dans un réservoir au-dessus de la zone 
+de dépression, d'où ils sont aspirés vers un petit coude, leur permettant de mieux couleur dans le 
+tube principal.\par 
+Sur le schéma de la figure \ref{fig:venturi}, le principe du canon y est représenté. Le débit d’air constant 
+(en noir) arrive au niveau du réservoir, la section diminuant, la pression diminue aussi. Ainsi, un phénomène 
+d’aspiration se produit. De cette manière, un mélange d'air et de confettis est projeté.
 
 \begin{figure}[H]
     \centering
@@ -94,53 +96,54 @@ d’air et de confettis.
     \label{fig:venturi}
 \end{figure}
 
-Cette première version fut rapidement envoyée dans l’atelier pour être imprimée en 3d afin d’effectuer 
-les premiers tests et les éventuelles corrections du canon. Voici une photo du tube principale imprimé 
-en PETG grâce à l’imprimante 3d de l’école.
+Cette première version fut rapidement envoyée à l’atelier pour être imprimée afin d’effectuer 
+les premiers tests et les éventuelles corrections du canon. La figure \ref{fig:3DPrintCanon} montre 
+le tube principale imprimé en PETG grâce à l’imprimante 3D de l’école.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{Images/photos_PGA/CanonBloc.jpg}
+    \includegraphics[width=0.35\textwidth]{Images/photos_PGA/CanonBloc.jpg}
     \caption{Exemple d'impression 3D du canon}
     \label{fig:3DPrintCanon}
 \end{figure}
 
 \subsubsection{Turbine}
 
-Un paramètre indispensable était d’avoir une source d’air continue avec un bon débit. La classe étant 
-équipée d’air comprimé, il suffisait de l’utiliser pour avoir un bon débit d’air constant. Cependant, 
-le bâtiment étant encore pas terminé les raccords d’air n’était pas fixé. Une autre solution demandait 
-à être trouvée. Il se trouve, qu’une turbine alimentée par un moteur à courant continue était la bonne 
-solution. Premièrement, ce dispositif est assez simple, pour régler la vitesse de rotations il suffit 
-de changer le voltage aux bornes du moteur. Deuxièmement la mécanique est très facilement intégrable 
-au canon. Cette solution permit de ne plus se soucier des histoires de débit d’air.
+Un paramètre indispensable est d’avoir une source d’air continue avec un débit satisfaisant. La salle de classe étant 
+équipée d’air comprimé, il suffit de l’utiliser pour avoir un débit d’air constant. Cependant, 
+le bâtiment étant encore en travaux, les raccords d’air n’étaient pas sertis. Une autre solution doit 
+être trouvée. Une turbine alimentée par un moteur à courant continue se trouve être la bonne 
+solution. Premièrement, ce dispositif est relativement simple. En effet, pour régler la vitesse de rotations, il suffit 
+de changer la tension aux bornes du moteur. Deuxièmement, la mécanique est facilement intégrable 
+au canon. Cette solution permet de ne plus se soucier des problèmes de débit d’air. La figure \ref{fig:turbine}
+montre la pièce d'adaptation entre la turbine et le tube principal.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.35\textwidth]{Images/photos_PGA/adaptmotventi.PNG}
-    \includegraphics[width=0.4\textwidth]{Images/photos_PGA/zoomTurbine.jpg}
+    \includegraphics[width=0.25\textwidth]{Images/photos_PGA/adaptmotventi.PNG}
+    \includegraphics[width=0.25\textwidth]{Images/photos_PGA/zoomTurbine.jpg}
     \caption{Turbine DC}
     \label{fig:turbine}
 \end{figure}
 
 \subsubsection{Problèmes rencontrés}
 
-A la suite de plusieurs tests, plusieurs choses se sont révélées problématiques. Premièrement, les 
-confettis « maison » ont une fâcheuse tendance à s’enchevêtrer les uns dans les autres, cela réduit 
-considérablement leurs capacités à bien couler dans le réservoir. Ce dernier se retrouvait sans cesse 
+A la suite d'une série de tests, plusieurs éléments se sont révélés problématiques. Premièrement, les 
+confettis confectionnés ont une tendance à s’enchevêtrer les uns dans les autres, et cela réduit 
+considérablement leurs capacités à couler dans le réservoir. Ce dernier se retrouvait sans cesse 
 bouché. Grace aux tests, le fait d’agrandir le passage des confettis permettrai d’avoir un meilleur 
-écoulement et de limiter la formation des bouchons.
+écoulement et de limiter la formation de bouchons.
 
 \subsubsection{Solution apportée}
 
-En prenant compte des problèmes survenu lors des premiers essais, une deuxième version fut modélisée. 
-Cette fois ci avec un réservoir plus grand et un angle de remplissable plus faible. Le coude passe 
-de 28mm de diamètre à 34 mm et cette fois ci il est imprimé directement sur le tube principal afin 
-d’éviter les angles trop saillants qui pourraient causer un blocage. Afin d’obtenir un coude plus large 
-il a fallu augmenter le changement de section dans le tube principale. Refaire complètement la pièce 
-pour tout faire plus grand aurait possible pour avoir plus d’aspiration. Cependant, le fait de garder 
-les dimensions de bases permettait de gagner du temps et d’éviter d’avoir à refaire des impressions 
-pour rien ou de racheter du matériel en plus.
+En prenant en compte les problèmes survenu lors des premiers essais, une deuxième version a été modélisée, 
+cette fois-ci avec un réservoir plus grand et un angle de remplissable plus faible. Le coude passe 
+de 28mm de diamètre à 34 mm. Ce dernier est maintenant directement imprimé dans le tube principal afin 
+d’éviter les angles trop saillants qui pourraient causer un blocage, comme le montre la figure \ref{fig:venturiv2}. 
+Afin d’obtenir un coude plus large 
+il a fallu augmenter le changement de section dans le tube principal. Nous aurions eu la possibilité de 
+totalement refabriquer la pièce pour avoir une plus grande aspiration. Cependant, le fait de garder 
+les dimensions de bases permettait de gagner du temps et d’éviter de relancer des impressions 3D inutilement.
 
 \begin{figure}[H]
     \centering
@@ -152,26 +155,26 @@ pour rien ou de racheter du matériel en plus.
 Lors des essais de la nouvelle version, le changement était notable. Le fait d’avoir augmenté le diamètre 
 du coude et de l’avoir imprimé en une fois avec le tube principal a réduit fortement les angles saillants. 
 Les lamelles de papiers continuaient à se coincer de temps en temps mais l’objectif d’avoir un débit 
-constant pendant une bonne minute a pu largement être atteint. Le canon était même capable s’il était 
+constant pendant plus d'une minute a pu largement être atteint. Le canon était même capable s’il était 
 placé réservoir vers le bas d’aspirer les confettis comme un aspirateur et de les rejeter comme de la 
-neige. 
+neige. On peut voir sur la figure \ref{fig:canonupdate} le canon en action.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.4\textwidth]{Images/photos_PGA/canonAction1.PNG}
-    \includegraphics[width=0.4\textwidth]{Images/photos_PGA/canonAction2.PNG}
+    \includegraphics[width=0.35\textwidth]{Images/photos_PGA/canonAction1.PNG}
+    \includegraphics[width=0.35\textwidth]{Images/photos_PGA/canonAction2.PNG}
     \caption{Mise en fonction du canon}
     \label{fig:canonupdate}
 \end{figure}
 
 Pour l’assemblage des différentes pièces du canon, comme ces dernières étaient très bien ajustées et 
-tenaient sans rien entres elles, le fait d’utiliser des colles fortes spécifiques n’a pas été nécessaire. 
-L’utilisation de colle chaude pour garantir un non-détachement et un démontage plus simple fut utilisé. 
-Certaines pièces étant interchangeable, elles ne pouvaient pas être collé, l’utilisation de scotch pour 
-garantir aucun déboitement fut très pratique. Cet appareil a surtout été conçu dans un but d’avancer 
-les mesures rapidement et le temps de conception/réalisation était très court, c’est pourquoi la complexité 
-des fixations n’a pas été la priorité. L’objectif qui était d’avoir un débit de neige constant a donc 
-été atteint.
+tenaient entres elles, utiliser des colles fortes spécifiques n’a pas été nécessaire. 
+L’utilisation de colle chaude pour garantir un non-détachement et un démontage plus simple a été utilisé. 
+Certaines pièces étant interchangeables, elles ne pouvaient pas être collées. Par conséquent, l’utilisation de scotch pour 
+garantir aucun déboitement a été privilégié. Cet appareil a surtout été conçu dans un but d'effectuer 
+les mesures rapidement et le temps de conception/réalisation était très court. C’est pourquoi la complexité 
+des fixations n’a pas été une priorité. L’objectif qui était d’avoir un débit de neige constant a donc 
+été atteint. La figure \ref{fig:canonensemble} montre l'assemblage final du canon à confettis.
 
 \begin{figure}[H]
     \centering
@@ -180,18 +183,19 @@ des fixations n’a pas été la priorité. L’objectif qui était d’avoir un
     \label{fig:canonensemble}
 \end{figure}
 
+\newpage
 \section{Boitier}
 
 \subsection{Premier prototype}
 
 \subsubsection{Ouverture}
 
-À la suite de ça un prototype de boitier fut réalisé pour se rendre compte de l’encombrement, de la 
-praticité et du design. Le choix de l’ouverture était de la mettre à l’arrière du boitier avec le 
-système d’étanchéité démontré ci-dessus. Le maintien de la pression sur le joint était fait grâce à 
-4 vis qui venait directement prendre dans la base du boitier. Cette manière de fixer permet de ne 
-pas avoir de trou traversant le boitier. Cette méthode est la même que sur celle de la plupart des 
-boitier étanche.
+À la suite de ça, un prototype de boitier a été réalisé pour se rendre compte de l’encombrement, de la 
+praticité et du design. Il a été choisi de mettre l'ouverture à l’arrière du boitier, comprenant un
+système d’étanchéité démontré sur la figure \ref{fig:vuearriereboitier}. Le maintien de la pression 
+sur le joint était fait grâce à quatre vis qui venait directement prendre dans la base du boitier. 
+Cette manière de fixer permet de ne pas avoir de trou traversant le boitier. Cette méthode est la 
+même que sur celle utilisé dans de la plupart des boitiers étanches.
 
 \begin{figure}[H]
     \centering
@@ -202,9 +206,9 @@ boitier étanche.
 
 \subsubsection{Encombrement}
 
-En ce qui concerne l’encombrement de la carte de développement dans le boitier qui faisait 200mm de 
-long par 100mmx100mm, il y avait juste assez de place. Dans le cas ci-dessous il manque les batteries, 
-le capteur et le Shield.
+Comme le boitier possède un encombrement de 200mm x 100mm x 100mm, il faut une électronique de 
+moyenne taille. La figure \ref{fig:encombrementv1} montre l'espace disponible dans le boitier, sans 
+les batteries, le capteur et le module d'extension.
 
 \begin{figure}[H]
     \centering
@@ -214,42 +218,43 @@ le capteur et le Shield.
     \label{fig:encombrementv1}
 \end{figure}
 
-En avançant dans le design du boitier des difficulté quant à la fixation de l’électronique dans le boiter 
-se manifestèrent. L’utilisation d’une casquette devenait aussi complexe, ce n’est pas facile de devoir 
-fixer des choses sur un boitier sans faire des trous traversants. La fixation pour le bras était pensée 
-sous le boitier, cependant elle aurait aussi pu être prise sur les côtés en englobant la casquette. 
-À la suite de tous ces problèmes, le design fut complètement revisité.
+En avançant dans le design du boitier, des difficultés concernant la fixation de l’électronique dans le boiter 
+se sont manifesté. L’utilisation d’une casquette devenait aussi complexe, car il faut éviter à tout prix d'avoir
+des perçages traversants. La fixation du le bras a été pensée pour se trouver
+sous le boitier. Cependant elle aurait aussi pu être prise sur les côtés en englobant la casquette. 
+À la suite de tous ces problèmes, le design a été complètement revisité.
 
 \subsection{Version finale du boitier}
 
 Le dernier design est inspiré des caméras de surveillance récente. Ce boitier sera conçu à base de 
-polymère. Cette matière permet de limiter les transferts de chaleurs et les couts.
+polymère, qui permet de limiter les transferts de chaleurs et les coûts.
 
 \subsubsection{Matériaux}
 
-Matière
-Les deux matériaux les plus souvent retrouvés dans l’industrie pour les boitiers sont l’Acrylonitrile 
-butadiène styrène (abs) et le polycarbonate (pc). Le polycarbonate n’apprécie pas d’être exposé trop 
+Les deux matériaux les plus souvent retrouvés dans l’industrie pour les boitiers sont l’acrylonitrile 
+butadiène styrène (ABS) et le polycarbonate (PC). Le polycarbonate n’apprécie pas d’être exposé trop 
 longtemps à un environnement humide. Cela pourrait provoquer de l’hydrolyse et dégrader le boitier. 
-L’abs quant à lui est très résistant, il est notamment utilisé pour faire des barques de secours.  
-L’injection de l’abs est très rependue, ce matériau est notamment utilisé pour fabriquer les briques Lego. 
-Ce terpolymère montre une bonne résistance aux chocs jusqu'à -40 °C . Sa TG se situe aux alentours 110 
-degrés, ce qui est largement suffisent dans notre cas. Le problème de l’abs est qu’il a une mauvaise 
-résistance aux UV. L’utilisation d’un revêtement de protection UV sous forme de peinture est envisageable. 
-Ce processus permettrait d’augmenter la durée de vie du boitier. Le prix de l’abs se situe aux alentours 
-de 3200 euros la tonne\footnote{https://www.polyvia.fr/fr/prix-du-plastique-les-previsions-pour-2022}.\\
-L’aluminium aurai aussi pu être intéressant pour la fabrication de ce boitier. Cependant la fonderie 
-s’avère plus complexe et plus couteuse que l’injection plastique. Le prix de la matière serait quasiment 
-triplé. Les caractéristiques du polymère étant parfaitement suffisant, l’intérêt d’utiliser de l’aluminium 
+L’ABS quant à lui est très résistant. Il est notamment utilisé pour faire des barques de secours.  
+L’injection de ce polymère est très répendue. Il est notamment utilisé pour fabriquer les briques \emph{Lego}. 
+Ce terpolymère montre une bonne résistance aux chocs jusqu'à -40 °C. Sa température de transition vitreuse se 
+situe aux alentours 110 °C, ce qui est largement suffisant dans notre cas. Le problème de l’ABS est qu’il a une mauvaise 
+résistance aux rayons UV. L’utilisation d’un revêtement de protection UV sous forme de peinture est envisageable. 
+Ce processus permettrait d’augmenter la durée de vie du boitier. Le prix de l’ABS se situe aux alentours 
+de 3200 euros la tonne\footnotemark[1].\\
+L’aluminium aurait aussi pu être intéressant pour la fabrication de ce boitier. Cependant la fonderie 
+s’avère plus complexe et plus couteuse que l’injection plastique. Le prix de la matière aurait quasiment 
+triplé. Les caractéristiques du polymère étant parfaitement suffisantes, l’intérêt d’utiliser de l’aluminium 
 n’était donc pas nécessaires.
+
+\footnotetext[1]{https://www.polyvia.fr/fr/prix-du-plastique-les-previsions-pour-2022}
 
 \subsubsection{Ouverture}
 
-L’ouverture se fait par en haut à l’aide d’un couvercle amovible. Le système de d’étanchéité est le 
-même que pour les précédentes versions. Le maintien en pression sur le joint est effectué grâce à 
-une fixation dites grenouillère. La grenouillère dispense l’utilisation d’outils et permet un gain 
-de temps lors de l’ouverture et la fermeture. Cette dernière possède une serrure intégrée pour dissuader 
-des possibles vols.
+L’ouverture se fait par en haut à l’aide d’un couvercle amovible. Le système d’étanchéité est le 
+même que les précédentes versions. Le maintien en pression sur le joint est effectué grâce à 
+une fixation dites grenouillère, comme le montre la figure \ref{fig:ouverturev2}. La grenouillère 
+dispense l’utilisation d’outils et permet un gain de temps lors de l’ouverture et la fermeture. 
+Cette dernière possède une serrure intégrée pour dissuader de possibles vols.
 
 \begin{figure}[H]
     \centering
@@ -265,7 +270,8 @@ L’une des grandes forces de ce systèmes est son ouverture simplifiée. En eff
 comme une trappe. Cette spécificité permet d’avoir un bien meilleur accès à l’intérieur du système. 
 Cette particularité permet pouvoir manipuler aisément les éléments qui se situent à l’intérieur. Le 
 pivot est assuré par un axe (tube) fileté à ses deux extrémités. Deux vis viennent maintenir de chaque 
-côté l’axe afin qu’il ne puisse pas sortir de son logement.
+côté l’axe afin qu’il ne puisse pas sortir de son logement. Le système d'ouverture est représenté à la 
+figure \ref{fig:pivot}.
 
 \begin{figure}[H]
     \centering
@@ -278,9 +284,9 @@ côté l’axe afin qu’il ne puisse pas sortir de son logement.
 \subsubsection{Fixation de la casquette}
 
 La casquette qui se situe sur le couvercle est facilement démontable pour mettre un autre modèle ou 
-la changer en cas de dégradation Elle est fixée par 4 vis imbus qui viennent se loger dans des inserts 
+la changer en cas de dégradation Elle est fixée par quatre vis imbus qui viennent se loger dans des inserts 
 situés sur le dessus du couvercle. Les fixations de la casquette sont posées sur le couvercle, cette 
-configuration permet de soulager les efforts sur les supports.
+configuration permet de soulager les efforts sur les supports, comme le montre la figure \ref{fig:casquette}.
 
 \begin{figure}[H]
     \centering
@@ -292,23 +298,24 @@ configuration permet de soulager les efforts sur les supports.
 
 \subsubsection{Fixation du module}
 
-En ce qui concerne la partie intérieure, 4 supports sont intégrés dans le fond du boitier. Ces derniers 
+En ce qui concerne la partie intérieure, quatre supports sont intégrés dans le fond du boitier. Ces derniers 
 sont dimensionnés pour accueillir des inserts plastiques. Toute la partie électronique pourra par la 
-suite venir fixer sur le dessus. Mettre une vue en coupe avec la plaque de base fixée
+suite venir se fixer sur le dessus. La figure \ref{fig:fixbase} montre ces fixations.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.4\textwidth]{Images/photos_PGA/fixationbaseModule.PNG}
+    \includegraphics[width=0.35\textwidth]{Images/photos_PGA/fixationbaseModule.PNG}
     \caption{Fixation du module}
     \label{fig:fixbase}
 \end{figure}
 
 \subsubsection{Fixations des supports}
 
-La fixation du bras sera assurée par 4 écrou carrés situé sous le boitier. Cette solution permet de 
-ne pas à avoir à faire de trous dans le boitier pour maintenir une bonne étanchéité. C’est écrou sont 
-guidés dans une gorge afin d’être maintenu pendant le serrage. Le même principe est utilisé dans pour 
-fixer des éléments dans les armoires en automation.
+La fixation du bras sera assurée par quatre écrous carrés situé sous le boitier, comme le montre la figure 
+\ref{fig:supportfix}. Cette solution permet de 
+ne pas à avoir à faire de trous dans le boitier pour maintenir une bonne étanchéité. Ces écrous sont 
+guidés dans une gorge afin d’être maintenus pendant le serrage. Le même principe est utilisé pour 
+fixer des éléments dans les armoires d'automation.
 
 \begin{figure}[H]
     \centering
@@ -320,26 +327,28 @@ fixer des éléments dans les armoires en automation.
 
 \subsection{Module électronique}
 
-Cette partie est consacré au développement d’un module compact et simple composé de toute la partie 
-électronique. Ce module est fixé dans le boitier grâce aux 4 plots de fixations situés dans le fond 
-du boitier. L’interet de faire une construction mécanique est de pouvoir soutenir tous les composants 
-pour les empechers de se déplacer a leur guise. La simplicitée recherchée dans sa conception permetterai 
-aux opérateurs de gagner beaucoup de temps.
+Cette partie est consacrée au développement d’un module compact et simple composé de toute l'électronique, 
+comme montré sur la figure \ref{fig:elmodule}.
+Ce module est fixé dans le boitier grâce aux quatre plots de fixations situés dans le fond 
+du boitier. L’interêt de designer une construction mécanique est de pouvoir soutenir tous les composants 
+pour les empêcher de se déplacer à leur guise. La simplicitée recherchée dans sa conception permet
+aux opérateurs de gagner du temps.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{Images/photos_PGA/ModuleElec2-removebg-preview.png}
+    \includegraphics[width=0.5\textwidth]{Images/photos_PGA/ModuleElec2-removebg-preview.png}
     \caption{Module électronique}
     \label{fig:elmodule}
 \end{figure}
 
 \subsubsection{Base du support des batteries}
 
-La pièce de base est prévue pour accueillir 6 batteries 18650. Un espace légèrement plus grand est 
+La pièce de base est prévue pour accueillir 6 batteries 18650, que l'on retrouve à la figure \ref{fig:supportbatteries}.
+Un espace légèrement plus grand est 
 prévu. L’appellation 18650 signifie que l’élément rechargeable fait un diamètre de 18mm et une longueur 
-de 65mm. Des petites fentes furent aussi pensées pour faciliter un câblage série/parallèle entre les 
+de 65mm. Des petites fentes ont aussi été pensées pour faciliter un câblage série/parallèle entre les 
 éléments. Cette pièce est la fondation du module électronique, elle sera naturellement fixée dans le 
-boitier. Cette pièce est directement fixée dans le boitier grâce aux 4 trous de fixations.
+boitier grâce aux 4 trous de fixations.
 
 \begin{figure}[H]
     \centering
@@ -351,14 +360,14 @@ boitier. Cette pièce est directement fixée dans le boitier grâce aux 4 trous 
 
 \subsubsection{Plaque de fixation et PCB}
 
-Au-dessus de la pièce supportant les batteries, une plaque est fixée. Cette plaque est très importante 
-dans l’ensemble. C’est en quelques sorte la carte mère de l’ensemble. Tous les modules sont fixés autours 
-d’elle.  Elle permet grâce aux trois fixations situées aux extrémités de venir bloquer les batteries 
-pour pas quelles ne sortent de leurs logements. Ces trois trous sont prévus pour venir fixer la plaque 
-sur le module de bas.  Les 4 autres trous servent à fixer la partie PCB. 4 vis à tête fraisée seront 
-insérées dans les trous fraisés afin de venir fixer des entretoises en plastiques. Sur ces entretoises 
-en plastique les circuits imprimés pourront être fixé à l’aide de visses en plastiques. Ces composants 
-plastique permettent d’éviter tout risque de court-circuit.
+Au-dessus de la pièce supportant les batteries, une plaque est fixée. Cette dernière est très importante 
+dans l’ensemble. Elle permet grâce aux trois fixations situées aux extrémités de venir bloquer les batteries 
+pour éviter qu'elles ne bougent. Ces trois trous sont prévus pour venir fixer la plaque 
+sur le module du bas. Les quatre autres servent à fixer la partie PCB. Quatre vis à tête fraisée seront 
+insérées dans les trous fraisés afin de venir fixer des entretoises en plastiques. Sur ces dernières, 
+les circuits imprimés pourront être fixé à l’aide de visses en plastiques. Ces composants 
+plastique permettent d’éviter tout risque de court-circuit. La figure \ref{fig:fixelectronique} montre la plaque
+de fixation et le module électronique monté.
 
 \begin{figure}[H]
     \centering
@@ -370,13 +379,14 @@ plastique permettent d’éviter tout risque de court-circuit.
 
 \subsubsection{Support du LiDAR}
 
-Le capteur Lidar ne possède pas de trou de fixation, seul deux fentes sont disponibles pour venir 
-clipser un support sur ce dernier. Le fabricant préconise de le fixer avec des colsons ou du scotch 
+Le capteur LiDAR ne possède pas de trou de fixation, seul deux fentes sont disponibles pour venir 
+cliper un support sur ce dernier. Le fabricant préconise de le fixer avec des attaches plastiques ou du scotch 
 double face. Ces solutions sont plutôt prévues à des fins de bricolage. Des essais de supports à base 
 de clips ont été réalisé mais l’ajustement de ces derniers était problématique. C’est pour ça que la 
 solution de pincer le capteur à l’aide de vis sans tête est parvenue comme la plus sûre et la plus simple. 
-Le support qui permet de fixer le lidar dans la bonne position vient directement se fixer dans les 
-trous de fixations du support à batteries.
+Le support qui permet de fixer le LiDAR dans la bonne position vient directement se fixer dans les 
+trous de fixations du support à batteries. La figure \ref{fig:supportlidar} montre sous différents angles 
+le support.
 
 \begin{figure}[H]
     \centering
@@ -390,38 +400,40 @@ trous de fixations du support à batteries.
 \subsection{Bras de fixation}
 
 La partie fixation permet d’assurer un positionnement juste et précis de l’ensemble du boitier. Cette 
-fixation doit pouvoir se faire sur quasiment toutes les surfaces à dispositions comme les murs ou les 
+dernière doit pouvoir se faire sur quasiment toutes les surfaces à dispositions comme les murs ou les 
 lampadaires.
 
 \subsubsection{Support du boitier}
 
 Le support du boitier est une partie rigide en aluminium qui vient se visser sous le boitier à l’aide 
-e 4 vis. Cette pièce est en deux partie. La première partie est une plaque carrée ayant les trous de 
-perçage correspondant au boitier. La deuxième est une autre plaque percée soudée perpendiculairement. 
+quatre vis. Cette pièce est en deux partie. La première partie est une plaque carrée ayant les trous de 
+perçage correspondant au boitier. La deuxième est une autre plaque percée soudée perpendiculairement.
 Ce perçage permettra de jongler entre les systèmes de fixation désiré. Grace à cette liaison par boulon, 
-l’inclinaison du boitier pourra être réglée.
+l’inclinaison du boitier pourra être réglée.\\
 En ce qui concerne le réglage précis de l’angle, un petit cadran autocollant pourrait être rajouté 
 sur le support et une ligne autocollante sur le support du boitier. Elle permettra de lire la valeur 
 de l’inclinaison du boitier. Cette petite subtilité permettra de faciliter le montage du boitier et 
-de pouvoir contrôler si la position du boitier est bonne sur le long terme.
+de pouvoir contrôler si la position est bonne sur le long terme.\\
+La figure \ref{fig:angle} montre la fixation au boitier ainsi que le réglage d'angle.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.4\textwidth]{Images/photos_PGA/fixdessous2.PNG}
-    \includegraphics[width=0.4\textwidth]{Images/photos_PGA/mesure d'angle.PNG}
+    \includegraphics[width=0.5\textwidth]{Images/photos_PGA/fixdessous2.PNG}
+    \includegraphics[width=0.32\textwidth]{Images/photos_PGA/mesure d'angle.PNG}
     \caption{Système de réglage de l'élévation}
     \label{fig:angle}
 \end{figure}
 
 \subsubsection{Support mural et tubulaire}
 
-L’objectif voulu était de pouvoir fixer le boitier sur des lampadaires ou des poteaux. Un système de 
+L’objectif voulu est de pouvoir fixer le boitier sur des lampadaires ou des poteaux. Un système de 
 collier de serrage a donc été conçu pour répondre à cette problématique. Les deux arcs de cercle collé 
-entre eux forment un ovale avec une air un peu plus petite que celle du poteau de fixation. En venant 
+entre eux forment un ovale avec une aire plus petite que celle du poteau de fixation. En venant 
 serrer les vis, une force de serrage agira naturellement sur le poteau et le boitier sera bien fixé. 
 Afin de régler la rotation azimutale, c’est-à-dire autours de l’axe du lampadaire, il suffit de placer 
 le boitier dans la position voulue. Une fois cette position atteinte, il faut bloquer l’ensemble boulonné. 
-Ce dispositif permet deux degrés de liberté, l’azimut et l’élévation.
+Ce dispositif permet deux degrés de liberté, l’azimut et l’élévation. La figure \ref{fig:supfix} montre 
+les deux supports possibles de fixation.
 
 \begin{figure}[H]
     \centering
@@ -433,18 +445,18 @@ Ce dispositif permet deux degrés de liberté, l’azimut et l’élévation.
 
 Un autre dispositif pour une fixation murale a aussi été pensé. Malheureusement dans cette configuration 
 la rotation azimutale ne peut pas être réglée. Le seul degré de liberté est l’élévation. Les trous en 
-bleus ont été pensé pour passer un éventuel collier de serrage pour un fixation spécial ou un montage 
+bleus ont été pensés pour passer un éventuel collier de serrage pour un fixation spécial ou un montage 
 provisoire.
 
 \subsection{LoRaSnow Testbox}
 
 Pour savoir si les simulations effectuées correspondaient avec la réalité, il a fallu tester le capteur 
-en condition réel. Cependant les chutes de neiges sont difficilement prévisibles. Le boitier étant un 
-concept mécanique, il fallait protéger les composants durant les essais. Un boitier pour la soirée de 
-test a rapidement été fabriquer la veille pour protéger les composants électroniques de la neige. La 
-fixation avec les clips a pu être expérimentée sous le boitier pour fixer le lidar. Ce type de fixation 
-n’étant pas convainquant, un collier Colson fut rajouté pour augmenter la force de pincement des clips. 
-Une autre fixation permettait de fixer le boitier sur un trépied.
+en condition réelle. Cependant les chutes de neiges sont difficilement prévisibles. Le boitier final était 
+encore au stade de conception, il a fallu confectionner un élément temporaire pour protéger les composants 
+durant les essais. Le LiDAR a été fixé sous le boitier à l'aide de la fixation avec les clips. Ce type de fixation 
+n’étant pas convainquant, une attache plastique a été rajouté pour augmenter la force de pincement des clips. 
+Une autre fixation permettait de visser le boitier sur un trépied. La figure \ref{fig:testbox} montre le boitier 
+temporaire ainsi que sa fixation.
 
 \begin{figure}[H]
     \centering
