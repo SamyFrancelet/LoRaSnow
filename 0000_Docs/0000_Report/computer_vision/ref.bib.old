@@ -1,0 +1,26 @@
+@misc{PerfectSnow,
+  title    = {Snowfall wallpaper},
+  author   = {caveman @ WallpaperCave},
+  url      = {https://wallpapercave.com/w/scDoVwf},
+  addendum = {(last accessed: 20 January 2022)}
+}
+
+@misc{SnowMeter,
+  author = {Jerry Zachedniak},
+  url = {https://ici.radio-canada.ca/nouvelle/1338531/hiver-tempete-parc-mont-riding},
+  addendum = {(last accessed: 20 January 2022)}
+}
+
+@techreport{SnowTimeLapse,
+  author      = {Kevin S. J. Brown and Steven R. Fassnacht},
+  institution = {Colorado State University, Departement of Ecosystem Science and Sustainability},
+  title       = {Snow Depth Measurement via Time Lapse Photography and Automated Image Recognition},
+  year        = {2019},
+  url         = {http://www.codos.org/#lit}
+}
+
+@misc{VibroSnow,
+  author       = {VibroSnow},
+  title        = {VibroSnow camera, implemented at route du Parlan, Ayent, Valais, Suisse},
+  year         = {2021}
+}

@@ -3,7 +3,7 @@ import numpy as np
 
 
 def main() :
-    cap = cv.VideoCapture("test2.mp4")
+    cap = cv.VideoCapture("snow_test.mp4")
 
     if not cap.isOpened() :
         print("Can't open file")

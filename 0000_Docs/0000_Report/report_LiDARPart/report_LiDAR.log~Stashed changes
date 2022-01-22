@@ -1,0 +1,967 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2021.12.10)  21 JAN 2022 15:10
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**c:/Users/vince/OneDrive/Documents/3e/PGA/git/LoRaSnow/0000_Docs/0000_Report/report_LiDARPart/report_LiDAR.tex
+(c:/Users/vince/OneDrive/Documents/3e/PGA/git/LoRaSnow/0000_Docs/0000_Report/report_LiDARPart/report_LiDAR.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2021-11-22> (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
+Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
+(C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/base\size11.clo
+File: size11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count183
+\c@chapter=\count184
+\c@section=\count185
+\c@subsection=\count186
+\c@subsubsection=\count187
+\c@paragraph=\count188
+\c@subparagraph=\count189
+\c@figure=\count190
+\c@table=\count191
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+) (Preamble.sty (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count192
+\Gm@cntv=\count193
+\c@Gm@tempcnt=\count194
+\Gm@bindingoffset=\dimen139
+\Gm@wd@mp=\dimen140
+\Gm@odd@mp=\dimen141
+\Gm@even@mp=\dimen142
+\Gm@layoutwidth=\dimen143
+\Gm@layoutheight=\dimen144
+\Gm@layouthoffset=\dimen145
+\Gm@layoutvoffset=\dimen146
+\Gm@dimlist=\toks17
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks18
+\inpenc@posthook=\toks19
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2021/11/29 3.67 The Babel package
+\babel@savecnt=\count195
+\U@D=\dimen147
+\l@unhyphenated=\language79
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count196
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of babel
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/babel-french\french.ldf
+Language: french 2021/07/20 v3.5m French support from the babel system
+Package babel Info: Hyphen rules for 'acadian' set to \l@french
+(babel)             (\language22). Reported on input line 91.
+Package babel Info: Hyphen rules for 'canadien' set to \l@french
+(babel)             (\language22). Reported on input line 92.
+\FB@nonchar=\count197
+Package babel Info: Making : an active character on input line 430.
+Package babel Info: Making ; an active character on input line 431.
+Package babel Info: Making ! an active character on input line 432.
+Package babel Info: Making ? an active character on input line 433.
+\FBguill@level=\count198
+\FBold@everypar=\toks20
+\FB@Mht=\dimen148
+\mc@charclass=\count199
+\mc@charfam=\count266
+\mc@charslot=\count267
+\std@mcc=\count268
+\dec@mcc=\count269
+\listindentFB=\dimen149
+\descindentFB=\dimen150
+\labelindentFB=\dimen151
+\labelwidthFB=\dimen152
+\leftmarginFB=\dimen153
+\parindentFFN=\dimen154
+\FBfnindent=\dimen155
+)) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/carlisle\scalefnt.sty) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\times.sty
+Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen156
+\captionmargin@=\dimen157
+\captionwidth=\dimen158
+\caption@tempdima=\dimen159
+\caption@indent=\dimen160
+\caption@parindent=\dimen161
+\caption@hangindent=\dimen162
+Package caption Info: Standard document class detected.
+Package caption Info: french babel package is loaded.
+)
+\c@caption@flags=\count270
+\c@continuedfloat=\count271
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/caption\subcaption.sty
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
+\c@subfigure=\count272
+\c@subtable=\count273
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.sty (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\l3keys2e.sty (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2021-11-22 L3 programming layer (loader) 
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count274
+\l__pdf_internal_box=\box50
+))
+Package: l3keys2e 2021-11-12 LaTeX2e option processing using LaTeX3 keys
+)
+Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
+\g__lipsum_par_int=\count275
+\l__lipsum_a_int=\count276
+\l__lipsum_b_int=\count277
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.ltd.tex)) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen163
+\Gin@req@width=\dimen164
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count278
+\float@exts=\toks21
+\float@box=\box51
+\@float@everytoks=\toks22
+\@floatcapt=\box52
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2021/10/15 v2.17l AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks23
+\ex@=\dimen165
+)) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen166
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2021/08/26 v2.02 operator names
+)
+\inf@bad=\count279
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count280
+\leftroot@=\count281
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count282
+\DOTSCASE@=\count283
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box53
+\strutbox@=\box54
+\big@size=\dimen167
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count284
+\c@MaxMatrixCols=\count285
+\dotsspace@=\muskip16
+\c@parentequation=\count286
+\dspbrk@lvl=\count287
+\tag@help=\toks24
+\row@=\count288
+\column@=\count289
+\maxfields@=\count290
+\andhelp@=\toks25
+\eqnshift@=\dimen168
+\alignsep@=\dimen169
+\tagshift@=\dimen170
+\tagwidth@=\dimen171
+\totwidth@=\dimen172
+\lineht@=\dimen173
+\@envbody=\toks26
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks27
+LaTeX Info: Redefining \[ on input line 2938.
+LaTeX Info: Redefining \] on input line 2939.
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.sty
+Package: mathtools 2021/04/12 v1.27 mathematical typesetting tools
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count291
+\calc@Bcount=\count292
+\calc@Adimen=\dimen174
+\calc@Bdimen=\dimen175
+\calc@Askip=\skip52
+\calc@Bskip=\skip53
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count293
+\calc@Cskip=\skip54
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
+\g_MT_multlinerow_int=\count294
+\l_MT_multwidth_dim=\dimen176
+\origjot=\skip55
+\l_MT_shortvdotswithinadjustabove_dim=\dimen177
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen178
+\l_MT_above_intertext_sep=\dimen179
+\l_MT_below_intertext_sep=\dimen180
+\l_MT_above_shortintertext_sep=\dimen181
+\l_MT_below_shortintertext_sep=\dimen182
+\xmathstrut@box=\box55
+\xmathstrut@dim=\dimen183
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1352.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1356.
+Package xcolor Info: Model `RGB' extended on input line 1368.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1370.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen184
+\ar@mcellbox=\box56
+\extrarowheight=\dimen185
+\NC@list=\toks28
+\extratabsurround=\skip56
+\backup@length=\skip57
+\ar@cellbox=\box57
+)
+\everycr=\toks29
+\minrowclearance=\skip58
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/graphics\rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count295
+\rotFPtop=\skip59
+\rotFPbot=\skip60
+\rot@float@box=\box58
+\rot@mess@toks=\toks30
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip61
+\multirow@cntb=\count296
+\multirow@dima=\skip62
+\bigstrutjot=\dimen186
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen187
+\lightrulewidth=\dimen188
+\cmidrulewidth=\dimen189
+\belowrulesep=\dimen190
+\belowbottomsep=\dimen191
+\aboverulesep=\dimen192
+\abovetopsep=\dimen193
+\cmidrulesep=\dimen194
+\cmidrulekern=\dimen195
+\defaultaddspace=\dimen196
+\@cmidla=\count297
+\@cmidlb=\count298
+\@aboverulesep=\dimen197
+\@belowrulesep=\dimen198
+\@thisruleclass=\count299
+\@lastruleclass=\count300
+\@thisrulewidth=\dimen199
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and footers
+\f@nch@headwidth=\skip63
+\f@nch@O@elh=\skip64
+\f@nch@O@erh=\skip65
+\f@nch@O@olh=\skip66
+\f@nch@O@orh=\skip67
+\f@nch@O@elf=\skip68
+\f@nch@O@erf=\skip69
+\f@nch@O@olf=\skip70
+\f@nch@O@orf=\skip71
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count301
+\lst@gtempboxa=\box59
+\lst@token=\toks31
+\lst@length=\count302
+\lst@currlwidth=\dimen256
+\lst@column=\count303
+\lst@pos=\count304
+\lst@lostspace=\dimen257
+\lst@width=\dimen258
+\lst@newlines=\count305
+\lst@lineno=\count306
+\lst@maxwidth=\dimen259
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count307
+\lst@skipnumbers=\count308
+\lst@framebox=\box60
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/newfloat\newfloat.sty
+Package: newfloat 2019/09/02 v1.1l Defining new floating environments (AR)
+Package newfloat Info: Document class `report' detected.
+Package newfloat Info: `rotating' package detected.
+)
+Package newfloat Info: New float `frameenv' with options `placement=H' on input line 95.
+\c@frameenv=\count309
+Package newfloat Info: float type `frameenv'=4 on input line 95.
+\c@subframeenv=\count310
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/mdframed\mdframed.sty
+Package: mdframed 2013/07/01 1.9b: mdframed
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+)) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
+Package: xparse 2021-11-12 L3 Experimental document command parser
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count311
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/zref\zref-abspage.sty
+Package: zref-abspage 2020-07-03 v2.32 Module abspage for zref (HO)
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/zref\zref-base.sty
+Package: zref-base 2020-07-03 v2.32 Module base for zref (HO)
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+)
+Package zref Info: New property list: main on input line 764.
+Package zref Info: New property: default on input line 765.
+Package zref Info: New property: page on input line 766.
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\c@abspage=\count312
+Package zref Info: New property: abspage on input line 66.
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/needspace\needspace.sty
+Package: needspace 2010/09/12 v1.3d reserve vertical space
+)
+\mdf@templength=\skip72
+\c@mdf@globalstyle@cnt=\count313
+\mdf@skipabove@length=\skip73
+\mdf@skipbelow@length=\skip74
+\mdf@leftmargin@length=\skip75
+\mdf@rightmargin@length=\skip76
+\mdf@innerleftmargin@length=\skip77
+\mdf@innerrightmargin@length=\skip78
+\mdf@innertopmargin@length=\skip79
+\mdf@innerbottommargin@length=\skip80
+\mdf@splittopskip@length=\skip81
+\mdf@splitbottomskip@length=\skip82
+\mdf@outermargin@length=\skip83
+\mdf@innermargin@length=\skip84
+\mdf@linewidth@length=\skip85
+\mdf@innerlinewidth@length=\skip86
+\mdf@middlelinewidth@length=\skip87
+\mdf@outerlinewidth@length=\skip88
+\mdf@roundcorner@length=\skip89
+\mdf@footenotedistance@length=\skip90
+\mdf@userdefinedwidth@length=\skip91
+\mdf@needspace@length=\skip92
+\mdf@frametitleaboveskip@length=\skip93
+\mdf@frametitlebelowskip@length=\skip94
+\mdf@frametitlerulewidth@length=\skip95
+\mdf@frametitleleftmargin@length=\skip96
+\mdf@frametitlerightmargin@length=\skip97
+\mdf@shadowsize@length=\skip98
+\mdf@extratopheight@length=\skip99
+\mdf@subtitleabovelinewidth@length=\skip100
+\mdf@subtitlebelowlinewidth@length=\skip101
+\mdf@subtitleaboveskip@length=\skip102
+\mdf@subtitlebelowskip@length=\skip103
+\mdf@subtitleinneraboveskip@length=\skip104
+\mdf@subtitleinnerbelowskip@length=\skip105
+\mdf@subsubtitleabovelinewidth@length=\skip106
+\mdf@subsubtitlebelowlinewidth@length=\skip107
+\mdf@subsubtitleaboveskip@length=\skip108
+\mdf@subsubtitlebelowskip@length=\skip109
+\mdf@subsubtitleinneraboveskip@length=\skip110
+\mdf@subsubtitleinnerbelowskip@length=\skip111
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.sty (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.sty (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common.tex
+\pgfutil@everybye=\toks32
+\pgfutil@tempdima=\dimen260
+\pgfutil@tempdimb=\dimen261
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-common-lists.tex)) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil-latex.def
+\pgfutil@abb=\box61
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.code.tex (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
+))
+Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.sty (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.sty (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys.code.tex
+Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks33
+\pgfkeys@temptoks=\toks34
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks35
+))
+\pgf@x=\dimen262
+\pgf@y=\dimen263
+\pgf@xa=\dimen264
+\pgf@ya=\dimen265
+\pgf@xb=\dimen266
+\pgf@yb=\dimen267
+\pgf@xc=\dimen268
+\pgf@yc=\dimen269
+\pgf@xd=\dimen270
+\pgf@yd=\dimen271
+\w@pgf@writea=\write3
+\r@pgf@reada=\read3
+\c@pgf@counta=\count314
+\c@pgf@countb=\count315
+\c@pgf@countc=\count316
+\c@pgf@countd=\count317
+\t@pgf@toka=\toks36
+\t@pgf@tokb=\toks37
+\t@pgf@tokc=\toks38
+\pgf@sys@id@count=\count318
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.cfg
+File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
+)
+Driver file for pgf: pgfsys-pdftex.def
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
+))) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfsyssoftpath@smallbuffer@items=\count319
+\pgfsyssoftpath@bigbuffer@items=\count320
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+)) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcore.code.tex
+Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.code.tex (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.code.tex) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparser.code.tex
+\pgfmath@dimen=\dimen272
+\pgfmath@count=\count321
+\pgfmath@box=\box62
+\pgfmath@toks=\toks39
+\pgfmath@stack@operand=\toks40
+\pgfmath@stack@operation=\toks41
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.code.tex (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.basic.code.tex) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.trigonometric.code.tex) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.random.code.tex) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.comparison.code.tex) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.base.code.tex) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.round.code.tex) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.misc.code.tex) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunctions.integerarithmetics.code.tex))) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count322
+)) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.tex) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@picminx=\dimen273
+\pgf@picmaxx=\dimen274
+\pgf@picminy=\dimen275
+\pgf@picmaxy=\dimen276
+\pgf@pathminx=\dimen277
+\pgf@pathmaxx=\dimen278
+\pgf@pathminy=\dimen279
+\pgf@pathmaxy=\dimen280
+\pgf@xx=\dimen281
+\pgf@xy=\dimen282
+\pgf@yx=\dimen283
+\pgf@yy=\dimen284
+\pgf@zx=\dimen285
+\pgf@zy=\dimen286
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@path@lastx=\dimen287
+\pgf@path@lasty=\dimen288
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@shorten@end@additional=\dimen289
+\pgf@shorten@start@additional=\dimen290
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfpic=\box63
+\pgf@hbox=\box64
+\pgf@layerbox@main=\box65
+\pgf@picture@serial@count=\count323
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgflinewidth=\dimen291
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@pt@x=\dimen292
+\pgf@pt@y=\dimen293
+\pgf@pt@temp=\dimen294
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfarrowsep=\dimen295
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@max=\dimen296
+\pgf@sys@shading@range@num=\count324
+\pgf@shadingcount=\count325
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfexternal@startupbox=\box66
+)) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfnodeparttextbox=\box67
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@nodesepstart=\dimen297
+\pgf@nodesepend=\dimen298
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
+)) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.sty (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.sty (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys.code.tex)) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.code.tex
+Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code.tex)
+\pgffor@iter=\dimen299
+\pgffor@skip=\dimen300
+\pgffor@stack=\toks42
+\pgffor@toks=\toks43
+)) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz\tikz.code.tex
+Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgf@plot@mark@count=\count326
+\pgfplotmarksize=\dimen301
+)
+\tikz@lastx=\dimen302
+\tikz@lasty=\dimen303
+\tikz@lastxsaved=\dimen304
+\tikz@lastysaved=\dimen305
+\tikz@lastmovetox=\dimen306
+\tikz@lastmovetoy=\dimen307
+\tikzleveldistance=\dimen308
+\tikzsiblingdistance=\dimen309
+\tikz@figbox=\box68
+\tikz@figbox@bg=\box69
+\tikz@tempbox=\box70
+\tikz@tempbox@bg=\box71
+\tikztreelevel=\count327
+\tikznumberofchildren=\count328
+\tikznumberofcurrentchild=\count329
+\tikz@fig@count=\count330
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+\pgfmatrixcurrentrow=\count331
+\pgfmatrixcurrentcolumn=\count332
+\pgf@matrix@numberofcolumns=\count333
+)
+\tikz@expandcount=\count334
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
+))) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/mdframed\md-frame-1.mdf
+File: md-frame-1.mdf 2013/07/01\ 1.9b: md-frame-1
+)
+\mdf@frametitlebox=\box72
+\mdf@footnotebox=\box73
+\mdf@splitbox@one=\box74
+\mdf@splitbox@two=\box75
+\mdf@splitbox@save=\box76
+\mdfsplitboxwidth=\skip112
+\mdfsplitboxtotalwidth=\skip113
+\mdfsplitboxheight=\skip114
+\mdfsplitboxdepth=\skip115
+\mdfsplitboxtotalheight=\skip116
+\mdfframetitleboxwidth=\skip117
+\mdfframetitleboxtotalwidth=\skip118
+\mdfframetitleboxheight=\skip119
+\mdfframetitleboxdepth=\skip120
+\mdfframetitleboxtotalheight=\skip121
+\mdffootnoteboxwidth=\skip122
+\mdffootnoteboxtotalwidth=\skip123
+\mdffootnoteboxheight=\skip124
+\mdffootnoteboxdepth=\skip125
+\mdffootnoteboxtotalheight=\skip126
+\mdftotallinewidth=\skip127
+\mdfboundingboxwidth=\skip128
+\mdfboundingboxtotalwidth=\skip129
+\mdfboundingboxheight=\skip130
+\mdfboundingboxdepth=\skip131
+\mdfboundingboxtotalheight=\skip132
+\mdf@freevspace@length=\skip133
+\mdf@horizontalwidthofbox@length=\skip134
+\mdf@verticalmarginwhole@length=\skip135
+\mdf@horizontalspaceofbox=\skip136
+\mdfsubtitleheight=\skip137
+\mdfsubsubtitleheight=\skip138
+\c@mdfcountframes=\count335
+
+****** mdframed patching \endmdf@trivlist
+
+****** -- success******
+
+\mdf@envdepth=\count336
+\c@mdf@env@i=\count337
+\c@mdf@env@ii=\count338
+\c@mdf@zref@counter=\count339
+Package zref Info: New property: mdf@pagevalue on input line 895.
+))
+LaTeX Font Info:    Trying to load font information for T1+ptm on input line 5.
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ptm.fd
+File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
+) (report_LiDAR.aux)
+\openout1 = `report_LiDAR.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=674.33032pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-23.91173pt
+* \headheight=14.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=59.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Info: Redefining \degres on input line 5.
+LaTeX Info: Redefining \up on input line 5.
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
+Package caption Info: rotating package is loaded.
+Package caption Info: End \AtBeginDocument code.
+(C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count340
+\scratchdimen=\dimen310
+\scratchbox=\box77
+\nofMPsegments=\count341
+\nofMParguments=\count342
+\everyMPshowfont=\toks44
+\MPscratchCnt=\count343
+\MPscratchDim=\dimen311
+\MPnumerator=\count344
+\makeMPintoPDFobject=\count345
+\everyMPtoPDFconversion=\toks45
+) (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+\c@lstlisting=\count346
+Package newfloat Info: `float' package detected.
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
+* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=426.79135pt
+* \textheight=674.33032pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-25.91173pt
+* \headheight=14.0pt
+* \headsep=25.0pt
+* \topskip=11.0pt
+* \footskip=30.0pt
+* \marginparwidth=59.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+<Images//hes/hei.png, id=4, 501.7947pt x 144.54pt>
+File: Images//hes/hei.png Graphic file (type png)
+<use Images//hes/hei.png>
+Package pdftex.def Info: Images//hes/hei.png  used on input line 10.
+(pdftex.def)             Requested size: 320.0935pt x 92.20311pt.
+ [1
+
+
+{C:/Users/vince/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./Images//hes/hei.png>] (report_LiDAR.toc)
+\tf@toc=\write4
+\openout4 = `report_LiDAR.toc'.
+
+ [1
+
+
+]
+Chapitre 1.
+(1-Introduction.tex
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 15.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 15.
+) [2
+
+]
+Chapitre 2.
+(2-Specs.tex
+<Images/Illustration/ConditionDifficiles.jpg, id=19, 361.35pt x 240.9pt>
+File: Images/Illustration/ConditionDifficiles.jpg Graphic file (type jpg)
+<use Images/Illustration/ConditionDifficiles.jpg>
+Package pdftex.def Info: Images/Illustration/ConditionDifficiles.jpg  used on input line 13.
+(pdftex.def)             Requested size: 273.14923pt x 182.10077pt.
+ [3
+
+ <./Images/Illustration/ConditionDifficiles.jpg>]
+<Images/Illustration/Architecture_lorawan.png, id=24, 504.08325pt x 354.123pt>
+File: Images/Illustration/Architecture_lorawan.png Graphic file (type png)
+<use Images/Illustration/Architecture_lorawan.png>
+Package pdftex.def Info: Images/Illustration/Architecture_lorawan.png  used on input line 33.
+(pdftex.def)             Requested size: 273.14923pt x 191.89359pt.
+ [4 <./Images/Illustration/Architecture_lorawan.png>]
+<Diagram/out/Diagram/BlockDiagram/GlobalBlockDiagram.png, id=28, 1120.185pt x 367.3725pt>
+File: Diagram/out/Diagram/BlockDiagram/GlobalBlockDiagram.png Graphic file (type png)
+<use Diagram/out/Diagram/BlockDiagram/GlobalBlockDiagram.png>
+Package pdftex.def Info: Diagram/out/Diagram/BlockDiagram/GlobalBlockDiagram.png  used on input line 81.
+(pdftex.def)             Requested size: 409.71692pt x 134.36731pt.
+) [5 <./Diagram/out/Diagram/BlockDiagram/GlobalBlockDiagram.png (PNG copy)>]
+Chapitre 3.
+(3-MethodsLiDAR.tex
+<Images/LiDAR/GarminLiDARLiteV4.jpg, id=33, 1023.825pt x 572.1375pt>
+File: Images/LiDAR/GarminLiDARLiteV4.jpg Graphic file (type jpg)
+<use Images/LiDAR/GarminLiDARLiteV4.jpg>
+Package pdftex.def Info: Images/LiDAR/GarminLiDARLiteV4.jpg  used on input line 5.
+(pdftex.def)             Requested size: 227.62206pt x 127.1976pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 33--40
+
+ []
+
+[6
+
+ <./Images/LiDAR/GarminLiDARLiteV4.jpg>]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 47.
+ (C:\Users\vince\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 76--80
+
+ []
+
+[7]
+<Images/LiDAR/LiDAROnArduino.jpeg, id=41, 709.14937pt x 1088.56688pt>
+File: Images/LiDAR/LiDAROnArduino.jpeg Graphic file (type jpg)
+<use Images/LiDAR/LiDAROnArduino.jpeg>
+Package pdftex.def Info: Images/LiDAR/LiDAROnArduino.jpeg  used on input line 121.
+(pdftex.def)             Requested size: 182.09486pt x 279.51598pt.
+ [8 <./Images/LiDAR/LiDAROnArduino.jpeg>]
+<Images/LiDAR/LiDAROnNucleo.jpeg, id=45, 578.16pt x 639.89063pt>
+File: Images/LiDAR/LiDAROnNucleo.jpeg Graphic file (type jpg)
+<use Images/LiDAR/LiDAROnNucleo.jpeg>
+Package pdftex.def Info: Images/LiDAR/LiDAROnNucleo.jpeg  used on input line 172.
+(pdftex.def)             Requested size: 227.62206pt x 251.9192pt.
+ [9 <./Images/LiDAR/LiDAROnNucleo.jpeg>]
+<Images/LiDAR/LiDAR_MesMethod.png, id=49, 265.74281pt x 243.91125pt>
+File: Images/LiDAR/LiDAR_MesMethod.png Graphic file (type png)
+<use Images/LiDAR/LiDAR_MesMethod.png>
+Package pdftex.def Info: Images/LiDAR/LiDAR_MesMethod.png  used on input line 187.
+(pdftex.def)             Requested size: 227.62206pt x 208.92589pt.
+) (4-ResultsLiDAR.tex [10 <./Images/LiDAR/LiDAR_MesMethod.png>]
+<Images/LiDAR/RealDistanceMes.jpeg, id=59, 1027.84pt x 770.88pt>
+File: Images/LiDAR/RealDistanceMes.jpeg Graphic file (type jpg)
+<use Images/LiDAR/RealDistanceMes.jpeg>
+Package pdftex.def Info: Images/LiDAR/RealDistanceMes.jpeg  used on input line 25.
+(pdftex.def)             Requested size: 227.62206pt x 170.71158pt.
+<Images/LiDAR/LiDARRealDistanceGraph_MesDist.png, id=60, 510.708pt x 330.471pt>
+File: Images/LiDAR/LiDARRealDistanceGraph_MesDist.png Graphic file (type png)
+<use Images/LiDAR/LiDARRealDistanceGraph_MesDist.png>
+Package pdftex.def Info: Images/LiDAR/LiDARRealDistanceGraph_MesDist.png  used on input line 39.
+(pdftex.def)             Requested size: 364.19667pt x 235.66975pt.
+ [11 <./Images/LiDAR/RealDistanceMes.jpeg>]
+<Images/LiDAR/LiDARRealDistanceGraph_MesDistError.png, id=64, 510.927pt x 330.471pt>
+File: Images/LiDAR/LiDARRealDistanceGraph_MesDistError.png Graphic file (type png)
+<use Images/LiDAR/LiDARRealDistanceGraph_MesDistError.png>
+Package pdftex.def Info: Images/LiDAR/LiDARRealDistanceGraph_MesDistError.png  used on input line 46.
+(pdftex.def)             Requested size: 364.19667pt x 235.56891pt.
+<Images/LiDAR/LiDARRealDistanceGraph_MesDist_Zoom.png, id=65, 511.365pt x 329.595pt>
+File: Images/LiDAR/LiDARRealDistanceGraph_MesDist_Zoom.png Graphic file (type png)
+<use Images/LiDAR/LiDARRealDistanceGraph_MesDist_Zoom.png>
+Package pdftex.def Info: Images/LiDAR/LiDARRealDistanceGraph_MesDist_Zoom.png  used on input line 56.
+(pdftex.def)             Requested size: 364.19667pt x 234.74835pt.
+ [12 <./Images/LiDAR/LiDARRealDistanceGraph_MesDist.png> <./Images/LiDAR/LiDARRealDistanceGraph_MesDistError.png>]
+<Images/LiDAR/LiDARRealDistanceGraph_MesDistError_Zoom.png, id=72, 511.803pt x 329.595pt>
+File: Images/LiDAR/LiDARRealDistanceGraph_MesDistError_Zoom.png Graphic file (type png)
+<use Images/LiDAR/LiDARRealDistanceGraph_MesDistError_Zoom.png>
+Package pdftex.def Info: Images/LiDAR/LiDARRealDistanceGraph_MesDistError_Zoom.png  used on input line 63.
+(pdftex.def)             Requested size: 364.19667pt x 234.54718pt.
+ [13 <./Images/LiDAR/LiDARRealDistanceGraph_MesDist_Zoom.png> <./Images/LiDAR/LiDARRealDistanceGraph_MesDistError_Zoom.png>]
+<Images/LiDAR/ErrorMesSetup.jpeg, id=78, 1027.84pt x 613.29124pt>
+File: Images/LiDAR/ErrorMesSetup.jpeg Graphic file (type jpg)
+<use Images/LiDAR/ErrorMesSetup.jpeg>
+Package pdftex.def Info: Images/LiDAR/ErrorMesSetup.jpeg  used on input line 112.
+(pdftex.def)             Requested size: 341.43307pt x 203.72493pt.
+<Images/LiDAR/LiDAR_ErrorMes_NoNoise.png, id=79, 459.243pt x 295.869pt>
+File: Images/LiDAR/LiDAR_ErrorMes_NoNoise.png Graphic file (type png)
+<use Images/LiDAR/LiDAR_ErrorMes_NoNoise.png>
+Package pdftex.def Info: Images/LiDAR/LiDAR_ErrorMes_NoNoise.png  used on input line 121.
+(pdftex.def)             Requested size: 364.19667pt x 234.64589pt.
+ [14 <./Images/LiDAR/ErrorMesSetup.jpeg>]
+<Images/LiDAR/LiDAR_ErrorMes_Moustache.png, id=83, 543.339pt x 401.208pt>
+File: Images/LiDAR/LiDAR_ErrorMes_Moustache.png Graphic file (type png)
+<use Images/LiDAR/LiDAR_ErrorMes_Moustache.png>
+Package pdftex.def Info: Images/LiDAR/LiDAR_ErrorMes_Moustache.png  used on input line 128.
+(pdftex.def)             Requested size: 364.19667pt x 268.93652pt.
+ [15 <./Images/LiDAR/LiDAR_ErrorMes_NoNoise.png> <./Images/LiDAR/LiDAR_ErrorMes_Moustache.png>] [16]
+<Images/LiDAR/TempMes.jpeg, id=92, 867.24pt x 1163.84813pt>
+File: Images/LiDAR/TempMes.jpeg Graphic file (type jpg)
+<use Images/LiDAR/TempMes.jpeg>
+Package pdftex.def Info: Images/LiDAR/TempMes.jpeg  used on input line 223.
+(pdftex.def)             Requested size: 227.62206pt x 305.47032pt.
+<Images/LiDAR/LiDAR_TempStabilityGraph.png, id=93, 695.544pt x 443.037pt>
+File: Images/LiDAR/LiDAR_TempStabilityGraph.png Graphic file (type png)
+<use Images/LiDAR/LiDAR_TempStabilityGraph.png>
+Package pdftex.def Info: Images/LiDAR/LiDAR_TempStabilityGraph.png  used on input line 232.
+(pdftex.def)             Requested size: 364.19667pt x 231.98273pt.
+ [17 <./Images/LiDAR/TempMes.jpeg>] [18 <./Images/LiDAR/LiDAR_TempStabilityGraph.png>]
+<Images/LiDAR/OffsetMes_InLab.jpeg, id=102, 770.88pt x 1027.84pt>
+File: Images/LiDAR/OffsetMes_InLab.jpeg Graphic file (type jpg)
+<use Images/LiDAR/OffsetMes_InLab.jpeg>
+Package pdftex.def Info: Images/LiDAR/OffsetMes_InLab.jpeg  used on input line 274.
+(pdftex.def)             Requested size: 227.62206pt x 303.49248pt.
+<Images/LiDAR/LiDAR_OffsetMes_Moustache.png, id=103, 536.331pt x 357.408pt>
+File: Images/LiDAR/LiDAR_OffsetMes_Moustache.png Graphic file (type png)
+<use Images/LiDAR/LiDAR_OffsetMes_Moustache.png>
+Package pdftex.def Info: Images/LiDAR/LiDAR_OffsetMes_Moustache.png  used on input line 283.
+(pdftex.def)             Requested size: 364.19667pt x 242.70155pt.
+ [19 <./Images/LiDAR/OffsetMes_InLab.jpeg>]
+<Images/LiDAR/LiDAR_OffsetMes_PerMethods.png, id=107, 535.893pt x 328.938pt>
+File: Images/LiDAR/LiDAR_OffsetMes_PerMethods.png Graphic file (type png)
+<use Images/LiDAR/LiDAR_OffsetMes_PerMethods.png>
+Package pdftex.def Info: Images/LiDAR/LiDAR_OffsetMes_PerMethods.png  used on input line 294.
+(pdftex.def)             Requested size: 364.19667pt x 223.55441pt.
+ [20 <./Images/LiDAR/LiDAR_OffsetMes_Moustache.png> <./Images/LiDAR/LiDAR_OffsetMes_PerMethods.png>]
+<Images/LiDAR/ReadTests_Setup.jpeg, id=113, 2055.68pt x 1541.76pt>
+File: Images/LiDAR/ReadTests_Setup.jpeg Graphic file (type jpg)
+<use Images/LiDAR/ReadTests_Setup.jpeg>
+Package pdftex.def Info: Images/LiDAR/ReadTests_Setup.jpeg  used on input line 336.
+(pdftex.def)             Requested size: 341.43307pt x 256.07324pt.
+ [21 <./Images/LiDAR/ReadTests_Setup.jpeg>]
+<Images/LiDAR/ReadTests_Results.png, id=117, 614.295pt x 444.132pt>
+File: Images/LiDAR/ReadTests_Results.png Graphic file (type png)
+<use Images/LiDAR/ReadTests_Results.png>
+Package pdftex.def Info: Images/LiDAR/ReadTests_Results.png  used on input line 373.
+(pdftex.def)             Requested size: 341.43307pt x 246.85535pt.
+) [22 <./Images/LiDAR/ReadTests_Results.png>]
+Chapitre 4.
+(5-Analyse.tex) [23
+
+]
+Chapitre 5.
+(6-Conclusion.tex) [24
+
+] (report_LiDAR.aux) ) 
+Here is how much of TeX's memory you used:
+ 21874 strings out of 478659
+ 433994 string characters out of 2845919
+ 809924 words of memory out of 3000000
+ 39515 multiletter control sequences out of 15000+600000
+ 464385 words of font info for 74 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 119i,12n,116p,573b,1140s stack positions out of 5000i,500n,10000p,200000b,80000s
+{C:/Users/vince/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/vince/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/vince/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/vince/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/vince/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/vince/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/vince/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/vince/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/vince/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/vince/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on report_LiDAR.pdf (25 pages, 2748633 bytes).
+PDF statistics:
+ 168 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 128 words of extra memory for PDF output out of 10000 (max. 10000000)
+
