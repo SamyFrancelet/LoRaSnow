@@ -186,6 +186,61 @@ des fixations n’a pas été une priorité. L’objectif qui était d’avoir u
 \newpage
 \section{Boitier}
 
+L’électronique ainsi que les capteurs doivent être protégés, les mesures se passant en milieu non 
+favorable (neige, pluie, vents…). La conception du boitier devra assurer une bonne étanchéité des 
+composants. Pour cela il faut un boitier sur mesure répondant à beaucoup de critères comme un encombrement 
+optimisé, une fixation permettant de mettre le boitier sur plusieurs styles de support et surtout 
+une simplicité de conception. Garantir une simplicité de conception dans un encombrement limité est
+un défi complexe.\par
+La configuration de base du boitier était d’avoir un LiDAR et une caméra qui travaillent ensemble, 
+le liDAR permettant d’avoir une mesure de hauteur de neige et la webcam d’avoir une mesure sur le débit 
+de neige. Une carte de développement ainsi qu’une carte d'extension spécifique doit être intégré. Une batterie 
+permet au système de fonctionner de manière autonome.
+
+\subsection{Vitre}
+
+Le premier défi réside dans le fait d’avoir une partie du boitier transparente tout en gardant ses caractéristiques d'étanchéité, 
+le but étant d’incruster une ou plusieurs vitres pour que les capteurs puissent effectuer leurs mesures 
+sans être perturbé par des problèmes d’eau ou de poussière. La vitre doit rester remplaçable facilement 
+en cas de casse ou d’usure. Un appareil qui est particulièrement étanche et qui permet une vision à 
+travers un boitier est la GoPro. Sur les anciens modèles, la vitre est démontable. Le système qui permet 
+à cette dernière d’être étanche et composé d’un joint qui vient pincer entre les deux surfaces en contact. 
+Le principe étant le même que celui recherché, il a été retenu et adapté.Lla solution est plus 
+amplement détaillée à la figure \ref{fig:vitre}, la vitre en bleu vient pincée sur le joint par la plaque du haut. La pression est 
+maintenue par les vis ce qui garantit l’étanchéité.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.25\textwidth]{Images/photos_PGA/vitreInv.PNG}
+    \includegraphics[width=0.6\textwidth]{Images/photos_PGA/vitreJoint.PNG}
+    \caption{Vitre et jointure}
+    \label{fig:vitre}
+\end{figure}
+
+Dans le cas où ces pièces sont faites en plastique, l’utilisation de vis auto taraudeuse ou d’insert 
+filetés seraient utilisés. Les vis auto taraudeuses sont plus simple à mettre en place et tout aussi 
+efficace. \\
+Dans le cas de pièces métalliques, un simple taraudage suffit. L’utilisation de frein filet est 
+envisageable mais étant donné que la pièce sert un joint élastique, il devrait absorber la plupart 
+des vibrations.\par 
+Pour permettre au capteur de faire des mesures, il faut une zone du boitier transparente. Un verre 
+était la solution. Cependant ce n’est pas aussi simple. En effet, le capteur fonctionne dans les infrarouges 
+proches (940nm). Tous les verres ne permettent pas le passage de ces rayons. Sur le graphique de la figure \ref{fig:wavelength}, 
+la capacité à laisser passer les rayons en fonction de la longueur d’onde est exprimé. Sans étonnement, 
+le verre de quartz est le plus adapté.\\
+De plus, les verres de quartz et de silice offrent une grande résistance aux hautes températures et 
+aux chocs thermiques. Ils ont une grande homogénéité et permettent une excellente transmission de la 
+lumière visible, mais aussi des rayonnements ultraviolets et infrarouges proches\footnotemark[1].
+
+%\footnotetext[1]{https://www.researchgate.net/figure/Color-online-Optical-transmittance-spectra-of-quartz-glass-asdeposited-ZnO-and_fig4_274430836}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{Images/photos_PGA/wavelength.png}
+    \caption{Transmittance de différents matériaux}
+    \label{fig:wavelength}
+\end{figure}
+
 \subsection{Premier prototype}
 
 \subsubsection{Ouverture}
