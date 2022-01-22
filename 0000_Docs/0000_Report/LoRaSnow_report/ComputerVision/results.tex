@@ -3,28 +3,40 @@ Plusieurs scripts \emph{Python} ont été réalisés pour testés les différent
 méthodes de mesure. Cette section détails ces scripts, les tests effectués
 et des conclusions préliminaires.
 
-\subsection{Mesure de débit de chute de neige}
+\subsection{Mesure de débit de chute de neige} \label{snowfall}
 Cette mesure doit permettre une information estimée de la chute de neige
 actuelle. Idéalement, on devrait pouvoir estimer les précipitations de neige
 en mm/h. Mais n'ayant pas encore reçu l'accès aux données de \emph{MeteoSwiss}
 pour comparer nos mesures à des données fiables, une approche simplifiée a été
 appliquée.\\
-On récupère plusieurs vidéos qu'on trie selon 3 critères : \label{criterias}
+On récupère plusieurs vidéos qu'on trie selon 2 critères :
 \begin{description}
     \item[Le moment de la journée] \hfill \\
-    matin, journée, soir, nuit
-    \item[La quantité visuelle de neiger qui est en train de tomber] \hfill \\
-    rien, petite neige, neige, grosse neige, tempête
-    \item[L'état de la route] \hfill \\
-    sèche, déneigée, partiellement enneigée, complêtement enneigée
+    journée, nuit
+    \item[La quantité visuelle de neige qui est en train de tomber] \hfill \\
+    rien, petite neige, neige, grosse neige
 \end{description}
-Chaque vidéo avec une route sèche ou déneigée, et avec aucune chute de neige
-peut servir de référence pour faire les mesures suivantes.
 Il est important de comparer des vidéos se passant durant la même période de la journée.
-La luminosité peut grandement affecter le résultat de la mesure.
+La luminosité peut grandement affecter le résultat de la mesure. La localisation
+de la caméra (Ayent) ne permet pas de différencier significativement la matinée
+de la journée et la soirée de la nuit. Il a donc été convenu de séparer uniquement
+par jour/nuit.
 
 \subsection{Détection de route enneigée}
 Le but de cette mesure est de fournir, a minima, si oui ou non la route
 est enneigée. Idéalement elle devrait pouvoir différencier plusieurs degré
-d'enneigement de la route. Ces degrés sont définis selon les critères
-cités précédemment (\ref{criterias})
+d'enneigement de la route. \\
+Pour réaliser les mesures on récupère plusieurs vidéos qu'on trie ainsi :
+\begin{description}
+    \item[Le moment de la journée] \hfill \\
+    journée, nuit 
+    \item[L'état de la route] \hfill \\
+    déneigée, partiellement enneigée, complêtement enneigée 
+\end{description}
+Chaque vidéo sans chute de neige avec une route déneigée peut servir de 
+référence pour différencier une route déneigée d'une route enneigée.
+Dans l'idéal, on devrait aussi pouvoir les trier selon la quantité de chute
+de neige, mais n'ayant pas suffisamment de vidéos pour réaliser ce tri, on devra
+se contenter de cette méthode.
+Les deux méthode de mesure citées au point \ref{snowOnRoad} vont être mises
+à l'épreuve pour déterminer laquelle est la plus pertinente pour ce projet.
