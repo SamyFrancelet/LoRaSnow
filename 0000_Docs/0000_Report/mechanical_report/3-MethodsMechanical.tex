@@ -241,6 +241,54 @@ lumière visible, mais aussi des rayonnements ultraviolets et infrarouges proche
     \label{fig:wavelength}
 \end{figure}
 
+\subsection{Modification des composants internes}
+
+Durant une bonne première partie du projet, la caméra et le lidar devaient être inclus dans le boitier. 
+Un choix au niveau de la disposition des vitres était nécessaire. Dans la première configuration, chaque 
+capteur possède une vitre adaptée à son boitier. Le design est très original cependant le fait de faire 
+ça augmente la complexité du montage et des pièces utilisées. Il n’y a aucun réel intérêt à faire ce design 
+plutôt qu’une simple grande vitre. La figure \ref{fig:boitierv1} montre la première version du boitier.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.3\textwidth]{Images/photos_PGA/Boiterv1.PNG}
+    \includegraphics[width=0.4\textwidth]{Images/photos_PGA/boitierv2.PNG}
+    \caption{Boitier version 1}
+    \label{fig:boitierv1}
+\end{figure}
+
+Durant une séance, la suppression de la stéréovision dans le boitier a été décidée. Ce choix a remis en cause 
+le design de ce dernier. L’encombrement se retrouve réduit et l’utilisation de deux verres n’est plus 
+nécessaire. 
+
+\subsection{Etanchéité}
+
+Lors de la suite de la conception, l’étanchéité de la boite posait beaucoup de difficulté. La situation de 
+l’ouverture pour accéder à l’intérieur était aussi une question à bien se poser.\\
+La solution pour l’étanchéité du mécanisme d’ouverture du boitier fut inspirée des boitiers étanches fortement 
+utilisé dans l’industrie pour protéger des composants électroniques. Le principe est très simple, il suffit 
+de faire une gorge dans la partie non amovible afin de pouvoir loger le joint. La partie amovible qui dans 
+notre cas est le couvercle, est composé d’un petit bourlet qui va venir écraser le joint lors de la fermeture 
+afin d’assurer une très bonne étanchéité. L’élasticité du joint permettra d’avoir constamment une étanchéité.
+La figure \ref{fig:etanche} montre le système d'étanchéité.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{Images/photos_PGA/EtanchBoitier.PNG}
+    \caption{Etanchéité du boitier}
+    \label{fig:etanche}
+\end{figure}
+
+\subsection{Problèmes de buée}
+
+Le système ne consommant que très peu courant (-100mA pendant env 2 min sinon en mode sleep dans les uA), 
+les problèmes de buées ne devraient pas poser trop de soucis. L’humidié dans le boitier se condense à cause 
+du froid de la vitre et forme une couche de buée. Cette buée pourrait nuire au bon fonctionnement du capteur. 
+La solution pour enlever au maximum l’humidité dans le boitier sont les sachets de silica gel. Un espace 
+permettra de pouvoir en disposer deux dans le boitier. 
+Malheureusement par manque de temps, des essais n’ont pas pu être réalisé pour prouver le bon fonctionnement 
+de cette solution. Cependant cette méthode est déjà très rependue et n’a pas besoin de faire ses preuves.
+
 \subsection{Premier prototype}
 
 \subsubsection{Ouverture}
@@ -307,9 +355,11 @@ n’était donc pas nécessaires.
 
 L’ouverture se fait par en haut à l’aide d’un couvercle amovible. Le système d’étanchéité est le 
 même que les précédentes versions. Le maintien en pression sur le joint est effectué grâce à 
-une fixation dites grenouillère, comme le montre la figure \ref{fig:ouverturev2}. La grenouillère 
+une fixation dites grenouillère, comme le montre la figure \ref{fig:ouverturev2}. La grenouillère\footnotemark[1] 
 dispense l’utilisation d’outils et permet un gain de temps lors de l’ouverture et la fermeture. 
 Cette dernière possède une serrure intégrée pour dissuader de possibles vols.
+
+%\footnotetext[1]{https://www.pfefferle.ch/?srv=search&pg=det&partnerId=3&rub=100048505&groupId=0&artNr=100148750&markId=}
 
 \begin{figure}[H]
     \centering
