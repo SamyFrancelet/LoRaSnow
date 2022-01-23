@@ -30,14 +30,6 @@
 \usepackage{enumitem}
 \usepackage{multicol}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% En-tête  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{fancyhdr}
-\setlength{\headheight}{14pt}
-\pagestyle{fancy}
-\renewcommand{\chaptermark}[1]{\markboth{#1}{#1}}
-\fancyhead[LO]{\textbf{\leftmark}}
-\fancyhead[RO]{\textbf{ LoRaSnow\ }}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CHAPTER HEADER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{tikz}
 \usepackage[explicit]{titlesec}
@@ -94,3 +86,10 @@
 }{
     \end{mdframed}\end{frameenv}
 }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% En-tête  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fancyhdr}
+\setlength{\headheight}{14pt}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{#1}}
+\fancyhead[LO]{\textbf{\leftmark}}
+\fancyhead[RO]{\textbf{ LoRaSnow }}
