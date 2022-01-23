@@ -9,7 +9,7 @@ Le deuxième grand défi est de compacter toute l'électronique dans un boitier 
 intempéries. Une carte de développement, une carte d'extension, des batteries ainsi que d’autres composants 
 doivent être à l’abri dans ce boitier. Pour assurer des mesures fiables et la survie de l’électronique, 
 l’étanchéité du boitier est nécessaire. La simplicité du démontage est aussi recherchée, elle permettra 
-aux personnes de gagner du temps lors du montage ou de la maintenance.
+aux techniciens de gagner du temps lors du montage ou de la maintenance.
 
 \section{Banc de test}
 
@@ -34,8 +34,8 @@ de test.
 Comme des essais doivent être réalisés dès les premières semaines du projet, la structure a dû être
 rapidement construite. Une structure en bois a donc été retenue pour sa simplicité de montage. 
 Les façades de la cage ont été réalisées avec des bâches de protections épaisses que nous avons aggrafé 
-sur la structure. Les planches ont été assemblées à l’aide d’équerres en métal et de vis à bois.\\
-Afin d’avoir une bonne rigidité, la structure aurait pu être triangulé avec des poutres en bois. 
+sur la structure. Les planches ont été assemblées à l’aide d’équerres métalliques et de vis à bois.\\
+Afin d’avoir une bonne rigidité, la structure aurait pu être triangulée avec des poutres en bois. 
 Cependant, le banc de test étant exposé à quasiment aucune contrainte mécanique, la rigidité ajoutée par 
 les bâches de protections est largement suffisante. Cette configuration nous a permis d’économiser du 
 temps et de l’argent.
@@ -55,7 +55,7 @@ dans les imprimantes de l’école. Malheureusement ces derniers étaient vidés
 trouvée était plus qu’insuffisante.\\
 La deuxième solution, celle qui a été retenue, est d’utiliser la déchiqueteuse du secrétariat. Cette 
 démarche n’était pas des plus écologique, mais elle a permis de pouvoir créer les confettis rapidement. 
-Un paquet de feuille blanche a été détruit pour fabriquer un carton plein de lamelle blanche s’apparentant 
+Un paquet de feuille blanche a été détruit pour fabriquer un carton plein de lamelles blanches ressemblant 
 à des confettis ou de la grosse neige. \\
 Le remplissage du carton à la figure \ref{fig:confettis} a pris environ une heure. 
 
@@ -87,7 +87,7 @@ de dépression, d'où ils sont aspirés vers un petit coude, leur permettant de 
 tube principal.\par 
 Sur le schéma de la figure \ref{fig:venturi}, le principe du canon y est représenté. Le débit d’air constant 
 (en noir) arrive au niveau du réservoir, la section diminuant, la pression diminue aussi. Ainsi, un phénomène 
-d’aspiration se produit. De cette manière, un mélange d'air et de confettis est projeté.
+d’aspiration se produit. De cette manière, un mélange d'air et de confettis est projeté a travers le tube principal.
 
 \begin{figure}[H]
     \centering
@@ -98,7 +98,7 @@ d’aspiration se produit. De cette manière, un mélange d'air et de confettis 
 
 Cette première version fut rapidement envoyée à l’atelier pour être imprimée afin d’effectuer 
 les premiers tests et les éventuelles corrections du canon. La figure \ref{fig:3DPrintCanon} montre 
-le tube principale imprimé en PETG grâce à l’imprimante 3D de l’école.
+le tube principal imprimé en PETG grâce à l’imprimante 3D \emph{(Prusa MK3)} de l’école.
 
 \begin{figure}[H]
     \centering
@@ -132,12 +132,12 @@ A la suite d'une série de tests, plusieurs éléments se sont révélés probl�
 confettis confectionnés ont une tendance à s’enchevêtrer les uns dans les autres, et cela réduit 
 considérablement leurs capacités à couler dans le réservoir. Ce dernier se retrouvait sans cesse 
 bouché. Grace aux tests, le fait d’agrandir le passage des confettis permettrai d’avoir un meilleur 
-écoulement et de limiter la formation de bouchons.
+écoulement et de limiter la formation d'agglomérats.
 
 \subsubsection{Solution apportée}
 
 En prenant en compte les problèmes survenu lors des premiers essais, une deuxième version a été modélisée, 
-cette fois-ci avec un réservoir plus grand et un angle de remplissable plus faible. Le coude passe 
+cette fois-ci avec un réservoir plus haut et un angle de remplissage plus faible. Le coude passe 
 de 28mm de diamètre à 34 mm. Ce dernier est maintenant directement imprimé dans le tube principal afin 
 d’éviter les angles trop saillants qui pourraient causer un blocage, comme le montre la figure \ref{fig:venturiv2}. 
 Afin d’obtenir un coude plus large 
@@ -169,8 +169,8 @@ neige. On peut voir sur la figure \ref{fig:canonupdate} le canon en action.
 
 Pour l’assemblage des différentes pièces du canon, comme ces dernières étaient très bien ajustées et 
 tenaient entres elles, utiliser des colles fortes spécifiques n’a pas été nécessaire. 
-L’utilisation de colle chaude pour garantir un non-détachement et un démontage plus simple a été utilisé. 
-Certaines pièces étant interchangeables, elles ne pouvaient pas être collées. Par conséquent, l’utilisation de scotch pour 
+L’utilisation de colle thermofusible pour garantir un non-détachement et un démontage plus simple a été utilisé. 
+Certaines pièces étant interchangeables, elles ne pouvaient pas être collées. Par conséquent, l’utilisation de ruban adhésif pour 
 garantir aucun déboitement a été privilégié. Cet appareil a surtout été conçu dans un but d'effectuer 
 les mesures rapidement et le temps de conception/réalisation était très court. C’est pourquoi la complexité 
 des fixations n’a pas été une priorité. L’objectif qui était d’avoir un débit de neige constant a donc 
@@ -186,28 +186,27 @@ des fixations n’a pas été une priorité. L’objectif qui était d’avoir u
 \newpage
 \section{Boitier}
 
-L’électronique ainsi que les capteurs doivent être protégés, les mesures se passant en milieu non 
-favorable (neige, pluie, vents…). La conception du boitier devra assurer une bonne étanchéité des 
-composants. Pour cela il faut un boitier sur mesure répondant à beaucoup de critères comme un encombrement 
-optimisé, une fixation permettant de mettre le boitier sur plusieurs styles de support et surtout 
-une simplicité de conception. Garantir une simplicité de conception dans un encombrement limité est
-un défi complexe.\par
-La configuration de base du boitier était d’avoir un LiDAR et une caméra qui travaillent ensemble, 
-le liDAR permettant d’avoir une mesure de hauteur de neige et la webcam d’avoir une mesure sur le débit 
-de neige. Une carte de développement ainsi qu’une carte d'extension spécifique doit être intégré. Une batterie 
-permet au système de fonctionner de manière autonome.
+Les mesures se passant en milieu non favorable (neige, pluie, vents…), L’électronique ainsi que les capteurs 
+doivent être protégés. La conception du boitier doit assurer une bonne étanchéité. Pour cela il faut un 
+boitier sur mesures répondant à beaucoup de critères comme un encombrement optimisé, une fixation permettant 
+de mettre le boitier sur plusieurs styles de supports et surtout une simplicité de conception. Garantir une 
+simplicité de conception dans un encombrement limité devient vite compliqué. \par
+La configuration de base du boitier est d’avoir un LiDAR et une caméra qui travaillent ensemble. Le LiDAR 
+permet d’avoir une mesure de hauteur de neige et la caméra d’avoir une indication sur le débit de neige. 
+Une carte de développement ainsi qu’un Shield spécifique doive être intégré. Une batterie permet au système 
+de fonctionner de manière autonome. Si la solution devait être reliée au secteur, beaucoup d’endroits potentiels 
+de mesure seraient supprimés. C’est pourquoi la solution d’une batterie fut retenue. 
 
 \subsection{Vitre}
 
-Le premier défi réside dans le fait d’avoir une partie du boitier transparente tout en gardant ses caractéristiques d'étanchéité, 
-le but étant d’incruster une ou plusieurs vitres pour que les capteurs puissent effectuer leurs mesures 
-sans être perturbé par des problèmes d’eau ou de poussière. La vitre doit rester remplaçable facilement 
-en cas de casse ou d’usure. Un appareil qui est particulièrement étanche et qui permet une vision à 
-travers un boitier est la GoPro. Sur les anciens modèles, la vitre est démontable. Le système qui permet 
-à cette dernière d’être étanche et composé d’un joint qui vient pincer entre les deux surfaces en contact. 
-Le principe étant le même que celui recherché, il a été retenu et adapté.Lla solution est plus 
-amplement détaillée à la figure \ref{fig:vitre}, la vitre en bleu vient pincée sur le joint par la plaque du haut. La pression est 
-maintenue par les vis ce qui garantit l’étanchéité.
+Le premier défi est d’avoir une partie du boitier transparente sans pour autant ne plus être étanche. Le but 
+étant d’incruster une ou plusieurs vitres pour que les capteurs puissent effectuer leurs mesures sans être 
+perturbés par des problèmes d’eau ou de poussière. La vitre doit rester remplaçable facilement en cas de 
+casse ou d’usure. Un appareil qui correspond à ces caractéristiques est la GoPro. Sur les anciens modèles, 
+la vitre est démontable. Le système qui permet à cette dernière d’être étanche est composé d’un joint qui 
+vient se pincer entre deux surfaces en contact. Ci-dessous, la solution est plus amplement détaillée (figure \ref{fig:vitre}), 
+la vitre en bleu vient pincée sur le joint par la plaque du haut. La pression est maintenue par les vis ce 
+qui garantit l’étanchéité.
 
 \begin{figure}[H]
     \centering
@@ -217,20 +216,19 @@ maintenue par les vis ce qui garantit l’étanchéité.
     \label{fig:vitre}
 \end{figure}
 
-Dans le cas où ces pièces sont faites en plastique, l’utilisation de vis auto taraudeuse ou d’insert 
-filetés seraient utilisés. Les vis auto taraudeuses sont plus simple à mettre en place et tout aussi 
+Dans le cas où ces pièces seraient faites en plastique, l’utilisation de vis auto taraudeuse ou d’insert 
+filetés sera nécessaire. Les vis auto taraudeuses sont plus simple à mettre en place et tout aussi 
 efficace. \\
-Dans le cas de pièces métalliques, un simple taraudage suffit. L’utilisation de frein filet est 
-envisageable mais étant donné que la pièce sert un joint élastique, il devrait absorber la plupart 
-des vibrations.\par 
-Pour permettre au capteur de faire des mesures, il faut une zone du boitier transparente. Un verre 
-était la solution. Cependant ce n’est pas aussi simple. En effet, le capteur fonctionne dans les infrarouges 
-proches (940nm). Tous les verres ne permettent pas le passage de ces rayons. Sur le graphique de la figure \ref{fig:wavelength}, 
-la capacité à laisser passer les rayons en fonction de la longueur d’onde est exprimé. Sans étonnement, 
+Dans le cas de pièces métalliques, un simple taraudage suffit. L’utilisation de frein-filet est envisageable 
+mais étant donné que la pièce serre un joint élastique, il absorbera la plupart des vibrations.\par 
+Afin de permettre au capteur de faire des mesures, il faut une zone du boitier transparente. L’utilisation 
+d'un verre est la solution. Cependant ce n’est pas aussi simple, le capteur fonctionne dans les infrarouges proches 
+(940nm). Tous les verres ne permettent pas le passage de ces rayons. Sur le graphique ci-dessous \ref{fig:wavelength},
+la capacité à laisser passer les rayons en fonction de la longueur d’onde est exprimé. Sans étonnement,
 le verre de quartz est le plus adapté.\\
-De plus, les verres de quartz et de silice offrent une grande résistance aux hautes températures et 
-aux chocs thermiques. Ils ont une grande homogénéité et permettent une excellente transmission de la 
-lumière visible, mais aussi des rayonnements ultraviolets et infrarouges proches\footnotemark[1].
+De plus, les verres de quartz offrent une grande résistance aux hautes températures et aux chocs 
+thermiques. Ils ont une grande homogénéité et permettent une excellente transmission de la lumière visible, mais 
+aussi des rayonnements ultraviolets et infrarouges proches\footnotemark[1].
 
 %\footnotetext[1]{https://www.researchgate.net/figure/Color-online-Optical-transmittance-spectra-of-quartz-glass-asdeposited-ZnO-and_fig4_274430836}
 
@@ -243,34 +241,34 @@ lumière visible, mais aussi des rayonnements ultraviolets et infrarouges proche
 
 \subsection{Modification des composants internes}
 
-Durant une bonne première partie du projet, la caméra et le lidar devaient être inclus dans le boitier. 
-Un choix au niveau de la disposition des vitres était nécessaire. Dans la première configuration, chaque 
-capteur possède une vitre adaptée à son boitier. Le design est très original cependant le fait de faire 
-ça augmente la complexité du montage et des pièces utilisées. Il n’y a aucun réel intérêt à faire ce design 
-plutôt qu’une simple grande vitre. La figure \ref{fig:boitierv1} montre la première version du boitier.
+Durant une bonne première partie du projet, la caméra et le lidar devaient être inclus ensemble dans le boitier. 
+Un choix au niveau de la disposition des vitres était nécessaire. Dans la première configuration, 
+chaque capteur possède une vitre adaptée à son boitier. Le design est très original cependant le fait de faire ça 
+augmente la complexité du montage et des pièces utilisées. Il n’y a aucun réel intérêt à faire ce design plutôt 
+qu’une simple grande vitre (figure \ref{fig:boitierv1}).
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.3\textwidth]{Images/photos_PGA/Boiterv1.PNG}
     \includegraphics[width=0.4\textwidth]{Images/photos_PGA/boitierv2.PNG}
-    \caption{Boitier version 1}
+    \caption{Premiers designs du boîtier (à gauche : double vitre, à droite : simple vitre)}
     \label{fig:boitierv1}
 \end{figure}
 
-Durant une séance, la suppression de la stéréovision dans le boitier a été décidée. Ce choix a remis en cause 
-le design de ce dernier. L’encombrement se retrouve réduit et l’utilisation de deux verres n’est plus 
-nécessaire. 
+Durant une séance, la suppression de la \emph{Computer Vision} dans le boitier fut décidée. Ce choix remis en cause le design 
+de ce dernier. L’encombrement se retrouvait réduit et l’utilisation de deux verres n’était plus une question à se 
+poser. 
 
 \subsection{Etanchéité}
 
-Lors de la suite de la conception, l’étanchéité de la boite posait beaucoup de difficulté. La situation de 
-l’ouverture pour accéder à l’intérieur était aussi une question à bien se poser.\\
-La solution pour l’étanchéité du mécanisme d’ouverture du boitier fut inspirée des boitiers étanches fortement 
-utilisé dans l’industrie pour protéger des composants électroniques. Le principe est très simple, il suffit 
-de faire une gorge dans la partie non amovible afin de pouvoir loger le joint. La partie amovible qui dans 
-notre cas est le couvercle, est composé d’un petit bourlet qui va venir écraser le joint lors de la fermeture 
-afin d’assurer une très bonne étanchéité. L’élasticité du joint permettra d’avoir constamment une étanchéité.
-La figure \ref{fig:etanche} montre le système d'étanchéité.
+Lors de la suite de la conception, l’étanchéité de la boite posa beaucoup de difficultés. La situation 
+de l’ouverture pour accéder à l’intérieur était aussi une question à bien se poser. \\
+La solution pour l’étanchéité du mécanisme d’ouverture est inspirée des boitiers étanches fortement 
+utilisés dans l’industrie pour protéger les composants électroniques. Le principe est très simple, il 
+suffit d’une gorge dans la partie non amovible afin de pouvoir loger un joint. La partie amovible, qui 
+dans notre cas est le couvercle, est composée d’un petit bourlet\ref{fig:etanche} qui va venir écraser le joint lors de 
+la fermeture afin d’assurer une très bonne étanchéité. L’élasticité du joint, sous contrainte, permettra 
+d’avoir constamment une étanchéité. 
 
 \begin{figure}[H]
     \centering
@@ -279,26 +277,26 @@ La figure \ref{fig:etanche} montre le système d'étanchéité.
     \label{fig:etanche}
 \end{figure}
 
-\subsection{Problèmes de buée}
+\subsection{Problème de buée}
 
-Le système ne consommant que très peu courant (-100mA pendant env 2 min sinon en mode sleep dans les uA), 
-les problèmes de buées ne devraient pas poser trop de soucis. L’humidié dans le boitier se condense à cause 
-du froid de la vitre et forme une couche de buée. Cette buée pourrait nuire au bon fonctionnement du capteur. 
-La solution pour enlever au maximum l’humidité dans le boitier sont les sachets de silica gel. Un espace 
-permettra de pouvoir en disposer deux dans le boitier. 
-Malheureusement par manque de temps, des essais n’ont pas pu être réalisé pour prouver le bon fonctionnement 
+L’humidié dans le boitier se condense à cause du froid de la vitre et forme une couche de buée. Cette buée 
+pourrait nuire au bon fonctionnement du capteur. Le système ne consommant que très peu courant (moins de 
+100mA durant fonctionnement, quelques uA sinon), la buée ne posera sûrement pas de problème. La solution 
+pour enlever au maximum l’humidité dans le boitier est l'utilisation de sachet de gel de silice. Un espace permettra 
+de pouvoir en disposer deux dans le boitier. \\
+Malheureusement par manque de temps, des essais n’ont pas pu être réalisés pour prouver le bon fonctionnement 
 de cette solution. Cependant cette méthode est déjà très rependue et n’a pas besoin de faire ses preuves.
 
-\subsection{Premier prototype}
+\subsection{Premier concept}
 
 \subsubsection{Ouverture}
 
-À la suite de ça, un prototype de boitier a été réalisé pour se rendre compte de l’encombrement, de la 
+À la suite de ça, un concept de boitier a été réalisé pour se rendre compte de l’encombrement, de la 
 praticité et du design. Il a été choisi de mettre l'ouverture à l’arrière du boitier, comprenant un
 système d’étanchéité démontré sur la figure \ref{fig:vuearriereboitier}. Le maintien de la pression 
-sur le joint était fait grâce à quatre vis qui venait directement prendre dans la base du boitier. 
+sur le joint était fait grâce à quatre vis qui viennet directement se prendre dans la base du boitier. 
 Cette manière de fixer permet de ne pas avoir de trou traversant le boitier. Cette méthode est la 
-même que sur celle utilisé dans de la plupart des boitiers étanches.
+même que dans de la plupart des boitiers étanches.
 
 \begin{figure}[H]
     \centering
@@ -309,27 +307,27 @@ même que sur celle utilisé dans de la plupart des boitiers étanches.
 
 \subsubsection{Encombrement}
 
-Comme le boitier possède un encombrement de 200mm x 100mm x 100mm, il faut une électronique de 
-moyenne taille. La figure \ref{fig:encombrementv1} montre l'espace disponible dans le boitier, sans 
+Arbitrairement, les dimensions de 200mm x 100mm x 100mm ont été choisies afin de rendre le système
+compact. La figure \ref{fig:encombrementv1} montre l'espace disponible dans le boitier, sans 
 les batteries, le capteur et le module d'extension.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.3\textwidth]{Images/photos_PGA/boitierV3.PNG}
     \includegraphics[width=0.4\textwidth]{Images/photos_PGA/boitierV3enc.PNG}
-    \caption{Encombrement du boitier, version 1}
+    \caption{Encombrement du boitier, version 1 (en rouge l'encombrement estimé de l’électronique)}
     \label{fig:encombrementv1}
 \end{figure}
 
 En avançant dans le design du boitier, des difficultés concernant la fixation de l’électronique dans le boiter 
-se sont manifesté. L’utilisation d’une casquette devenait aussi complexe, car il faut éviter à tout prix d'avoir
-des perçages traversants. La fixation du le bras a été pensée pour se trouver
+se sont manifestées. L’utilisation d’une casquette devenait aussi compliquée, car il faut éviter à tout prix d'avoir
+des perçages traversants. La fixation du bras a été pensée pour se situer
 sous le boitier. Cependant elle aurait aussi pu être prise sur les côtés en englobant la casquette. 
 À la suite de tous ces problèmes, le design a été complètement revisité.
 
 \subsection{Version finale du boitier}
 
-Le dernier design est inspiré des caméras de surveillance récente. Ce boitier sera conçu à base de 
+Le dernier design est inspiré des caméras de surveillance récente. Ce boitier est conçu à base de 
 polymère, qui permet de limiter les transferts de chaleurs et les coûts.
 
 \subsubsection{Matériaux}
@@ -349,17 +347,17 @@ s’avère plus complexe et plus couteuse que l’injection plastique. Le prix d
 triplé. Les caractéristiques du polymère étant parfaitement suffisantes, l’intérêt d’utiliser de l’aluminium 
 n’était donc pas nécessaires.
 
-\footnotetext[1]{https://www.polyvia.fr/fr/prix-du-plastique-les-previsions-pour-2022}
+\footnotetext[1]{\url{https://www.polyvia.fr/fr/prix-du-plastique-les-previsions-pour-2022}}
 
 \subsubsection{Ouverture}
 
 L’ouverture se fait par en haut à l’aide d’un couvercle amovible. Le système d’étanchéité est le 
-même que les précédentes versions. Le maintien en pression sur le joint est effectué grâce à 
-une fixation dites grenouillère, comme le montre la figure \ref{fig:ouverturev2}. La grenouillère\footnotemark[1] 
+même que les précédentes versions. Le maintien de la pression sur le joint est effectué grâce à 
+une fixation dites grenouillère, comme le montre la figure \ref{fig:ouverturev2}. La grenouillère\footnotemark[2] 
 dispense l’utilisation d’outils et permet un gain de temps lors de l’ouverture et la fermeture. 
 Cette dernière possède une serrure intégrée pour dissuader de possibles vols.
 
-%\footnotetext[1]{https://www.pfefferle.ch/?srv=search&pg=det&partnerId=3&rub=100048505&groupId=0&artNr=100148750&markId=}
+\footnotetext[2]{\url{https://www.pfefferle.ch/?srv=search&pg=det&partnerId=3&rub=100048505&groupId=0&artNr=100148750&markId=}}
 
 \begin{figure}[H]
     \centering
@@ -397,20 +395,20 @@ configuration permet de soulager les efforts sur les supports, comme le montre l
     \centering
     \includegraphics[width=0.4\textwidth]{Images/photos_PGA/fixcasquette.PNG}
     \includegraphics[width=0.4\textwidth]{Images/photos_PGA/inserts.jpg}
-    \caption{Mécanisme du pivot}
+    \caption{Fixation de la casquette et inserts filetés}
     \label{fig:casquette}
 \end{figure}
 
 \subsubsection{Fixation du module}
 
 En ce qui concerne la partie intérieure, quatre supports sont intégrés dans le fond du boitier. Ces derniers 
-sont dimensionnés pour accueillir des inserts plastiques. Toute la partie électronique pourra par la 
-suite venir se fixer sur le dessus. La figure \ref{fig:fixbase} montre ces fixations.
+sont dimensionnés pour accueillir des inserts filetés. Toute la partie électronique pourra par la 
+suite venir se fixer sur les quatre supports. La figure \ref{fig:fixbase} montre les supports du module.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.35\textwidth]{Images/photos_PGA/fixationbaseModule.PNG}
-    \caption{Fixation du module}
+    \caption{Support du module}
     \label{fig:fixbase}
 \end{figure}
 
@@ -418,8 +416,8 @@ suite venir se fixer sur le dessus. La figure \ref{fig:fixbase} montre ces fixat
 
 La fixation du bras sera assurée par quatre écrous carrés situé sous le boitier, comme le montre la figure 
 \ref{fig:supportfix}. Cette solution permet de 
-ne pas à avoir à faire de trous dans le boitier pour maintenir une bonne étanchéité. Ces écrous sont 
-guidés dans une gorge afin d’être maintenus pendant le serrage. Le même principe est utilisé pour 
+ne pas à avoir à faire de trous dans le boitier pour maintenir une bonne étanchéité. Les écrous carrés viennent
+glisser dans des fentes et sont ensuite bloqués par les vis de fixation. Le même principe est utilisé pour 
 fixer des éléments dans les armoires d'automation.
 
 \begin{figure}[H]
@@ -436,8 +434,9 @@ Cette partie est consacrée au développement d’un module compact et simple co
 comme montré sur la figure \ref{fig:elmodule}.
 Ce module est fixé dans le boitier grâce aux quatre plots de fixations situés dans le fond 
 du boitier. L’interêt de designer une construction mécanique est de pouvoir soutenir tous les composants 
-pour les empêcher de se déplacer à leur guise. La simplicitée recherchée dans sa conception permet
-aux opérateurs de gagner du temps.
+pour les empêcher de se déplacer à leur guise. La simplicité recherchée dans sa conception permet
+aux opérateurs de gagner du temps. L'aspect interne est également beaucoup plus propre et le module est
+rapidement remplaçable en cas de panne.
 
 \begin{figure}[H]
     \centering
@@ -453,7 +452,7 @@ Un espace légèrement plus grand est
 prévu. L’appellation 18650 signifie que l’élément rechargeable fait un diamètre de 18mm et une longueur 
 de 65mm. Des petites fentes ont aussi été pensées pour faciliter un câblage série/parallèle entre les 
 éléments. Cette pièce est la fondation du module électronique, elle sera naturellement fixée dans le 
-boitier grâce aux 4 trous de fixations.
+boitier grâce à quatre vis imbus.
 
 \begin{figure}[H]
     \centering
@@ -468,7 +467,7 @@ boitier grâce aux 4 trous de fixations.
 Au-dessus de la pièce supportant les batteries, une plaque est fixée. Cette dernière est très importante 
 dans l’ensemble. Elle permet grâce aux trois fixations situées aux extrémités de venir bloquer les batteries 
 pour éviter qu'elles ne bougent. Ces trois trous sont prévus pour venir fixer la plaque 
-sur le module du bas. Les quatre autres servent à fixer la partie PCB. Quatre vis à tête fraisée seront 
+sur la pièce du bas. Les quatre autres servent à fixer la partie PCB. Quatre vis à tête fraisée seront 
 insérées dans les trous fraisés afin de venir fixer des entretoises en plastiques. Sur ces dernières, 
 les circuits imprimés pourront être fixé à l’aide de visses en plastiques. Ces composants 
 plastique permettent d’éviter tout risque de court-circuit. La figure \ref{fig:fixelectronique} montre la plaque
@@ -485,7 +484,7 @@ de fixation et le module électronique monté.
 \subsubsection{Support du LiDAR}
 
 Le capteur LiDAR ne possède pas de trou de fixation, seul deux fentes sont disponibles pour venir 
-cliper un support sur ce dernier. Le fabricant préconise de le fixer avec des attaches plastiques ou du scotch 
+cliper un support sur ce dernier. Le fabricant \emph{(Garmin)} préconise de le fixer avec des attaches câbles ou du scotch 
 double face. Ces solutions sont plutôt prévues à des fins de bricolage. Des essais de supports à base 
 de clips ont été réalisé mais l’ajustement de ces derniers était problématique. C’est pour ça que la 
 solution de pincer le capteur à l’aide de vis sans tête est parvenue comme la plus sûre et la plus simple. 
@@ -504,8 +503,8 @@ le support.
 
 \subsection{Bras de fixation}
 
-La partie fixation permet d’assurer un positionnement juste et précis de l’ensemble du boitier. Cette 
-dernière doit pouvoir se faire sur quasiment toutes les surfaces à dispositions comme les murs ou les 
+La fixation permet d’assurer un positionnement juste et précis de l’ensemble du boitier. Elle
+doit pouvoir se faire sur quasiment toutes les surfaces à dispositions comme les murs ou les 
 lampadaires.
 
 \subsubsection{Support du boitier}
@@ -516,8 +515,8 @@ perçage correspondant au boitier. La deuxième est une autre plaque percée sou
 Ce perçage permettra de jongler entre les systèmes de fixation désiré. Grace à cette liaison par boulon, 
 l’inclinaison du boitier pourra être réglée.\\
 En ce qui concerne le réglage précis de l’angle, un petit cadran autocollant pourrait être rajouté 
-sur le support et une ligne autocollante sur le support du boitier. Elle permettra de lire la valeur 
-de l’inclinaison du boitier. Cette petite subtilité permettra de faciliter le montage du boitier et 
+sur le collier-support et une ligne autocollante sur le support du boitier. Elle permettra de lire la valeur 
+de l’inclinaison du système. Cette petite subtilité permettra de faciliter le montage du boitier et 
 de pouvoir contrôler si la position est bonne sur le long terme.\\
 La figure \ref{fig:angle} montre la fixation au boitier ainsi que le réglage d'angle.
 
@@ -570,23 +569,3 @@ temporaire ainsi que sa fixation.
     \caption{LoRaSnow Testbox, intérieur et extérieur}
     \label{fig:testbox}
 \end{figure}
-
-%% HEEEEEEEEEEEEEEEEEEEEEEEEEEHHHHHH STOOOOOOOOOOOOOOOOOPPPPPPPPPPPPPPP %%
-
-\section{Synthèse des résultats}
-
-Grace à un banc de test comprenant une cage d’essai et un canon à confettis. Plusieurs séries de mesures 
-concluantes ont pu être réalisées. Le débit de neige produit par le canon étant réglable, il augmente les 
-possibilités de mesures. La cage permit de contenir les nuages de confettis sans dégrader les conditions 
-de travails des autres usagers de la salle.\\
-Différents designs de boitier ont été imaginés avant d’arriver à la solution finale. L’étanchéité fut la 
-partie plus problématique lors de la conception. L’utilisation de joint torique pincé permit de résoudre 
-ces problèmes. L’ABS étant une matière très simple à injecter, la fabrication des pièces du boitier serait 
-corolaire. Le support du boitier permet de régler à la fois l’élévation et l’azimut du boitier. La partie 
-amovible supérieure permet un très bon accès à la partie du module électronique. Elle se verrouille facilement 
-grâce à une fermeture par grenouillère. L’ouverture est verrouillée grâce à la serrure incrustée dans la 
-fixation.\\
-Le module électronique se fixe simplement dans le boitier à l’aide de 4 vis. Une structure mécanique permet 
-de maintenir les batteries en place. Au-dessus des batteries, une plaque permet la fixation du capteur Lidar 
-et des PCB. Suffisamment d’espace est prévu autour du module afin de pouvoir disposer aisément le câblage. 
-La simplicité du module permet une manipulation rapide et simple des différents éléments.
