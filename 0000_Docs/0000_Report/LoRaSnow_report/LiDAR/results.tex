@@ -316,7 +316,20 @@ utilisée pour les tests sur le terrain.
 Après avoir prouvé le fonctionnement du capteur en laboratoire, il est essentiel de le tester en conditions
 réelles, sous la neige. Pour ce faire, des tests ont été réalisés la nuit du 3 au 4 décembre 2021 à Ayent.
 Un boitier temporaire a été confectionné afin de protéger le LiDAR et la carte de développement des 
-précipitations.
+précipitations.\par 
+Afin de facilité l'intégration du module dans un boitier, un PCB a été confectionné par nos soins. Ainsi, une 
+carte d'extension au format \emph{Arduino Uno} a été imaginée, implémentant une connexion pour le LiDAR, un
+capteur de température sous la forme d'une NTC ainsi qu'un slot pour carte SD. Le capteur de température
+permet d'enclancher le système lorsque la température est suffisamment basse. Cette dernière a été fixée 
+à 5°C. La carte SD nous est utile pour enregistrer des données à des fins de debug. La figure \ref{fig:PCB}
+montre la carte d'extension dans le boitier de test.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{Images/photos_PGA/testboxinside.jpg}
+    \caption{Vue du PCB fabriqué}
+    \label{fig:PCB}
+\end{figure}
 
 \subsubsection{Méthode}
 
