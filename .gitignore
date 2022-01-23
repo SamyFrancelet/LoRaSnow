@@ -13,3 +13,6 @@
 *.run.xml
 *.synctex.gz
 *.toc
+*.lot
+*.lof
+*.out
