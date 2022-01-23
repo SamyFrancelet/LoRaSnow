@@ -321,9 +321,9 @@ def main():
     f.write("Day,Observed snow on road, White ratio on road, Estimated snow on road\n")
     f.close()
 
-    dayRef = quickRatio("sorted/snowOnRoad/day/ref.mp4", 1)
+    dayRef = quickRatio("sorted/snowOnRoad/day/ref.mp4", 1, denoise=False)
     print(dayRef*100)
-    nightRef = quickRatio("sorted/snowOnRoad/night/ref.mp4", 0)
+    nightRef = quickRatio("sorted/snowOnRoad/night/ref.mp4", 0, denoise=False)
     print(nightRef*100)
 
     for root, dirs, files in os.walk("sorted\snowOnRoad"):
@@ -348,7 +348,7 @@ def main():
 
             for file in files:
                 print((day, snowyness))
-                print(snowOnRoad(root + '\\' + file, ref, day, snowyness, logFolder))
+                print(snowOnRoad(root + '\\' + file, ref, day, snowyness, logFolder, denoise=False))
 
     f = open(logFolder + "snowfall.csv", 'a')
     f.write("Day,Observed intensity, White ratio, Estimated intensity\n")
@@ -375,7 +375,7 @@ def main():
 
             for file in files:
                 print((day, snowfall))
-                print(snowfallRate(root + '\\' + file, day, snowfall, logFolder))
+                #print(snowfallRate(root + '\\' + file, day, snowfall, logFolder))
 
 
 if __name__ == "__main__":
