@@ -7,9 +7,9 @@
     \label{fig:LiDARLiteV4}
 \end{figure}
 
-Le LiDAR (ou \emph{laser imaging detection and ranging}) est un système de télédétection par laser
-utile pour mesurer des distances. Ce dernier envoie des faisceaux laser et mesure le temps que 
-parcourt la lumière jusqu'au sujet. Il est ainsi possible de connaître avec plus ou moins de précision
+Le LiDAR (ou \emph{laser imaging detection and ranging}) est un système de télédétection par laser,
+utile pour mesurer des distances. Ce dernier envoie des faisceaux laser et mesure le temps du trajet
+aller-retour vers le sujet. Il est ainsi possible de connaître avec plus ou moins de précision
 quelle est la distance entre l'objet et le capteur.
 
 \subsection{Fondamentaux}
@@ -22,16 +22,16 @@ les instruments.\\
 À partir d'une mesure de référence au sol, le capteur doit être capable de mesurer une hauteur de neige
 présente dès les premières chutes, même après déneigement de la route. De plus, les conditions
 météorologiques extrêmes présentes en altitude ne doivent en aucun cas perturber ces mesures, et ce
-durant tout l'hiver. De plus, il serait important de ne pas avoir à entretenir ou dépanner le système
+durant tout l'hiver. Finalement, il serait important de ne pas avoir à entretenir ou dépanner le système
 au cours de la saison, sauf en cas de force majeure.\\
-Lors d'une mesure lorsqu'il neige, les flocons peuvent passer devant le capteur et interférer avec la
+Lors d'une mesure, lorsqu'il neige, les flocons peuvent passer devant le capteur et interférer avec la
 mesure. De ce fait, une solution efficace devra être développée afin de pouvoir mesurer efficacement
 la hauteur de neige présente sur la route. De plus, le bruit généré par ces flocons pourra éventuellement
 nous donner des informations sur le débit de neige actuel.
 
 \subsection{Caractéristiques}
 Après une étude détaillée des solutions disponibles sur le marché, nous avons retenu le LiDAR Lite V4
-de la firme Garmin, spécialiste des équipements GPS et de capteurs pour diverses applications.\\
+de la firme Garmin.\\
 Il a l'avantage principal d'être livré dans un boîtier adapté (comme le montre la figure 
 \ref{fig:LiDARLiteV4}), permettant une implémentation mécanique simple et rapide. Il faut cependant se 
 méfier du fait que ce boîtier n'est pas étanche et ne peut par conséquent par être directement utilisé
@@ -79,9 +79,9 @@ Ci-dessous sont détaillés les éléments essentiels à la sélection de ce cap
 
 \begin{description}
     \item[Température de fonctionnement] \hfill \\ 
-    Cette information s'avère essentielle pour ce projet. En
+    Cette information s'avère importante pour ce projet. En
     effet, on peut s'attendre à ce que ce capteur puisse fonctionner à des températures négatives,
-    parfois jusqu'à -20°C. La borne supérieure de cette caractéristique nous intéresse moins, car
+    allant jusqu'à -20°C. La borne supérieure de cette caractéristique nous intéresse moins, car
     ce sont des températures difficilement atteignables en hiver, même dans un boîtier fermé en 
     plein soleil.
     \item[Consommation de courant] \hfill \\ 
@@ -133,7 +133,7 @@ de l'acquisition de mesures, et peut donc être configurée en interruption si n
 Pour tester simplement et efficacement ce capteur, il a tout d'abord été interfacé sur Arduino Uno
 à l'aide de la librairie Sparkfun fournie (voir figure \ref{fig:LiDAROnArduino}). Les premiers résultats 
 sont détaillés dans la section correspondante.\\
-Le capteur a été porté ensuite sur une carte de développement \emph{STM32F411RE NUCLEO} de la firme 
+Le capteur a été ensuite porté sur une carte de développement \emph{STM32F411RE NUCLEO} de la firme 
 STMicroelectronics (figure \ref{fig:LiDAROnNUCLEO}) pour plus de flexibilité et une puissance de calcul plus importante. La libraire
 mentionnée ci-dessus a été adaptée pour correspondre à l'environnement de développement dans le language
 C.
@@ -160,10 +160,9 @@ C.
 
 Dans le but de prendre des mesures de distance, plusieurs registres I2C doivent être consultés. La
 table \ref{table:LiDARI2C} montre une sélection de 4 registres essentiels au fonctionnement de ce capteur.
-Premièrement, on va envoyer une commande de mesure de distance dans le registre 0x00, puis on attend
-grâce au status (0x01) que l'appareil ne soit plus occupé. On peut donc ensuite consulter les deux
-registres 0x10 et 0x11 afin de recomposer une valeur 16 bits représentant la distance mesurée, en 
-centimètre.\\
+Premièrement, une commande de mesure de distance est envoyée dans le registre 0x00, puis on attend
+grâce au status (0x01) que l'appareil ne soit plus occupé. Les deux registres 0x10 et 0x11 peuvent ensuite
+être consulté afin de recomposer une valeur 16 bits représentant la distance mesurée, en centimètre.\\
 Par défaut, le LiDAR possède une adresse I2C fixée à 0x62.
 
 \begin{figure}[H]

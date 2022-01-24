@@ -1,11 +1,11 @@
 La \emph{Computer Vision} (ou vision par ordinateur) comprend l'acquisition, l'analyse et
 le traitement des images numériques pour comprendre et extraire des données, informations
 ou décisions.\\
-Les applications et possibilités de ce domaine sont pour ainsi dire, infinie.
+Les applications et possibilités de ce domaine sont pour ainsi dire, infinies.
 
 \section{Défis liés à la mesure en extérieur}
-La principale difficulté de la mesure de neige par \emph{Computer Vision} est lié au fait
-qu'il neige. Les caméras embarquées sont souvent de mauvaise qualité, et les débits
+La principale difficulté de la mesure de neige par \emph{Computer Vision} est liée au fait
+qu'il neige. Les caméras embarquées sont souvent de mauvaises qualités, et les débits
 sont mauvais à cause des processeurs embarqués qui sont limités en puissance de calcul.
 
 \begin{figure}[H]
@@ -16,19 +16,25 @@ sont mauvais à cause des processeurs embarqués qui sont limités en puissance 
     \label{fig:Snow comparison}
 \end{figure}
 \footnotetext[1]{Wallpaper from WallpaperCave, by caveman, \url{https://wallpapercave.com/w/scDoVwf} (last accessed: 20 January 2022)}
-\footnotetext[2]{VibroSnow camera, implemented at route du Pralan, Ayent, Suisse}
+\footnotetext[2]{VibroSnow camera, installed at route du Pralan, Ayent, Suisse}
 
 \noindent
 Il faut donc trouver une méthode ne demandant pas trop de ressources de calcul, et pouvant fournir
 des résultats utiles pour informer sur l'état des routes.
-
-\section{Applications pour la mesure de neige}
-Les possibilités de la \emph{Computer Vision} étant vaste, plusieurs méthodes ont été discutées.
-
+\subsection{Visibilité dans le brouillard et la nuit}
+Bien qu'il est rare d'avoir une forte chute de neige ainsi qu'un brouillard épais, il reste nécessaire
+de trouver un moyen d'améliorer la visibilité au travers du brouillard.
+Selon ce rapport\cite{HAL}, les infrarouges proches \emph{(NIR)} permettent de voir au travers
+d'un brouillard fin, et d'augementer \emph{légèrement} la visibilité au travers d'un brouillard épais.
+L'ajout d'un éclairage infrarouge sera donc nécessaire, et permettra également de pouvoir augmenter
+la visibilité durant la nuit.
 \newpage
 
+\section{Applications pour la mesure de neige}
+Les possibilités de la \emph{Computer Vision} étant vastes, plusieurs méthodes ont été discutées.
+
 \subsection{Mesure de niveau sur une règlette}
-Les mesures de niveau de neige manuel se font déjà avec une réglette plantée dans la neige.
+Les mesures de niveau de neige manuelles se font déjà avec une règlette plantée dans la neige.
 
 \begin{figure}[H]
     \centering
@@ -39,7 +45,7 @@ Les mesures de niveau de neige manuel se font déjà avec une réglette plantée
 \footnotetext[1]{Image by Jerry Zachedniak, \url{https://ici.radio-canada.ca/nouvelle/1338531/hiver-tempete-parc-mont-riding}
 (last accessed: 20 January 2022)}
 \noindent
-La mesure pourrait être réalisé en plaçant la caméra en face de la règlette.
+La mesure pourrait être réalisée en plaçant la caméra en face de la règlette.
 Deux méthodes sont possibles :
 \begin{description}
     \item[Avoir une règlette graduée] \hfill \\
@@ -60,11 +66,11 @@ mais présente plusieurs désavantages lors du fonctionnement:
     \item[Si on utilise une règlette graduée] \hfill \\ 
     il faut s'assurer d'avoir un matériau surlequel la neige ne colle pas ou 
     ne réfléchis pas trop la lumière du soleil.
-    \item[L'utilisation d'un piquet peut demander l'usage d'une intelligence artificielle] \hfill \\
-    pour reconnaitre le piquet d'autres objets (p. ex.: arbres, lampadaires, ...) \cite{SnowTimeLapse}%\footnotemark[2])
+    \item[L'utilisation d'un piquet peut demander l'usage d'une intelligence artificielle \cite{SnowTimeLapse}] \hfill \\
+    pour reconnaitre le piquet d'autres objets (p. ex.: arbres, lampadaires, ...)
     Cela demanderait trop de puissance de calcul pour un système embarqué basse consommation.
     Une autre solution serait de calibrer chaque installation pour reconnaître le piquet.
-    Cependant la caméra étant intégrée dans un système embarqué, cette calibration serait certainement
+    Cependant la caméra étant embarquée, cette calibration serait certainement
     fastidieuse et demanderait une interface utilisateur supplémentaire pour la réaliser.
 \end{description}
 %\footnotetext[2]{\emph{Snow Depth Measurement via Time Lapse Photography and Automated Image Recognition},
@@ -72,9 +78,9 @@ mais présente plusieurs désavantages lors du fonctionnement:
 %Departement of Ecosystem Science and Sustainability, 2019, http://www.codos.org/\#lit}
 \newpage
 
-\subsection{Mesure de niveau par Stéréovision}
-La Stéréovision est une méthode de mesure se servant d'images provenant de plusieurs point de vue.
-Typiquement, deux caméras côte à côte, peuvent mesurer des profondeurs comme des yeux.
+\subsection{Mesure de niveau par téréovision}
+La stéréovision est une méthode de mesure se servant d'images provenant de plusieurs points de vue.
+Typiquement, deux caméras côte à côte, peuvent mesurer des profondeurs de la même manière que des yeux.
 
 \begin{figure}[H]
     \centering
@@ -83,14 +89,14 @@ Typiquement, deux caméras côte à côte, peuvent mesurer des profondeurs comme
     \label{fig:Stereovision}
 \end{figure}
 \noindent
-Beaucoup de caméra spécialisée dans la reconnaissance d'image par Intelligence artificielle utilise se principe
+Beaucoup de caméras spécialisées dans la reconnaissance d'image par intelligence artificielle utilisent ce principe
 pour estimer les distances (ex: OpenCV OAK cameras).
 Cette méthode demande trop de puissance de calcul pour un système embarqué basse consommation et ne fournit
-pas de résultat suffisamment précis pour mesurer une couche de neige.
+pas de résultats suffisamment précis pour mesurer une couche de neige.
 \newpage
 
 \subsection{Mesure du débit de chute de neige}
-Une mesure simple et rapide est d'estimer le débit de chute de neige en isolant les flocons.
+Une mesure simple et rapide consiste à estimer le débit de chute de neige en isolant les flocons.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.35\textwidth]{Images/computer_vision/snow_cam.png}
@@ -98,18 +104,18 @@ Une mesure simple et rapide est d'estimer le débit de chute de neige en isolant
     \caption[Comparaison image source et bruit sur image]{Image source de la caméra VibroSnow\footnotemark[1] et image avec les flocons isolés}
     \label{fig:Snowfall}
 \end{figure}
-\footnotetext[1]{VibroSnow camera, implemented at route du Pralan, Ayent, Suisse}
+\footnotetext[1]{VibroSnow camera, installed at route du Pralan, Ayent, Suisse}
 \noindent
 Cette mesure, en parrallèle à une mesure de hauteur de neige, permettrait d'estimer 
-l'augmentation de cette hauteur au fil du temps. Fournissant ainsi une information supplémentaire
+l'augmentation de cette hauteur au fil du temps, fournissant ainsi une information supplémentaire
 aux services de déneigement.
 
 \subsection{Détection de route enneigée}
 Étant donné que la mesure de hauteur de neige par \emph{Computer Vision} serait trop complexe
 pour un système embarqué basse consommation, détecter si la route est enneigée ou non
 permettrait de fournir une redondance à une mesure de hauteur de neige fournie par un autre capteur.
-Si la petite zone mesurée par le capteur se retrouve mal déneigée, ou qu'un objet, comme un caillou, mal placé
-fausse la mesure du capteur, savoir si le segment de route est enneigé ou non permettrait d'éliminer ces erreurs.
+Si la petite zone mesurée par le capteur se retrouve mal déneigée, ou qu'un objet, comme une pierre, mal placé
+fausse la mesure du capteur, savoir si le segment de route est enneigé ou non offre l'occasion d'éliminer ces erreurs.
 
 \subsection{Méthodes retenues}
 Les méthodes retenues pour ce projet de recherche sont \textbf{la mesure du débit de chute de neige}

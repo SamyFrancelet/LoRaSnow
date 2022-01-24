@@ -2,7 +2,7 @@
 
 Ici seront présentés les résultats des tests qui concernent le LiDAR Lite V4. Au fur et à mesure des
 résultats, quelques conclusions seront d'ores et déjà tirées.\\
-En annexe, se trouve le protocole de test complet du capteur.
+En annexe\ref{app:testLiDAR}, se trouve le protocole de test complet du capteur.
 
 \subsection{Caractéristique de l'erreur de mesure}
 
@@ -71,7 +71,7 @@ On constate très facilement sur la figure \ref{fig:RealDistanceMesGraph} que le
 de 3.5m, soit bien moins qu'annoncé par le fabricant. La figure \ref{fig:RealDistanceMesGraphError} nous 
 montre une erreur absurde de plus de 5 mètres. On conclut donc que ce capteur ne pourra pas être utilisé
 pour des distances de plus de 3.5m.\\
-Comme cette grande erreur aplatit totalement les mesures sous 3.5m, nous avons jugé utile d'effectuer un
+Comme cette grande erreur aplatit totalement les mesures sous 3.5m, nous avons jugé important d'effectuer un
 zoom sur cette plage utile. On constate alors que la distance mesurée par le LiDAR reflète avec plus ou
 moins de précision la distance réelle, comme le montre la figure \ref{fig:RealDistanceMesGraphZoom}.
 Lorsqu'on trace l'erreur en fonction de la distance réelle, on remarque une erreur généralement bien plus
@@ -79,10 +79,10 @@ Lorsqu'on trace l'erreur en fonction de la distance réelle, on remarque une err
 moins de 2m et \textpm 2cm entre 2 et 4m. Cependant, il faut se rappeler que ce graphe montre uniquement 
 l'erreur à la distance réelle, et non l'erreur de répétabilité. Or, comme ces mesures sont un condensé 
 de plusieurs séquences espacées dans le temps, on remarque que l'erreur est constante, qui donc peut 
-être compensée. De plus, dans le projet, on ne travaille qu'avec des offsets, ce qui limite d'autant 
+être compensée. De plus, dans le projet, nous ne travaillons qu'avec des différences entre deux mesures, ce qui limite d'autant 
 plus les effets de cette erreur.\par
 
-On peut finalement conclure que ce test est réussi. En effet, malgré une erreur non-négligeable de mesure,
+Nous pouvons finalement conclure que ce test est réussi. En effet, malgré une erreur non-négligeable de mesure,
 le capteur a une répétabilité constante. Nous pouvons donc passer au test suivant.
 
 \subsection{Mesures de distance dans un environnement perturbé}
@@ -91,7 +91,7 @@ le capteur a une répétabilité constante. Nous pouvons donc passer au test sui
 Maintenant que nous savons que le capteur a une répétabilité acceptable, nous cherchons à déterminer comment 
 le LiDAR réagit dans un environnement perturbé. Ainsi, un banc de test a été construit afin de projeter 
 des confettis devant le capteur lorsqu'il mesure. Les détails de sa construction sont expliqués dans la
-section correspondante. Le but final est de générer du bruit de mesure afin de représenter au mieux une
+section \ref{sec:banc}. Le but final est de générer du bruit de mesure afin de représenter au mieux une
 situation réelle, par exemple en pleine tempête de neige. Nous pourrons ainsi développer une méthode
 de mesure qui permet en tout temps de mesurer une hauteur de neige.
 
@@ -162,10 +162,9 @@ Premièrement, la figure \ref{fig:ErrorMesRefDist} montre l'histogramme des 100 
 Elles s'avèrent plutôt rassurantes car on remarque que la répétabilité des mesures est respectée, avec
 une précision typique de \textpm 2cm. La plupart des mesures sont réparties uniformément autour de 160cm.\par
 On distingue ensuite sur la figure \ref{fig:ErrorMesMoustache} que le bruit de mesure a bel et bien augmenté
-au fil des séries, représenté par la longueur des barres d'erreur. Comme l'indique le principe des boîtes
-à moustache, le trait central du rectangle représente la médiane des valeurs, alors que les deux autres
-sont le premier et troisième quartiles. Ainsi, les valeurs médianes des séries s'éloignent de plus en 
-plus de la distance au sol (de référence).\par
+au fil des séries, représenté par la longueur des barres d'erreur. Comme l'indiquent les boîtes
+à moustache, les valeurs médianes des séries s'éloignent de plus en 
+plus de la distance à la référence.\par
 Le but final de la figure \ref{fig:ErrorMesMoustache} est d'aider à déterminer quelle est la méthode
 de mesure la plus efficace pour calculer des distances dans un environnement perturbé. On remarque
 ainsi d'ores et déjà que la médiane n'est pas un outil fiable, puisque sa valeur d'éloigne de plus en
@@ -177,17 +176,17 @@ trois méthodes. Pour rappel, selon la mesure de référence, la distance au sol
 \begin{description}
     \item[Moyenne] \hfill \\ 
     La moyenne représente la meilleure méthode dans le cas d'une mesure sans aucune 
-    perturbation. Cependant, on voit que cette méthode devient très imprécise lorsque du bruit
+    perturbation. Cependant, nous constatons que cette méthode devient très imprécise lorsque du bruit
     apparaît devant le capteur.
     \item[Médiane] \hfill \\ 
-    Malgré le fait que la médiane soit généralement plus proche de la réalité par rapport 
-    à la moyenne, elle est encore beaucoup trop éloignée de la vraie distance au sol. L'erreur est à 
+    Malgré une amélioration par rapport à la moyenne, la médiane 
+    est encore beaucoup trop éloignée de la vraie distance au sol. L'erreur est à 
     nouveau de plus en plus grande dès que les perturbations augmentent. 
     \item[Maximum] \hfill \\ 
     La méthode du maximum semble donner une valeur très proche de la vraie distance,
     et ce peu importe le niveau de perturbation devant le capteur. Il suffit en effet qu'une valeur
     de la série soit la mesure du sol pour que cette méthode fonctionne. Nous comptons donc sur le fait 
-    que, statistiquement, on finisse toujours par faire au moins une mesure de la distance au sol dans 
+    que, statistiquement, le capteur finisse toujours par faire au moins une mesure de la distance au sol dans 
     la série.
 \end{description}
 
@@ -198,7 +197,7 @@ des techniques de calcul.
 \subsection{Stabilité en température des mesures}
 
 Le capteur, intégré dans un boîtier étanche, sera soumis à des températures qui varient constamment,
-de -20°C lors d'une nuit glaciale jusqu'à 30 voire 40°C à l'intérieur du boîtier, en plein soleil.
+de -20°C lors d'une nuit glaciale jusqu'à 30°C voire 40°C à l'intérieur du boîtier, en plein soleil.
 Il est important de savoir comment les mesures prises par le LiDAR vont être influencées par cette 
 variation.\\
 À titre d'exemple, imaginons que le système prenne une mesure de distance de référence afin d'être

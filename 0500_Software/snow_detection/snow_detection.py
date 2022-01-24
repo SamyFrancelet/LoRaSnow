@@ -9,148 +9,18 @@ onRoadThreshold_day = 120
 onRoadThreshold_night = 85
 snowfallThreshold = 10
 
-def snowDetection(ref, test, log):
-    """Detects in test video the snowfall rate and
-    if there is snow on the road or not. Uses a reference video to
-    test the video.
+def snowfallRate(video, day, realDegree, log):
+    """Estimates snowfall rate on the video
 
     Args:
-        ref (str): path to reference video
-        test (str): path to test video
-        log (bool): indicates if a csv logfile and logvids must be made for this test
+        video (str): path to video to test
+        day (int): indicates if the video is during the day (1 = day, 0 = night)
+        realDegree (int): indicates the degree of snowfall from 0 to 3
+        log (str): path to log folder
 
     Returns:
-        (bool, float): tuple containing test results in the following format : [snowOnRoad, snowfallRates]
+        (float, int): tuple containing results in the following format : [snowfall rate, estimatedDegree]
     """
-    
-    refCap = cv2.VideoCapture(ref)
-    
-    if not refCap.isOpened():
-        print("Can't open reference video")
-        exit()
-        
-    testCap = cv2.VideoCapture(test)
-    
-    if not testCap.isOpened():
-        print("Can't open test video")
-        exit()
-        
-    frame_width = int(refCap.get(cv2.CAP_PROP_FRAME_WIDTH))
-    frame_height = int(refCap.get(cv2.CAP_PROP_FRAME_HEIGHT))
-    
-    totalPixels = frame_height*frame_width
-    
-    frame_size = (int(frame_width), int(frame_height))    
-    
-    fps = 20
-    fourcc = cv2.VideoWriter_fourcc('M','J','P','G')
-    out_ref = cv2.VideoWriter("log/ref.avi", fourcc, fps, frame_size)
-    out_test = cv2.VideoWriter("log/test.avi", fourcc, fps, frame_size)
-    
-    out_refNoise = cv2.VideoWriter("log/refNoise.avi", fourcc, fps, frame_size)
-    out_refBack = cv2.VideoWriter("log/refBack.avi", fourcc, fps, frame_size)
-    out_refNoiseThres = cv2.VideoWriter("log/refNoiseThres.avi", fourcc, fps, frame_size)
-    out_refBackThres = cv2.VideoWriter("log/refBackThres.avi", fourcc, fps, frame_size)
-    
-    out_testNoise = cv2.VideoWriter("log/testNoise.avi", fourcc, fps, frame_size)
-    out_testBack = cv2.VideoWriter("log/testBack.avi", fourcc, fps, frame_size)
-    out_testNoiseThres = cv2.VideoWriter("log/testNoiseThres.avi", fourcc, fps, frame_size)
-    out_testBackThres = cv2.VideoWriter("log/testBackThres.avi", fourcc, fps, frame_size)
-        
-    
-    refNoiseRatios = []
-    refSnowRatios = []     
-       
-    testNoiseRatios = []
-    testSnowRatios = []        
-    
-    # tests with 60 double frames
-    for i in range(60):
-        # get reference double frames
-        check1, refFrame1 = refCap.read()
-        check2, refFrame2 = refCap.read()
-        
-        # get test double frames
-        check3, testFrame1 = testCap.read()
-        check4, testFrame2 = testCap.read()
-        
-        if check1 and check2 and check3 and check4:
-            # Create noise and background ref frames
-            refNoise = cv2.subtract(refFrame1, refFrame2)
-            refBackground = cv2.subtract(refFrame1, refNoise)
-            
-            # Create noise and background test frames
-            testNoise = cv2.subtract(testFrame1, testFrame2)
-            testBackground = cv2.subtract(testFrame1, testNoise)
-            #testBackground = testFrame1
-               
-            # Create thresholds frame
-            refNoiseGrey = cv2.cvtColor(refNoise, cv2.COLOR_BGR2GRAY)
-            th, refNoiseThres = cv2.threshold(refNoiseGrey, snowfallThreshold, 255, cv2.THRESH_BINARY)
-            refBackgroundGrey = cv2.cvtColor(refBackground, cv2.COLOR_BGR2GRAY)
-            th, refBackThres = cv2.threshold(refBackgroundGrey, onRoadThreshold_night, 255, cv2.THRESH_BINARY)
-            
-            testNoiseGrey = cv2.cvtColor(testNoise, cv2.COLOR_BGR2GRAY)
-            th, testNoiseThres = cv2.threshold(testNoiseGrey, snowfallThreshold, 255, cv2.THRESH_BINARY)
-            testBackgroundGrey = cv2.cvtColor(testBackground, cv2.COLOR_BGR2GRAY)
-            th, testBackThres = cv2.threshold(testBackgroundGrey, onRoadThreshold_night, 255, cv2.THRESH_BINARY)
-            
-            if log:
-                out_ref.write(refFrame1)
-                out_test.write(testFrame1)
-            
-                out_refNoise.write(refNoise)
-                out_refBack.write(refBackground)
-                refNoiseThres = cv2.cvtColor(refNoiseThres, cv2.COLOR_GRAY2BGR)
-                out_refNoiseThres.write(refNoiseThres)
-                refBackThres = cv2.cvtColor(refBackThres, cv2.COLOR_GRAY2BGR)
-                out_refBackThres.write(refBackThres)
-                
-                out_testNoise.write(testNoise)
-                out_testBack.write(testBackground)
-                testNoiseThres = cv2.cvtColor(testNoiseThres, cv2.COLOR_GRAY2BGR)
-                out_testNoiseThres.write(testNoiseThres)
-                testBackThres = cv2.cvtColor(testBackThres, cv2.COLOR_GRAY2BGR)
-                out_testBackThres.write(testBackThres)
-                        
-            refNoiseRatios.append(np.sum(refNoiseThres == 255)/totalPixels)
-            refSnowRatios.append(np.sum(refBackThres == 255)/totalPixels)
-            
-            testNoiseRatios.append(np.sum(testNoiseThres == 255)/totalPixels)
-            testSnowRatios.append(np.sum(testBackThres == 255)/totalPixels)            
-            
-        else:
-            break
-        
-    refCap.release()
-    testCap.release()
-    
-    if log:
-        out_ref.release()
-        out_test.release()
-    
-        out_refNoise.release()
-        out_refBack.release()
-        out_refNoiseThres.release()
-        out_refBackThres.release()
-        
-        out_testNoise.release()
-        out_testBack.release()
-        out_testNoiseThres.release()
-        out_testBackThres.release()
-    
-    refNoiseRatio = np.average(refNoiseRatios)
-    refSnowRatio = np.average(refSnowRatios)
-    
-    testNoiseRatio = np.average(testNoiseRatios)
-    testSnowRatio = np.average(testSnowRatios)
-                
-    snowfallRate = (testNoiseRatio - refNoiseRatio)*100
-    snowyRoad = testSnowRatio >= refSnowRatio+onRoadOffset
-
-    return (snowyRoad, testNoiseRatio*100)
-
-def snowfallRate(video, day, realDegree, log):
 
     cap = cv2.VideoCapture(video)
 
@@ -178,17 +48,11 @@ def snowfallRate(video, day, realDegree, log):
             noise_grey = cv2.cvtColor(noise, cv2.COLOR_BGR2GRAY)
             th, noise_thres = cv2.threshold(noise_grey, snowfallThreshold, 255, cv2.THRESH_BINARY)
 
-            #cv2.imshow("Test", noise_thres)
 
             snow_pixels = np.sum(noise_thres==255)
             snowRatios.append(snow_pixels/total_pixels)
 
-            #if cv2.waitKey(1) == ord('q'):
-            #    print("Quitting...")
-            #    break
-
         else:
-            #print("Video finished")
             break
 
     rate = np.average(snowRatios)
@@ -210,6 +74,19 @@ def snowfallRate(video, day, realDegree, log):
     return rate, estimatedDegree
 
 def snowOnRoad(video, ref, day, realState, log, denoise=True):
+    """Estimates snow coverage on the road from video
+
+    Args:
+        video (str): path to video to test
+        ref (float): white ratio from reference video
+        day (int): indicates if the video is during the day (1 = day, 0 = night)
+        realState (int): indicates the degree of snow on the road from 0 to 2
+        log (str): path to log folder
+        denoise (bool): indicates if the algorithm must use denoising or not
+
+    Returns:
+        (float, int): tuple containing results in the following format : [snowyness rate, estimatedSnowyness]
+    """
     cap = cv2.VideoCapture(video)
 
     if not cap.isOpened():
@@ -274,6 +151,17 @@ def snowOnRoad(video, ref, day, realState, log, denoise=True):
     return snowyRoad, estimatedSnowyness
 
 def quickRatio(video, day, denoise=True):
+    """Gives a quick white ratio, typically for a reference video
+
+    Args:
+        video (str): path to video to test
+        day (int): indicates if the video is during the day (1 = day, 0 = night)
+        denoise (bool): indicates if the algorithm must use denoising or not
+
+    Returns:
+        (float): white ratio in the video
+    """
+
 
     cap = cv2.VideoCapture(video)
 

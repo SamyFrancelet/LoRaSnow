@@ -1,8 +1,8 @@
 \section{Cahier des charges}
 
-LoRaSnow est un projet destiné à détecter de la neige sur une route lorsque les condition 
+LoRaSnow est un projet destiné à détecter de la neige sur une route lorsque les conditions 
 météorologiques sont difficiles. Ainsi le système doit pouvoir fournir des résultats fiables,
-même sous une neige importante, dans le brouillard ou encore un vent fort.\\
+même sous une neige importante, dans le brouillard ou encore lors de vents forts.\\
 Le but du projet est donc de créer un module capable de détecter de la neige par une quelconque méthode 
 définie et transmettre des données sur un réseau LoRaWAN tout en implémentant une solution en 
 \emph{Edge Computing}. Notre travail ici est d'étudier les différentes possibilités qui s'offrent à nous 
@@ -21,9 +21,9 @@ pour accomplir cette tâche.
 
 \subsection{LoRaWAN}
 LoRaWAN (acronyme de \emph{long-range wide-area network}) est un réseau de communication radio spécifique
-à l'internet des objets (IoT). Ce protocole est utilisé pour transmettre des données sur des grandes 
+à l'internet des objets (IoT). Ce protocole est utilisé pour transmettre des données sur de grandes 
 distances tout en permettant une consommation électrique très faible. La longue portée de son signal 
-permet d'installation d'appareils dans des endroits isolés, sans nécessairement avoir accès au réseau 
+permet l'installation d'appareils dans des endroits isolés, sans nécessairement avoir accès au réseau 
 électrique ou mobile.\\
 La topologie de LoRaWAN est dite en étoile d'étoiles. En effet, comme le montre la figure \ref{fig:LoRaWANTopo},
 le serveur d'application se trouve au centre, et les passerelles réparties sur un territoire donné 
@@ -44,7 +44,7 @@ Comme le réseau LoRa utilisé permet une transmission de données bas débit, i
 le plus possible la bande passante. Pour cela, la méthode d'optimisation d'\emph{Edge Computing} est
 privilégiée, rapprochant le traitement des données au plus proche des capteurs.\\
 En pratique, dans ce projet, cela signifie que les données récoltées seront traitées directement sur 
-le module LoRaSnow. Ainsi, uniquement les résultats des mesures seront envoyées dans le cloud.
+le module LoRaSnow. Ainsi, uniquement les résultats des mesures seront envoyés dans le cloud.
 \newpage
 
 \subsection{Notre interprétation du cahier des charges}
@@ -54,8 +54,8 @@ Comme le cahier des charges donne un objectif à atteindre, nous avons jugé imp
 \begin{description}
     \item[Mesure de hauteur de neige] \hfill \\ 
     Afin d'avoir une indication sur l'enneigement de la route, nous 
-    avons trouvé utile d'avoir une information sur la hauteur de neige présente dans le but d'avoir 
-    une vue global d'une région grâce à un réseau de capteurs. Sur un vaste territoire comme certaines
+    avons trouvé utile d'avoir une information sur la hauteur de neige présente. Cela nous permet d'avoir 
+    une vue globale d'une région grâce à un réseau de capteurs. Sur un vaste territoire comme certaines
     communes de montagne, l'enneigement peut être irrégulier. De cette manière, nous pouvons connaître 
     facilement l'état des routes dans des endroits isolés.
     \item[Reconnaissance du débit de neige et de l'état de la route] \hfill \\
@@ -64,21 +64,21 @@ Comme le cahier des charges donne un objectif à atteindre, nous avons jugé imp
     flocons, dans l'objectif de faire des prévisions à court terme.\\
     Nous avons estimé qu'il était important de créer une redondance sur l'indication de l'état de la
     route. En effet, nous nous attendons à ce que la mesure physique de hauteur de neige ne soit pas 
-    capable de donner des résultats pertinents pour les premiers millimètres. De plus la mesure de
-    hauteur de neige par un capteur sera sûrement réalisé sur une toute petite zone ou un point,
-    si cette zone/point est mal déneigé, ou qu'un objet comme un caillou se place à cet endroit,
+    capable de donner des résultats pertinents pour les premiers millimètres. De plus, la mesure de
+    hauteur de neige sera sûrement réalisée sur une toute petite zone ou un point.
+    Si cette zone/point est mal déneigé, ou qu'un objet comme une pierre se place à cet endroit,
     la mesure sera faussée.
     \item[Fixation et protection du module] \hfill \\ 
-    Comme le module LoRaSnow sera exposé au aléas météorologiques de la montagne, un boitier étanche 
-    et résistant doit être confectionné sur mesures. Il doit permettre de protéger totalement l'électronique de 
-    l'humidité et d'autres types de perturbations. Il doit permettre une fixation simple,
-    fiable et règlable. La fixation de l'électronique devra être organisé pour permettre une
+    Comme le module LoRaSnow sera exposé aux aléas météorologiques de la montagne, un boitier étanche 
+    et résistant doit être confectionné sur mesure. Il doit permettre de protéger totalement l'électronique de 
+    l'humidité et d'autres types de perturbations, et doit offrir une fixation simple,
+    fiable et règlable. La fixation de l'électronique devra être organisée pour permettre une
     installation ou maintenance simple.
 \end{description}
 
 L'avantage principal de ce cahier des charges explicite réside dans le fait qu'il est très facile pour
 nous de séparer les tâches entre les collaborateurs du projet. Ainsi, chaque solution n'est que très 
-peu couplée les unes par rapport aux autres durant le prototypage.
+peu couplée aux autres durant le prototypage.
 \newpage
 
 \section{Schéma bloc global}
@@ -98,11 +98,11 @@ peu couplée les unes par rapport aux autres durant le prototypage.
     Ce capteur se charge de mesurer une hauteur de neige sur la route selon une méthode définie. Il 
     communique ses mesures directement à l'\emph{Embedded Electronic}. 
     \item[\emph{Camera}] \hfill \\
-    Cette partie s'occupe de mesurer le débit de flocons et indiquer si le segment de route est enneigé.
+    Cette partie s'occupe de mesurer le débit de flocons et d'indiquer si le segment de route est enneigé.
     Elle permet aussi de certifier que la \emph{Height Measurement} est bien fiable.
     \item[\emph{Embedded Electronic}] \hfill \\
     L'électronique embarquée représente la partie central du projet. C'est ici que l'on retrouve le
-    microcontrôleur qui traiter les données reçues par les différents capteur et de transmettre les
+    microcontrôleur qui traite les données reçues par les différents capteur et de transmettre les
     résultats. 
     \item[\emph{LoRa Transmission}] \hfill \\
      Le module de transmission LoRa reçoit les données du microcontrôleur et les envoie sur le réseau 
@@ -112,7 +112,7 @@ peu couplée les unes par rapport aux autres durant le prototypage.
     LoRaSnow. Ainsi, les données transmises sont réceptionnées et retransmises sur un réseau IP. 
     \item[\emph{Cloud Server}] \hfill \\   
     Finalement, on retrouve un serveur dans le cloud se chargeant de la bonne réception des données 
-    de tous les modules LoRaSnow d'un même groupe. Les données récoltées peuvent ainsi être mise en
+    de tous les modules LoRaSnow d'un même groupe. Les données récoltées peuvent ainsi être mises en
     forme et utilisées pour indiquer par exemple la couverture neigeuse d'une région.
 \end{description}
 

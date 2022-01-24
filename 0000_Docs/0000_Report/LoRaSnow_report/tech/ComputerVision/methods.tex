@@ -1,17 +1,17 @@
 
 \section{Implémentation}
 Pour tester les algorithmes de mesure avec des vidéos sur le terrain,
-Dr. Mudry Pierre-André et M. Matter Fabien nous on aimablement laissé accès à
+Dr. Mudry Pierre-André et M. Matter Fabien nous ont aimablement donné l'accès à
 la caméra de notre projet parent \emph{VibroSnow\cite{VibroSnow}} et nous
 les remercions énormément.
 
 \subsection{Récupération des vidéos}
 La caméra de \emph{VibroSnow} détecte le passage d'objet (voitures, chute de neige,...) et
 enregistre une vidéo qui est ensuite transmise à un serveur \emph{Windows}.
-Bien que l'accès aux vidéos nous a été donné, nous ne pouvons pas aller chercher les vidéos
+Bien que l'accès aux vidéos nous ait été donné, nous ne pouvons pas aller chercher les fichiers
 directement sur le serveur \emph{Windows} car il est utilisé pour d'autres projets auxquels nous
 n'avons pas accès.\\
-Il a donc fallu créer un script \emph{Powershell}, transferant chaque jour les vidéos
+Il a donc fallu créer un script \emph{Powershell} transferant chaque jour les vidéos
 cumulées sur le serveur \emph{Windows} vers un serveur auquel nous avons accès.
 Un \emph{Raspberry Pi} a été mis en place comme serveur pour récuperer les vidéos.
 
@@ -54,12 +54,12 @@ La méthode utilisée pour détecter les chutes de neige se décompose ainsi :
 Deux méthodes ont été testées pour détecter si la route est enneigée ou non.\\
 La première réalise un simple seuillage des niveaux de blancs, et un calcul
 du ratio des pixels blancs sur l'image. On récupère plusieurs images et on
-calcul la moyenne du ratio de blanc sur toute les images.
+calcule la moyenne du ratio de blanc sur toutes les images.
 Cette moyenne est ensuite comparée à une moyenne similaire réalisée sur une
 vidéo de la route déneigée, en vérifiant qu'on se trouve au même moment de
 la journée (jour/nuit, matin/après-midi).\\
 La deuxième est identique, à l'exception d'une suppression du bruit réalisée
-avant le seuillage. Cette suppresion du bruit reprends la méthode d'isolation
+avant le seuillage. Cette suppression du bruit reprend la méthode d'isolation
 de neige utilisée pour mesurer le débit de chute de neige et soustrait cette image
 de bruit à l'image originale. Cette méthode demande un peu plus de calculs mais peut
 potentiellement générer un résultat plus fiable.
