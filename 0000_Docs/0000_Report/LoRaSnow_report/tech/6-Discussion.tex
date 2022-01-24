@@ -1,0 +1,74 @@
+\section{LiDAR}
+Une batterie de tests a été effectuée afin d'attester du bon fonctionnement du LiDAR dans les conditions
+attendues.\par
+En effet, on remarque que le capteur est capable de fonctionner dans la plage utile de 2 à 
+4 mètres. Il serait cependant préférable d'éviter d'avoir une distance trop grande entre ce dernier et 
+la route, comme sa mesure diverge très vite de la réalité. \\
+De la même manière, le LiDAR a été mis à l'épreuve dans le banc de test en laboratoire. Sur une série 
+d'une centaine de mesures, il était parfaitement capable de mesurer une distance au sol, et ce peu importe 
+le débit de fausse neige devant le capteur. Cette information est essentielle pour un fonctionnement en
+condition réelle. De cette manière, nous savons que la neige ou le brouillard ne poseront pas de problèmes 
+pour effectuer les mesures. La méthode de mesure du maximum a par ailleurs été retenue.\\
+Comme ce projet est à même de devoir résister à de grandes variations de température entre le jour et
+la nuit. Cependant, cette différence ne doit en aucun cas avoir des répectutions sur les mesures effectuées.
+Heureusement, il semble que le capteur soit stable en température, restant majoritairement dans son 
+erreur typique.\\
+Après que les tests ci-dessus soient validés, nous avons pu nous concentrer sur une méthode de mesure de 
+hauteur en laboratoire. Nous avons ainsi constaté que le capteur arrive à calculer la hauteur d'un élément,
+même avec du bruit généré devant lui. Il faut cependant faire attention à la porosité du matériau mesuré. En
+effet, certaines épaisseurs ont été fortement faussées. Cette étape a aussi permis de définitivement valider
+la méthode du maximum pour le test suivant.\\
+Finalement, le 4 décembre 2021, nous avons pu faire une nuit de mesure sur le terrain. Le LiDAR a été en
+mesure de calculer la hauteur de neige présente sur la route, et ce avec une
+précision de 7 milimètres! Ce test final a permis de valider le \emph{proof of concept} de cette méthode. De plus amples
+recherches et essais doivent être effectués afin de totalement valider ou abandonner ce capteur, mais les
+résultats actuels sont prometteurs.\par 
+Il est important de noter que, comme prévu, le LiDAR ne fonctionne pas de jour, même lorsque le ciel
+est complètement couvert. Cela ne pose en aucun cas un problème. En effet, ce projet est fait pour 
+majoritairement fonctionner la nuit.
+
+\subsection{Problèmes rencontrés}
+Nous savons que le LiDAR a des difficultés à mesurer des distances sur des matériaux poreux. Cependant,
+les essais sur le terrain avec de la véritable neige n'ont monté aucune erreur. Il serait nécessaire
+d'approfondir les recherches afin de déterminer si certaines neiges peuvent provoquer ce problème.
+
+\section{Computer Vision}
+La \emph{Computer Vision} qui devait initialement servir plutôt de redondance au \emph{LiDAR} fournit
+finalement des résultats très suprenant avec des algorithmes très simples.\\
+La mesure du débit de chute de neige est fonctionnelle, bien que perfectible avec des données météos précises.\\
+La détection de route enneigée est une réussite, l'algorithme est très simple et peut tourner sur un
+processeur rudimentaire. Elle fournit une mesure très importante et le fait à la perfection.\\
+La vision par ordinateur permet donc de palier parfaitement aux problèmes du \emph{LiDAR},
+c'est à dire : les mesures durant la journée, et les erreurs liées à la mesure sur un point (p. ex: caillou sur le point de mesure).\\
+Si on imaginait un système encore plus simpliste, la \emph{Computer Vision} pourrait être le seul outil de mesure.
+
+\subsection{Problèmes rencontrés}
+\subsubsection{Caméra}
+Au départ, pour tester rapidement l'idée de la mesure de débit, nous avions imaginés filmer notre session
+de mesure avec un ordinateur, puis comparer les données de bruit du LiDAR avec le débit estimé par
+la caméra. Hors les webcams utilisées n'avaient pas de possibilités de désactivation de l'autofocus,
+du réglage automatique du diaphragme et rendaient les vidéos capturées inutilisables.\\
+Il a donc été primordiale de récupérer des données d'une caméra bien plus fiable, et sur le terrain.
+Nous remercions encore une fois Dr. Mudry Pierre-André et M. Matter Fabien de nous avoir donné
+l'accès aux vidéos de la caméra du projet parent \emph{VibroSnow\cite{VibroSnow}}.
+\subsubsection{Données météos}
+Une demande d'accès aux données de \emph{MeteoSwiss} a été visée et signée par M. Cyrille Bezençon et transmise
+par la poste vers \emph{MeteoSwiss}. Cependant l'autorisation a tardé à arriver et les données météos
+n'ont pas pu être utilisées pour améliorer la reconnaissance du débit de chute de neige.
+
+\section{Mécanique}
+Grace à un banc de test comprenant une cage d’essai et un canon à confettis. Plusieurs séries de mesures 
+concluantes ont pu être réalisées. Le débit de neige produit par le canon étant réglable, il augmente les 
+possibilités de mesures. La cage permet de contenir les nuages de confettis sans dégrader les conditions 
+de travails des autres usagers de la salle.\\
+Différents designs de boitier ont été imaginés avant d’arriver à la solution finale. L’étanchéité fut la 
+partie plus problématique lors de la conception. L’utilisation de joint torique pincé permit de résoudre 
+ces problèmes. L’ABS étant une matière très simple à injecter, la fabrication des pièces du boitier serait 
+corolaire. Le support du boitier permet de régler à la fois l’élévation et l’azimut du boitier. La partie 
+amovible supérieure permet un très bon accès à la partie du module électronique. Elle se verrouille facilement 
+grâce à une fermeture par grenouillère. L’ouverture est verrouillée grâce à la serrure incrustée dans la 
+fixation.\\
+Le module électronique se fixe simplement dans le boitier à l’aide de 4 vis. Une pièce mécanique permet 
+de loger les batteries. Au-dessus des batteries, une plaque permet la fixation du capteur Lidar 
+et des PCB. Suffisamment d’espace est prévu autour du module afin de pouvoir disposer aisément le câblage. 
+La simplicité du module permet une manipulation rapide et simple des différents éléments.

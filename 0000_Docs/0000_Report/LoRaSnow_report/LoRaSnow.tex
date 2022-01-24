@@ -9,8 +9,8 @@
 	\centering
     \includegraphics[width=0.6\linewidth]{hes/hei}\\[1cm] 	% University Logo
     \textsc{\LARGE Haute école d'ingénieur du Valais}\\ \vspace{\fill}
-    %\includegraphics[width=1\linewidth]{Images/Logo_LoRaSnow.png}\\ \vspace{\fill}
-	\textbf{\textsc{\fontsize{35}{35}\selectfont LoRaSnow}}\\ \vspace{\fill}
+    \includegraphics[width=1\linewidth]{Images/Logo_LoRaSnow.png}\\ \vspace{\fill}
+	%\textbf{\textsc{\fontsize{35}{35}\selectfont LoRaSnow}}\\ \vspace{\fill}
 	\textsc{\LARGE Mesure du niveau de neige en conditions difficiles}\\[0.4cm]
 	\rule{\linewidth}{0.2 mm} \\[0.5 cm]
 	Samy Francelet \\
@@ -26,26 +26,81 @@
 \chapter{Introduction}
 \input{1-Introduction.tex}
 
+\part{Technique}
+
 \chapter{Spécifications}
-\input{2-Specs.tex}
+\input{tech/2-Specs.tex}
 
 \chapter{LiDAR}
-\input{LiDAR/methods.tex}
-\input{LiDAR/results.tex}
+\input{tech/LiDAR/methods.tex}
+\input{tech/LiDAR/results.tex}
 
 \chapter{Computer Vision}
-\input{ComputerVision/introduction.tex}
-\input{ComputerVision/methods.tex}
-\input{ComputerVision/results.tex}
+\input{tech/ComputerVision/introduction.tex}
+\input{tech/ComputerVision/methods.tex}
+\input{tech/ComputerVision/results.tex}
 
 \chapter{Mécanique}
-\input{mechanical/methods.tex}
+\input{tech/mechanical/methods.tex}
 
 \chapter{Synthèse des résultats}
-\input{6-Discussion.tex}
+\input{tech/6-Discussion.tex}
+
+\part{Gestion}
+
+\chapter{Résumé}
+\input{business/7-Resume.tex}
+
+\chapter{Produits et services}
+\input{business/8-Produits.tex}
+
+\chapter{Marché et Contexte}
+\input{business/9-Contexte.tex}
+
+\chapter{Stratégie}
+\input{business/10-Strategie.tex}
+
+\chapter{Mesures}
+\input{business/11-Mesures.tex}
+
+\chapter{Finances}
+\input{business/12-Finances.tex}
 
 \chapter{Conclusion}
-\input{7-Conclusion.tex}
+\input{13-Conclusion.tex}
+
+\appendix
+
+\chapter{Planning}
+\label{app:planning}
+\section{Planning prévisionnel}
+\includegraphics[angle=90, height=0.75\textheight]{Images/business/planning/prevu.PNG}
+\section{Planning réalisé}
+\includegraphics[angle=90, height=0.95\textheight]{Images/business/planning/research.PNG}
+\includegraphics[angle=90, height=0.95\textheight]{Images/business/planning/tests.PNG}
+\includegraphics[angle=90, height=0.95\textheight]{Images/business/planning/dev.PNG}\newpage
+\includegraphics[angle=90, height=0.95\textheight]{Images/business/planning/implementation.PNG}
+\includegraphics[angle=90, height=0.95\textheight]{Images/business/planning/admin.PNG}
+
+\chapter{Bilan prévisionnel}
+\label{app:bilan}
+\section{Prix et coûts}
+\includegraphics[width=\textwidth]{Images/business/costs.png} \\[1cm]
+\includegraphics[width=0.6\textwidth]{Images/business/case_price.PNG}
+\newpage
+\section{Budgets et bilans}
+\subsection{Base case}
+\includegraphics[angle=90, height=\textheight]{Images/business/base.png}
+\subsection{Worst case}
+\includegraphics[angle=90, height=\textheight]{Images/business/worst.png}
+\subsection{Best case}
+\includegraphics[angle=90, height=\textheight]{Images/business/best.png}
+
+\chapter{Schéma électronique}
+\includepdf[pages=1, angle=90]{Docs/schema}
+
+\chapter{Mises en plan}
+\includepdf[pages=-, angle=90]{Docs/misesenplansmergez}
 
 \setlength{\topmargin}{-2.2mm} % = 0mm -1in + 23.2mm
 \printbibliography[heading=bibintoc]
